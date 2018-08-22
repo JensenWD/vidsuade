@@ -1,0 +1,141 @@
+<template>
+  <div>
+    <div class="row hero_bg text-center pb-5 pt-5 font-white">
+      <div class="col-12 mb-5 mt-4">
+        <h1 class="font-weight-bold helvetica">Why video?</h1>
+        <h4 class="helvetica font-weight-light">Leveraging video marketing is a powerful strategy.</h4>
+      </div>
+      <div class="col-12">
+        <img src="https://placehold.it/700x400" alt="">
+      </div>
+    </div>
+
+    <div class="row pb-5 pt-5 font-white blue-bg mb-3">
+      <div class="col-12 text-center">
+        <h3 style="font-size: 3rem">7 reasons why video is effective</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-9 col-xl-8">
+        <div class="row pt-4 pb-5">
+          <div class="col-3 pr-3 text-center">
+            <img src="../assets/why-video/01_Attention_Photo.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-9 pl-3">
+            <h4 class="font-blue"><span class="font-orange">#1 </span>Draw attention</h4>
+            <p>The movement that video produces draws peoples' attention.
+              In a time when people are surrounded by information and it can be
+              difficult to get people to notice a specific message people are 4X
+              more likely to watch video than read text (Animoto).</p>
+          </div>
+        </div>
+
+        <div class="row pb-3 pt-3">
+          <div class="col-3 pr-3 text-center">
+            <img src="../assets/why-video/02_Engagement_Photo.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-9 pl-3">
+            <h4 class="font-blue"><span class="font-orange">#2 </span>Increases Engagement</h4>
+            <p>Videos get 1,200% more shares than text or images combined (SimplyMeasured).
+              45% of people watch more than an hour of Facebook or Youtube videos a week (Hubspot).</p>
+          </div>
+        </div>
+
+        <div class="row pb-3 pt-3">
+          <div class="col-3 pr-3 text-center">
+            <img src="../assets/why-video/03_SEO_Photo.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-9 pl-3">
+            <h4 class="font-blue"><span class="font-orange">#3 </span>Great for SEO</h4>
+            <p>Companies that use videos on their website have 41% more web traffic
+              from searches than those that don't (Smallbiztrends). Video also drives organic traffic by 157% (SERPs)
+              and search
+              engines rank sites with videos higher than those that don't.</p>
+          </div>
+        </div>
+        <div class="row pb-3 pt-3">
+          <div class="col-3 pr-3 text-center">
+            <img src="../assets/why-video/04_Retention_Recall_Photo.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-9 pl-3">
+            <h4 class="font-blue"><span class="font-orange">#4 </span>Boosts retention and brand recall</h4>
+            <p>80% of customers remember a video they viewed in the past month.
+              Viewers retain 95% of a message when watching it on a video compared to 10% when reading it in text
+              (WireBuzz) and video marketers
+              achieve a 54% increase in brand awareness.</p>
+          </div>
+        </div>
+        <div class="row pb-3 pt-3">
+          <div class="col-3 pr-3 text-center">
+            <img src="../assets/why-video/05_Conversion_Photo.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-9 pl-3">
+            <h4 class="font-blue"><span class="font-orange">#5 </span>Increases conversions</h4>
+            <p>85% are more likely to buy after watching a product video and when embedding
+            videos on a landing page conversions can increase by 80% (Unbounce). Initial emails
+            with a video increases click through-rates by 96% (Campaign Monitor).</p>
+          </div>
+        </div>
+        <div class="row pb-3 pt-3">
+          <div class="col-3 pr-3 text-center">
+            <img src="../assets/why-video/06_Perceived_Value_Photo.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-9 pl-3">
+            <h4 class="font-blue"><span class="font-orange">#6 </span>Gives a higher perceived value</h4>
+            <p>Video has a higher perceived value than text. It's more expensive,
+            more time consuming, and harder to produce. Simply put, when
+            you produce a video people notice and are more willing to share.</p>
+          </div>
+        </div>
+        <div class="row pb-3 pt-3">
+          <div class="col-3 pr-3 text-center">
+            <img src="../assets/why-video/07_Effective_Photo.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-9 pl-3">
+            <h4 class="font-blue"><span class="font-orange">#7 </span>More effective</h4>
+            <p>Studies say that a one-minute video equates to 1.8 million
+            written words (Forrester Research) and in a recent study by ReelSEO,
+            73% of agency and marketing professionals said that video has positively
+            impacted marketing results.</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-3 col-xl-4">
+        <div class="card m-auto position-sticky" style="width: 18rem;top:1rem;">
+          <img class="card-img-top" src="https://placehold.it/160x140" alt="Card image cap">
+          <div class="card-body text-center">
+            <p class="card-text helvetica font-weight-bold">Learn how to create professional videos for your business on a shoe-string budget with our FREE guide!</p>
+            <a href="#" class="btn btn-primary m-auto border-0 pl-3 pr-3" style="background: #E98000;">Download guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer_section_bg justify-content-center align-items-center pt-5 pb-5 text-center flex-column">
+      <h2 class="font-white font-weight-bold">Want to get started?</h2>
+      <button class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-blue helvetica font-weight-regular"
+              style="font-size: 20px">get a free quote</button>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "WhyVideo"
+  }
+</script>
+
+<style lang="sass" scoped>
+  h4
+    font-size: 1.55rem
+    span
+      font-size: 1.55rem
+  .hero_bg
+    background-image: url("../assets/why-video/Why_Video_BG_Photo@2x.png")
+    background-size: cover
+  .blue-bg
+    background: #009EE9
+  .card
+    box-shadow: 0 2px 4px #c8c8c8
+</style>
