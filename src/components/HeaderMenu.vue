@@ -16,10 +16,10 @@
             <router-link class="nav-link mr-sm-4" to="/about-us">About us</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link mr-sm-4" href="#">Pricing</a>
+            <router-link class="nav-link mr-sm-4" to="/pricing">Pricing</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link mr-sm-1" href="#">Contact us</a>
+            <router-link class="nav-link mr-sm-1" to="/contact">Contact us</router-link>
           </li>
         </ul>
       </div>
