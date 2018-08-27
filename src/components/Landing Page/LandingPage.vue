@@ -37,6 +37,7 @@
                 <span class="browse">+</span><span class="filename">Click to choose a file instead</span>
                 <p class="mt-3">Submit payment</p>
                 <div class="payment-form pl-3 pt-1 pb-1 mb-3">Click here for payment options</div>
+                <div id="card-element"></div>
                 <div class="total text-center">Total: $49.95</div>
                 <div class="submit pt-1 pb-1 text-center mt-2">Animate my logo</div>
                 <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>
@@ -225,6 +226,10 @@
 </template>
 
 <script>
+    let stripe = Stripe(`YOUR_STRIPE_PUBLISHABLE_KEY`),
+        elements = stripe.elements(),
+        card = undefined;
+
     export default {
         name: "LandingPage",
         data() {
@@ -233,6 +238,14 @@
         mounted() {
             //hide nav && footer from landing page
             let url = window.location.toString();
+            let style = {
+                base: {
+                    border: '',
+                    color: '#FFFFFF'
+                }
+            };
+            card = elements.create('card', style);
+            card.mount('#card-element');
 
             if (url.includes('landing')) {
                 $('nav').css({'display': 'none'});
@@ -391,8 +404,8 @@
         background-color: #F1F1F1;
         max-width: 400px;
         position: absolute;
-        right: 360px;
-        top: 200px;
+        right: 20%;
+        top: 20%;
     }
     #days, #hours, #minutes, #seconds {
         font-size: 42px;
