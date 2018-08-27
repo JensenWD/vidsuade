@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12">
+  <div class="col-12" style="min-height: 0;">
     <nav class="navbar navbar-expand-lg bg-transparent">
       <router-link class="navbar-brand ml-4" to="/">
         <img src="../assets/home/Logo_NavBar.png" class="img-fluid logo" alt="logo">
