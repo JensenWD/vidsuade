@@ -26,10 +26,15 @@
 
 <style lang="sass">
   #app
-    font-family: 'Avenir', Helvetica, sans-serif
+    font-family: 'Helvetica Neue', sans-serif
+    font-weight: 300
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
-    color: #2c3e50
+    color: #838283
+
+  .fs-16
+    p, span, li, div, a
+      font-size: 16px
 
   .helvetica
     font-family: 'Helvetica Neue', sans-serif
@@ -37,8 +42,14 @@
   h1, h2
     font-size: 3rem
 
-  h1, h2, h3
+  h3, h4, h5
     font-family: 'Helvetica Neue', sans-serif
+    font-weight: 500
+
+  p, span, li, div, a
+    font-family: 'Helvetica Neue', sans-serif
+    font-size: 18px
+    font-weight: 300
 
   .font-white
     color: white
@@ -52,8 +63,8 @@
   .font-orange
     color: #E98000
 
-  p, span, li
-    font-size: 18px
+  .font-grey
+    color: grey
 
   .footer_section_bg
     background-image: url("./assets/home/Footer_CTA@2x.png")

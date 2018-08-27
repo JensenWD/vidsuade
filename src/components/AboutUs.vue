@@ -1,9 +1,74 @@
 <template>
   <div>
     <div class="row hero_bg text-center pb-5 pt-5 font-white">
-      <div class="col-12 mb-5 mt-4">
-        <h1 class="font-weight-bold helvetica">Videos that convert</h1>
-        <h4 class="helvetica font-weight-light">Videos made to increase sales for business.</h4>
+      <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mb-5 mt-4">
+        <h1 class="font-weight-bold helvetica">Why choose us?</h1>
+        <p class="helvetica font-weight-light text-left">At Vidsuade we provide a complete video solution, from
+        effectively writing scripts meant to persuade and convert to producing
+        professional videos that generate leads, increase conversion rates, and boosts sales.</p>
+        <br>
+        <p class="text-left">We know producing effective videos can be overwhelming between copywriting, techincal
+        camera knowledge and video editing skills... So let us professionals worry about that and you
+        just sit back and enjoy the sweet end result - increase ROI.</p>
+      </div>
+
+      <div class="col-12">
+        <button class="btn top-btn text-uppercase p-2 pr-4 pl-4 mt-1 font-white helvetica font-weight-regular"
+                style="font-size: 20px">get a free quote</button>
+      </div>
+    </div>
+
+    <div class="row pb-5 pt-5 font-blue mb-3">
+      <div class="col-12 text-center">
+        <h3 style="font-size: 3rem">Our process</h3>
+      </div>
+    </div>
+
+    <div class="row sections">
+      <div class="col-12">
+        <div class="row">
+          <div class="p-0 col-12 col-md-4">
+            <img src="../assets/about/About_Us_Scriptwriting_Photo.png" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-12 col-md-8 d-flex justify-content-center p-3 p-md-5 flex-column align-items-start">
+            <h4 class="font-blue">Stratey and scriptwriting</h4>
+            <p>Here at Vidsuade we have a background in digital marketing and utilize
+              our expertise to come up with a strategy to meet specific goals. We start
+              with learning your industry and learning what makes your business stand out in that industry.
+              Then we'll create a highly targeted call-to-action. Once we learn what your audience
+              wants and why your solution makes sense we'll devise a persuasive script made
+              specifically for your audience and leave them wanting your solution.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-8 d-flex justify-content-center p-3 p-md-5 flex-column align-items-start">
+            <h4 class="font-blue">Pre-production</h4>
+            <p>After strategizing and creating a highly engaging and persuasive script, we'll
+              storyboard and organize the shoot so that you'll know exactly what to expect. Don't worry we'll work with you so that you're happy
+              with the direction of the video and that there aren't any surprises. We'll
+              make sure that it's a smooth and seamless process.</p>
+          </div>
+
+          <div class="p-0 col-12 col-md-4">
+            <img src="../assets/about/About_Us_Preproduction_Photo.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="p-0 col-12 col-md-4">
+            <img src="../assets/about/About_Us_Production_Photo.png" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-12 col-md-8 d-flex justify-content-center p-3 p-md-5 flex-column align-items-start">
+            <h4 class="font-blue">Production</h4>
+            <p>Depending on whether it's an animated or live-action video, we'll make sure it's of
+              highest quality. When producing the video, we'll provide two revisions so that you're
+              100% happy with the finished product. We'll even provide best practices when embedding
+              the video on your website or landing pages to ensure the highest visibility possible.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -25,5 +90,11 @@
   .hero_bg
     background-image: url("../assets/about/About_Us_BG_Photo@2x.png")
     background-size: cover
+  .top-btn
+    background: #E98000
+    margin: auto
+  .sections
+    .row:nth-child(2n-1)
+      background: #e9e9e9
 
 </style>
