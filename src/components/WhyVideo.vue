@@ -16,8 +16,8 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12 col-md-9 col-xl-8">
+    <div class="row justify-content-center">
+      <div class="container">
         <div class="row pt-4 pb-5">
           <div class="col-3 pr-3 text-center">
             <img src="../assets/why-video/01_Attention_Photo.png" alt="" class="img-fluid">

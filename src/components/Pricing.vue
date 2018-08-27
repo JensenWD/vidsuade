@@ -7,12 +7,12 @@
       </div>
     </div>
 
-    <div class="row text-center">
-      <div class="col-12 col-lg-10 offset-lg-1 pricing_tables_wrapper">
+    <div class="row text-center justify-content-center">
+      <div class="container pricing_tables_wrapper">
         <div class="row">
 
           <div class="col-3">
-            <div class="card">
+            <div class="card h-100">
 
               <div class="card-block fs-16">
                 <h4 class="card-title">Social media spots</h4>
@@ -36,7 +36,7 @@
           </div>
 
           <div class="col-3">
-            <div class="card">
+            <div class="card h-100">
 
               <div class="card-block fs-16">
                 <h4 class="card-title">Sales process videos</h4>
@@ -60,7 +60,7 @@
           </div>
 
           <div class="col-3">
-            <div class="card">
+            <div class="card h-100">
 
               <div class="card-block fs-16">
                 <h4 class="card-title">Testimonial videos</h4>
@@ -84,7 +84,7 @@
           </div>
 
           <div class="col-3">
-            <div class="card">
+            <div class="card h-100">
 
               <div class="card-block fs-16">
                 <h4 class="card-title">Explainer videos</h4>
@@ -114,8 +114,8 @@
       <div class="col-12 mt-5 pt-4"><span class="large font-blue">- or -</span></div>
     </div>
 
-    <div class="row mt-3">
-      <div class="col-12 pl-0 col-md-10 offset-md-1 col-xl-6 offset-xl-3 custom_package">
+    <div class="row justify-content-center mt-3">
+      <div class="container p-0 custom_package">
         <div class="row">
           <div class="col-5 pr-0">
             <img src="../assets/pricing/Custom_Package_Photo.png" alt="" class="img-fluid">
@@ -138,12 +138,12 @@
       </div>
     </div>
 
-    <div class="row mt-4">
+    <div class="row justify-content-center mt-4">
      <div class="col-12">
        <h3 class="text-center">Frequently Asked Questions</h3>
      </div>
 
-      <div class="col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2 mb-4">
+      <div class="container mb-4">
         <div id="faq" role="tablist" aria-multiselectable="true">
 
           <div class="card">
