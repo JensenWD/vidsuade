@@ -51,7 +51,7 @@
               make sure that it's a smooth and seamless process.</p>
           </div>
 
-          <div class="p-0 col-12 col-md-4">
+          <div class="p-0 col-12 col-md-4 text-right">
             <img src="../assets/about/About_Us_Preproduction_Photo.png" alt="" class="img-fluid">
           </div>
         </div>
