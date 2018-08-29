@@ -6,6 +6,7 @@ import AboutUs from '@/components/AboutUs'
 import LandingPage from '@/components/Landing Page/LandingPage'
 import Pricing from '@/components/Pricing'
 import Contact from '@/components/Contact'
+import TermsOfUse from '@/components/TermsOfUse'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
             path: '/contact',
             name: 'Contact',
             component: Contact
-        }
+        },
+      {
+        path: '/terms',
+        name: 'TermsOfUse',
+        component: TermsOfUse
+      }
     ]
 })

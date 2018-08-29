@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container-fluid">
-      <div class="row fixed-nav">
+      <div class="row sticky-top">
         <header-menu></header-menu>
       </div>
 
@@ -27,29 +27,49 @@
 <style lang="sass">
   #app
     font-family: 'Helvetica Neue', sans-serif
-    font-weight: 300
+    font-weight: 500
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
     color: #838283
 
+  @font-face
+    font-family: 'Gilroy_bold'
+    src: url('assets/gilroy_bold/gilroy_bold.woff2') format('woff2'),
+    url('assets/gilroy_bold/gilroy_bold.ttf')  format('truetype'),
+    url('assets/gilroy_bold/gilroy_bold.woff')  format('woff'),
+    url('assets/gilroy_bold/gilroy_bold.eot')  format('eot')
+
+  @font-face
+    font-family: 'Gilroy'
+    src: url('assets/gilroy_light/gilroy_light.woff2') format('woff2'),
+    url('assets/gilroy_light/gilroy_light.ttf')  format('truetype'),
+    url('assets/gilroy_light/gilroy_light.woff')  format('woff'),
+    url('assets/gilroy_light/gilroy_light.eot')  format('eot')
+
+  .fs-28
+    font-size: 28px !important
+
   .fs-16
     p, span, li, div, a
       font-size: 16px
+
+  a:hover
+    text-decoration: none
 
   .helvetica
     font-family: 'Helvetica Neue', sans-serif
 
   h1, h2
     font-size: 3rem
+    font-family: 'Gilroy_bold', sans-serif !important
 
   h3, h4, h5
-    font-family: 'Helvetica Neue', sans-serif
-    font-weight: 500
+    font-family: 'Gilroy', sans-serif !important
 
   p, span, li, div, a
     font-family: 'Helvetica Neue', sans-serif
     font-size: 18px
-    font-weight: 300
+    font-weight: 400
 
   .font-white
     color: white
