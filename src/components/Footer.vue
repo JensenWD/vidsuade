@@ -4,14 +4,14 @@
       <div class="container pt-2 pb-2">
         <div class="row align-items-center justify-content-around">
           <div class="col text-center">
-            <a href="">
+            <router-link to="/about-us">
               <span class="text-uppercase font-white">About us</span>
-            </a>
+            </router-link>
           </div>
           <div class="col text-center">
-            <a href="">
+            <router-link to="/contact">
               <span class="text-uppercase font-white">Contact us</span>
-            </a>
+            </router-link>
           </div>
           <div class="col text-center">
             <img src="../assets/home/Footer_Logo_Icon.png" style="max-width: 51px" class="img-fluid" alt="">
@@ -22,9 +22,9 @@
             </a>
           </div>
           <div class="col text-center">
-            <a href="">
+            <router-link to="/terms">
               <span class="text-uppercase font-white">Legal</span>
-            </a>
+            </router-link>
           </div>
         </div>
 

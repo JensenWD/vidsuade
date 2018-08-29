@@ -4,7 +4,8 @@
       <router-link class="navbar-brand ml-4" to="/">
         <img src="../assets/home/Logo_NavBar.png" class="img-fluid logo" alt="logo">
       </router-link>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -28,9 +29,21 @@
 </template>
 
 <script>
-    export default {
-        name: "HeaderMenu"
+  export default {
+    name: "HeaderMenu",
+    mounted() {
+      $(document).scroll(function () {
+        let nav = $(".navbar");
+        if ($(window).scrollTop() === 0) {
+          nav.removeClass('bg-dark');
+          nav.addClass('bg-transparent');
+        } else {
+          nav.removeClass('bg-transparent');
+          nav.addClass('bg-dark');
+        }
+      });
     }
+  }
 </script>
 
 <style lang="sass" scoped>
@@ -39,6 +52,7 @@
     left: 0
     top: 0
     width: 100%
+    transition: 0.15s
   .nav-item, .nav-link
     color: white
     text-transform: uppercase

@@ -3,7 +3,7 @@
     <div class="row hero_bg text-center pt-5 font-white">
       <div class="col-12 mb-5 mt-4">
         <h1 class="font-weight-bold helvetica">Pricing</h1>
-        <h4 class="helvetica font-weight-light">Find out which tactical video you need below.</h4>
+        <span class="fs-28 helvetica font-weight-light">Find out which tactical video you need below.</span>
       </div>
     </div>
 
@@ -30,7 +30,7 @@
                   <li>Delivery of each video in the appropriate format for each of your social channels</li>
                 </ul>
 
-                <router-link to="" class="font-blue learn-btn">Learn more</router-link>
+                <a href="#/" data-toggle="modal" data-target="#socialMediaModal" class="font-blue learn-btn">Learn more</a>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@
                   <li>Delivery of each video in the appropriate format for each of your social channels</li>
                 </ul>
 
-                <router-link to="/contact" class="font-blue learn-btn">Learn more</router-link>
+                <a href="#/" data-toggle="modal" data-target="#salesProcessModal" class="font-blue learn-btn">Learn more</a>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
                   <li>Delivery of each video in the appropriate format for each of your social channels</li>
                 </ul>
 
-                <router-link to="/contact" class="font-blue learn-btn">Learn more</router-link>
+                <a href="#/" data-toggle="modal" data-target="#testimonialModal" class="font-blue learn-btn">Learn more</a>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@
                   <li>Delivery of each video in the appropriate format for each of your social channels</li>
                 </ul>
 
-                <router-link to="/contact" class="font-blue learn-btn">Learn more</router-link>
+                <a href="#/" data-toggle="modal" data-target="#explainerModal" class="font-blue learn-btn">Learn more</a>
               </div>
             </div>
           </div>
@@ -301,12 +301,17 @@
         </div>
       </div>
     </div>
+
+    <modals></modals>
   </div>
 </template>
 
 <script>
+  import Modals from './PricingModals';
+
   export default {
-    name: "Pricing"
+    name: "Pricing",
+    components: {Modals}
   }
 </script>
 

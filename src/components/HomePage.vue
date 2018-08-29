@@ -12,8 +12,10 @@
 
     <div class="row font-blue">
 
-      <div class="position-absolute">
-        <button class="btn btn-primary font-white">Get a free quote</button>
+      <div class="position-absolute floating-btn">
+        <router-link to="/contact">
+          <button class="btn text-uppercase font-white">Get a free quote</button>
+        </router-link>
       </div>
 
       <div class="col-6 col-md-3 col_section">
@@ -49,7 +51,7 @@
             <p class="text-left">Adding videos to your website makes your site 6X more likely to convert visitors into
               paying customers and since the average user spends 88% more time on a website with video, then you're at a
               disadvantage if you're not leveraging the power of video on your website.</p>
-            <span><a href="" class="font-white text-underline">Learn more</a></span>
+            <span><router-link to="" class="font-white text-underline">Learn more</router-link></span>
           </div>
         </div>
       </div>
@@ -72,7 +74,7 @@
               we persuade or "Vidsuade" your audience and guide them towards your solution.</p>
             <p class="text-left">Whether you want to engage your audience on social media, drive
               organic traffic to your website, increase lead-to-sale conversion rates, or all of
-              the above, we'll help you achieve your goals. Want a free quote? <a href="" class="font-orange text-underline">Click here</a></p>
+              the above, we'll help you achieve your goals. Want a free quote? <router-link to="/contact" class="font-orange text-underline">Click here</router-link></p>
           </div>
         </div>
       </div>
@@ -147,8 +149,10 @@
 
     <div class="row footer_section_bg justify-content-center align-items-center pt-5 pb-5 text-center flex-column">
       <h2 class="font-white font-weight-bold">Want to get started?</h2>
-      <button class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-blue helvetica font-weight-regular"
-      style="font-size: 20px">get a free quote</button>
+      <router-link to="/contact">
+        <button class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-blue helvetica font-weight-regular"
+                style="font-size: 20px">get a free quote</button>
+      </router-link>
     </div>
   </div>
 </template>
@@ -166,6 +170,8 @@
   .section2_bg
     background-image: url("../assets/home/Home_Why_Video_Photo@2x.png")
     background-size: cover
+  .col_section:not(:last-child)
+    border-right: 1px solid #b0b0b0
   .col_section
     display: flex
     justify-content: center
@@ -178,4 +184,16 @@
     display: flex
     justify-content: center
     align-items: center
+
+  .floating-btn
+    z-index: 100
+    left: 50%
+    margin-left: -140px
+    margin-top: -20px
+    button
+      width: 280px
+      border: 5px solid white
+      border-radius: 9px
+      background-color: #D98430
+      font-size: 1.4rem
 </style>
