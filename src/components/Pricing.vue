@@ -15,7 +15,7 @@
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Social media spots</h4>
+                <h4 class="card-title">Social media <br> spots</h4>
                 <div>
                   <span class="price font-grey">$500-$1k</span>
                 </div>
@@ -39,7 +39,7 @@
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Sales process videos</h4>
+                <h4 class="card-title">Sales process <br> videos</h4>
                 <div>
                   <span class="price font-grey">$2k-$8k</span>
                 </div>
@@ -63,7 +63,7 @@
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Testimonial videos</h4>
+                <h4 class="card-title">Testimonial <br> videos</h4>
                 <div>
                   <span class="price font-grey">$5k-$10k</span>
                 </div>
@@ -87,7 +87,7 @@
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Explainer videos</h4>
+                <h4 class="card-title">Explainer <br> videos</h4>
                 <div>
                   <span class="price font-grey">$8k-$15k</span>
                 </div>
