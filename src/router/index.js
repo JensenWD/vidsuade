@@ -7,6 +7,7 @@ import LandingPage from '@/components/Landing Page/LandingPage'
 import Pricing from '@/components/Pricing'
 import Contact from '@/components/Contact'
 import TermsOfUse from '@/components/TermsOfUse'
+import PrivacyPolicy from '@/components/PrivacyPolicy'
 
 Vue.use(Router)
 
@@ -42,10 +43,19 @@ export default new Router({
             name: 'Contact',
             component: Contact
         },
-      {
-        path: '/terms',
-        name: 'TermsOfUse',
-        component: TermsOfUse
-      }
-    ]
+        {
+            path: '/terms',
+            name: 'TermsOfUse',
+            component: TermsOfUse
+        },
+        {
+            path: '/privacy-policy',
+            name: 'PrivacyPolicy',
+            component: PrivacyPolicy
+        }
+    ],
+    scrollBehavior(to, from, savedPosition) {
+        return {x: 0, y: 0}
+    }
+
 })

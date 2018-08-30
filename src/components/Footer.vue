@@ -17,9 +17,9 @@
             <img src="../assets/home/Footer_Logo_Icon.png" style="max-width: 51px" class="img-fluid" alt="">
           </div>
           <div class="col text-center">
-            <a href="">
+            <router-link to="/privacy-policy">
               <span class="text-uppercase font-white">Privacy policy</span>
-            </a>
+            </router-link>
           </div>
           <div class="col text-center">
             <router-link to="/terms">

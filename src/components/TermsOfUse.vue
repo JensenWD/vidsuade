@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-12 text-center">
+      <div class="row mt-5">
+        <div class="col-12 text-center pt-5 mb-4">
           <h1>Terms of use</h1>
         </div>
 
@@ -35,22 +35,22 @@
               <a class="text-underline" href="#6">Disclaimers; Limitations of Liability</a>
             </li>
             <li>
-              <a class="text-underline" href="">Indemnification</a>
+              <a class="text-underline" href="#7">Indemnification</a>
             </li>
             <li>
-              <a class="text-underline" href="">Privacy</a>
+              <a class="text-underline" href="#8">Privacy</a>
             </li>
             <li>
-              <a class="text-underline" href="">General Provisions</a>
+              <a class="text-underline" href="#9">General Provisions</a>
             </li>
             <li>
-              <a class="text-underline" href="">Income Disclaimer</a>
+              <a class="text-underline" href="#10">Income Disclaimer</a>
             </li>
             <li>
-              <a class="text-underline" href="">Refund Policy</a>
+              <a class="text-underline" href="#11">Refund Policy</a>
             </li>
             <li id="1">
-              <a class="text-underline" href="">Live Online Events Notice</a>
+              <a class="text-underline" href="#12">Live Online Events Notice</a>
             </li>
           </ul>
 
@@ -192,13 +192,13 @@
                 your use, misuse, or inability to use the Site or the Content, or any violation by you of these Terms of Use.</p>
             </div>
           </div>
-          <div class="row">
+          <div id="9" class="row">
             <div class="col-12 mb-4">
               <span class="section-title">8. Privacy</span>
               <p class="mt-4">Your use of the Site is subject to Vidsuade’s Privacy Policy</p>
             </div>
           </div>
-          <div class="row">
+          <div id="10" class="row">
             <div class="col-12 mb-4">
               <span class="section-title">9. General Provisions</span>
               <p class="mt-4">a. Entire Agreement/No Waiver. These Terms of Use constitute the entire agreement of the parties with respect
@@ -210,7 +210,7 @@
                 not, however, guarantee that any errors, inaccuracies or omissions will be corrected.</p>
             </div>
           </div>
-          <div class="row">
+          <div id="11" class="row">
             <div class="col-12 mb-4">
               <span class="section-title">10. Income Disclaimer</span>
               <p class="mt-4">Vidsuade, LLC cannot guarantee the results that each individual experiences with our ideas, techniques, tools
@@ -221,7 +221,7 @@
                 numbers just by watching our content and/or purchasing our services.</p>
             </div>
           </div>
-          <div class="row">
+          <div id="12" class="row">
             <div class="col-12 mb-4">
               <span class="section-title">11. Refund Policy</span>
               <p class="mt-4">Unless otherwise specified in the case of a special offer/promotions, the refund policy are as follows: In the

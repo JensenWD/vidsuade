@@ -2,6 +2,7 @@
   <div id="app">
     <div class="container-fluid">
       <div class="row sticky-top">
+        <ad-bar></ad-bar>
         <header-menu></header-menu>
       </div>
 
@@ -17,10 +18,11 @@
 <script>
   import HeaderMenu from './components/HeaderMenu';
   import FooterMenu from './components/Footer';
+  import AdBar from './components/adBar';
 
   export default {
     name: 'App',
-    components: {HeaderMenu, FooterMenu}
+    components: {HeaderMenu, FooterMenu, AdBar}
   }
 </script>
 

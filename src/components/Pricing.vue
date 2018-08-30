@@ -134,7 +134,9 @@
         <span class="font-weight-bold large-text">Is the video service you're looking for not on the list?</span> <br>
         <span class="medium-text">Let us know what you need and we'll get back to you.</span>
         <br>
-        <button class="btn font-white mt-4">CONTACT US</button>
+        <router-link to="/contact">
+          <button class="btn font-white mt-4">CONTACT US</button>
+        </router-link>
       </div>
     </div>
 

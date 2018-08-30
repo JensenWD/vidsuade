@@ -51,7 +51,7 @@
             <p class="text-left">Adding videos to your website makes your site 6X more likely to convert visitors into
               paying customers and since the average user spends 88% more time on a website with video, then you're at a
               disadvantage if you're not leveraging the power of video on your website.</p>
-            <span><router-link to="" class="font-white text-underline">Learn more</router-link></span>
+            <span><router-link to="/why-video" class="font-white text-underline">Learn more</router-link></span>
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@
     background-image: url("../assets/home/Home_Hero_Photo@2x.png")
     background-size: cover
   .section2_bg
-    background-image: url("../assets/home/Home_Why_Video_Photo@2x.png")
+    background-image: url("../assets/home/Home_Why_Video_Photo.png")
     background-size: cover
   .col_section:not(:last-child)
     border-right: 1px solid #b0b0b0

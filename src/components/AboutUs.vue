@@ -13,8 +13,10 @@
       </div>
 
       <div class="col-12">
-        <button class="btn top-btn text-uppercase p-2 pr-4 pl-4 mt-1 font-white helvetica font-weight-regular"
-                style="font-size: 20px">get a free quote</button>
+        <router-link to="/contact">
+          <button class="btn top-btn text-uppercase p-2 pr-4 pl-4 mt-1 font-white helvetica font-weight-regular"
+                  style="font-size: 20px">get a free quote</button>
+        </router-link>
       </div>
     </div>
 
@@ -74,8 +76,10 @@
 
     <div class="row footer_section_bg justify-content-center align-items-center pt-5 pb-5 text-center flex-column">
       <h2 class="font-white font-weight-bold">Want to get started?</h2>
-      <button class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-blue helvetica font-weight-regular"
-              style="font-size: 20px">get a free quote</button>
+      <router-link to="/contact">
+        <button class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-blue helvetica font-weight-regular"
+                style="font-size: 20px">get a free quote</button>
+      </router-link>
     </div>
   </div>
 </template>
