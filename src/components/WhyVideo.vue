@@ -6,7 +6,7 @@
         <span class="helvetica fs-28 font-weight-light">Leveraging video marketing is a powerful strategy.</span>
       </div>
       <div class="col-12">
-        <img src="https://placehold.it/700x400" alt="">
+        <iframe src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
       </div>
     </div>
 
@@ -101,7 +101,7 @@
           </div>
         </div>
       </div>
-      <div class="d-none d-md-block col-md-3 col-xl-4">
+      <div class="d-none col-md-3 col-xl-4">
         <div class="card m-auto position-sticky" style="width: 18rem;top:1rem;">
           <img class="card-img-top" src="https://placehold.it/160x140" alt="Card image cap">
           <div class="card-body text-center">

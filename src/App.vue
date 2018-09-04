@@ -50,6 +50,7 @@
 
   .fs-28
     font-size: 28px !important
+    line-height: 24px
 
   .fs-16
     p, span, li, div, a
@@ -91,4 +92,24 @@
   .footer_section_bg
     background-image: url("./assets/home/Footer_CTA@2x.png")
     background-size: cover
+
+  iframe
+    width: 100%
+    max-width: 685px
+    height: 390px
+
+  @media(max-width: 767px)
+    .fs-28
+      font-size: 20px !important
+      line-height: 21px
+
+  @media (max-width: 655px)
+    iframe
+      height: 250px
+      width: 450px
+
+  @media (max-width: 545px)
+    iframe
+      height: 160px
+      width: 300px
 </style>

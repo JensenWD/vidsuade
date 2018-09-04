@@ -130,7 +130,6 @@
     .hero_bg
         background-image: url("../assets/contact/Contact_US_BG@2x.png")
         background-size: cover
-        height: 100vh
     .submit
         background: #E98000
         border-radius: 5px

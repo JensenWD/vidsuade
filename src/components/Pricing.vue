@@ -11,11 +11,11 @@
       <div class="container pricing_tables_wrapper">
         <div class="row">
 
-          <div class="col-3">
+          <div class="col-12 col-sm-6 col-xl-3">
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Social media <br> spots</h4>
+                <h4 class="card-title">Social media <br class="d-none d-xl-block"> spots</h4>
                 <div>
                   <span class="price font-grey">$500-$1k</span>
                 </div>
@@ -35,11 +35,11 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-12 col-sm-6 col-xl-3">
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Sales process <br> videos</h4>
+                <h4 class="card-title">Sales process <br class="d-none d-xl-block"> videos</h4>
                 <div>
                   <span class="price font-grey">$2k-$8k</span>
                 </div>
@@ -59,11 +59,11 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-12 col-sm-6 col-xl-3">
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Testimonial <br> videos</h4>
+                <h4 class="card-title">Testimonial <br class="d-none d-xl-block"> videos</h4>
                 <div>
                   <span class="price font-grey">$5k-$10k</span>
                 </div>
@@ -83,11 +83,11 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-12 col-sm-6 col-xl-3">
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Explainer <br> videos</h4>
+                <h4 class="card-title">Explainer <br class="d-none d-xl-block"> videos</h4>
                 <div>
                   <span class="price font-grey">$8k-$15k</span>
                 </div>
@@ -110,18 +110,17 @@
       </div>
     </div>
 
-    <div class="row text-center mt-5 mb-4">
-      <div class="col-12 mt-5 pt-4"><span class="large font-blue">- or -</span></div>
+    <div class="row table_separator text-center mb-4">
+      <div class="col-12"><span class="large font-blue">- or -</span></div>
     </div>
 
     <div class="row justify-content-center mt-3">
-      <div class="container p-0 custom_package">
+      <div class="container custom_package">
         <div class="row">
-          <div class="col-5 pr-0">
-            <img src="../assets/pricing/Custom_Package_Photo.png" alt="" class="img-fluid">
+          <div class="d-none d-lg-block col-lg-5 bg-img pr-0">
           </div>
-          <div class="col-7 p-3 pl-4">
-            <h5>Custom package</h5>
+          <div class="col-12 col-lg-7 p-3 pl-4">
+            <h3 class="font-blue helvetica font-weight-bold">Custom package</h3>
             <p>Need a combination of videos? Or maybe you need an entire funnel process of videos? If you do, you'll enjoy a discounted rate. Let's chat about your specific needs.</p>
             <router-link to="/contact"><button class="btn font-white">Get a Quote</button></router-link>
           </div>
@@ -153,7 +152,7 @@
               <h5 class="mb-0">
                 <a data-toggle="collapse" data-parent="#faq" href="#section1ContentId" aria-expanded="true"
                    aria-controls="section1ContentId">
-                  <div class="blue-btn">+</div>
+                  <div class="blue-btn"><span>+</span></div>
                   Does it really make a difference having video marketers making our videos?
                 </a>
               </h5>
@@ -172,7 +171,7 @@
               <h5 class="mb-0">
                 <a data-toggle="collapse" data-parent="#faq" href="#section2Content" aria-expanded="true"
                    aria-controls="section2Content">
-                  <div class="blue-btn">+</div>
+                  <div class="blue-btn"><span>+</span></div>
                   What industries can benefit from having video?
                 </a>
               </h5>
@@ -189,7 +188,7 @@
               <h5 class="mb-0">
                 <a data-toggle="collapse" data-parent="#faq" href="#section3Content" aria-expanded="true"
                    aria-controls="section3Content">
-                  <div class="blue-btn">+</div>
+                  <div class="blue-btn"><span>+</span></div>
                   Can I just create my own videos?
                 </a>
               </h5>
@@ -210,7 +209,7 @@
               <h5 class="mb-0">
                 <a data-toggle="collapse" data-parent="#faq" href="#section4Content" aria-expanded="true"
                    aria-controls="section4Content">
-                  <div class="blue-btn">+</div>
+                  <div class="blue-btn"><span>+</span></div>
                   What's the turnaround time on a video?
                 </a>
               </h5>
@@ -231,7 +230,7 @@
               <h5 class="mb-0">
                 <a data-toggle="collapse" data-parent="#faq" href="#section5Content" aria-expanded="true"
                    aria-controls="section5Content">
-                  <div class="blue-btn">+</div>
+                  <div class="blue-btn"><span>+</span></div>
                   How much time is my company involved in the process?
                 </a>
               </h5>
@@ -252,7 +251,7 @@
               <h5 class="mb-0">
                 <a data-toggle="collapse" data-parent="#faq" href="#section6Content" aria-expanded="true"
                    aria-controls="section6Content">
-                  <div class="blue-btn">+</div>
+                  <div class="blue-btn"><span>+</span></div>
                 What if I want to revise the script or video?
                 </a>
               </h5>
@@ -270,7 +269,7 @@
               <h5 class="mb-0">
                 <a data-toggle="collapse" data-parent="#faq" href="#section7Content" aria-expanded="true"
                    aria-controls="section7Content">
-                  <div class="blue-btn">+</div>
+                  <div class="blue-btn"><span>+</span></div>
                   If I'm not happy with the end result, can I get a refund?
                 </a>
               </h5>
@@ -287,7 +286,7 @@
               <h5 class="mb-0">
                 <a data-toggle="collapse" data-parent="#faq" href="#section8Content" aria-expanded="true"
                    aria-controls="section8Content">
-                  <div class="blue-btn">+</div>
+                  <div class="blue-btn"><span>+</span></div>
                 How can I get started?
                 </a>
               </h5>
@@ -318,33 +317,41 @@
 </script>
 
 <style lang="sass" scoped>
+  .bg-img
+    background-image: url('../assets/pricing/Custom_Package_Photo.png')
+    background-size: cover
+    background-repeat: no-repeat
+    height: 299px
+
+  .table_separator
+    margin-top: 120px
+
   .hero_bg
     background-image: url("../assets/pricing/Pricing_Hero_Photo@2x.png")
     background-size: cover
-    padding-bottom: 27%
+    padding-bottom: 500px
 
   .pricing_tables_wrapper
     position: absolute
     top: 250px
-
-  .card
-    border-radius: 0
-    padding: 1.5rem 1.75rem
-    box-shadow: 0 2px 5px #b7b7b7
-    .card-title
-      color: #009EE9
-    .price
-      font-size: 2.2rem
-    p
-      text-align: left
-    button
-      background: #E98000
-      border-radius: 2px
-      padding: 0.5rem 1.25rem
-      margin: 1rem auto
-    .learn-btn
-      text-decoration: underline
-      font-style: italic
+    .card
+      border-radius: 0
+      padding: 1.5rem 1.75rem
+      box-shadow: 0 2px 5px #b7b7b7
+      .card-title
+        color: #009EE9
+      .price
+        font-size: 2.2rem
+      p
+        text-align: left
+      button
+        background: #E98000
+        border-radius: 2px
+        padding: 0.5rem 1.25rem
+        margin: 1rem auto
+      .learn-btn
+        text-decoration: underline
+        font-style: italic
 
   .large
     font-size: 3.4rem
@@ -378,13 +385,14 @@
   .blue-btn
     float: left
     width: 50px
-    height: 100%
+    height: 50px
     background: #009EE9
     color: white
-    font-size: 2.6rem
     text-align: center
     padding: 0
     margin-right: 0.9rem
+    span
+      font-size: 2.3rem
 
   #faq
     .card
@@ -406,5 +414,36 @@
       max-width: 900px
       margin: auto
       padding-top: 1.25rem
+
+  @media(max-width: 1200px)
+    .pricing_tables_wrapper
+      >.row
+        > .col-12
+          margin-top: 1rem
+    .table_separator
+      margin-top: 420px
+
+  @media(max-width: 991px)
+    .table_separator
+      margin-top: 520px
+    .custom_package
+      p
+        font-size: 14px
+
+  @media(max-width: 767px)
+    .table_separator
+      margin-top: 790px
+
+    #faq
+      .card-header
+        a
+          font-size: 12px
+
+  @media(max-width: 575px)
+    .pricing_tables_wrapper
+      top: 290px
+    .table_separator
+      margin-top: 1340px
+
 
 </style>

@@ -6,7 +6,7 @@
         <h4 class="helvetica font-weight-light">Videos made to increase sales for business.</h4>
       </div>
       <div class="col-12">
-        <img src="https://placehold.it/700x400" alt="">
+        <iframe src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
       </div>
     </div>
 
@@ -18,21 +18,29 @@
         </router-link>
       </div>
 
-      <div class="col-6 col-md-3 col_section">
-        <img src="../assets/home/Home_SocialMedia_Photo.png" class="img-fluid" alt="">
-        <span>Social media videos</span>
+      <div class="col-6 col-lg-3 col_section text-center">
+        <a href="#/" data-toggle="modal" data-target="#socialMediaModal" class="font-blue learn-btn">
+          <img src="../assets/home/Home_SocialMedia_Photo.png" class="img-fluid" alt="">
+          <span>Social media videos</span>
+        </a>
       </div>
-      <div class="col-6 col-md-3 col_section">
-        <img src="../assets/home/Home_Sales_Process_Photo.png" class="img-fluid" alt="">
-        <span>Sales process videos</span>
+      <div class="col-6 col-lg-3 col_section text-center">
+        <a href="#/" data-toggle="modal" data-target="#salesProcessModal" class="font-blue learn-btn">
+          <img src="../assets/home/Home_Sales_Process_Photo.png" class="img-fluid" alt="">
+          <span>Sales process videos</span>
+        </a>
       </div>
-      <div class="col-6 col-md-3 col_section">
-        <img src="../assets/home/HomeExplainer_Photo.png" class="img-fluid" alt="">
-        <span>Explainer videos</span>
+      <div class="col-6 col-lg-3 col_section text-center">
+        <a href="#/" data-toggle="modal" data-target="#explainerModal" class="font-blue learn-btn">
+          <img src="../assets/home/HomeExplainer_Photo.png" class="img-fluid" alt="">
+          <span>Explainer videos</span>
+        </a>
       </div>
-      <div class="col-6 col-md-3 col_section">
-        <img src="../assets/home/Home_Customer_Test_Photo.png" class="img-fluid" alt="">
-        <span>Customer testimonials</span>
+      <div class="col-6 col-lg-3 col_section text-center">
+        <a href="#/" data-toggle="modal" data-target="#testimonialModal" class="font-blue learn-btn">
+          <img src="../assets/home/Home_Customer_Test_Photo.png" class="img-fluid" alt="">
+          <span>Customer testimonials</span>
+        </a>
       </div>
     </div>
 
@@ -82,18 +90,18 @@
 
     <div class="row">
       <div class="container">
-        <div class="row pt-5 pb-5">
+        <div class="row pt-sm-4 pb-5">
           <div class="col-12 col-md-8 offset-md-2 text-center p-2">
             <h2 class="mt-2 mb-5 font-weight-light font-blue">How we operate</h2>
           </div>
-          <div class="col-12 p-0">
+          <div class="col-12">
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <div class="row">
-                  <div class="col-3 p-3 icon">
+                  <div class="col-12 col-md-3 p-3 icon">
                     <img src="../assets/home/Strategy_Icon.png" class="img-fluid" alt="">
                   </div>
-                  <div class="col-9">
+                  <div class="col-12 col-md-9">
                     <h3 class="font-orange font-weight-regular">Strategy</h3>
                     <p>Here at Vidsuade we have a background in digital marketing and we utilize our expertise
                     to come up with a strategy to meet specific goals. We start with learning your industry and learning
@@ -102,24 +110,24 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <div class="row">
-                  <div class="col-3 p-3 icon">
+                  <div class="col-12 col-md-3 p-3 icon">
                     <img src="../assets/home/script_Icon.png" class="img-fluid" alt="">
                   </div>
-                  <div class="col-9">
+                  <div class="col-12 col-md-9">
                     <h3 class="font-orange font-weight-regular">Scriptwriting</h3>
                     <p>Once we learn what your audience wants and why your solution makes sense we'll devise a
                     persuasive script made specifically for your audience and leave them wanting your solution.</p>
                   </div>
                 </div>
               </div>
-              <div class="col-6 mt-4">
+              <div class="col-12 col-lg-6 mt-0 mt-md-4">
                 <div class="row">
-                  <div class="col-3 p-3 icon">
+                  <div class="col-12 col-md-3 p-3 icon">
                     <img src="../assets/home/Preproduction_Icon.png" class="img-fluid" alt="">
                   </div>
-                  <div class="col-9">
+                  <div class="col-12 col-md-9">
                     <h3 class="font-orange font-weight-regular">Pre-Production</h3>
                     <p>After strategizing and creating a highly engaging and persuasive script, we'll
                     storyboard and organize the shoot so that you'll know exactly what to expect. Don't worry
@@ -128,12 +136,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 mt-4">
+              <div class="col-12 col-lg-6 mt-0 mt-md-4">
                 <div class="row">
-                  <div class="col-3 p-3 icon">
+                  <div class="col-12 col-md-3 p-3 icon">
                     <img src="../assets/home/Production_Icon.png" class="img-fluid" alt="">
                   </div>
-                  <div class="col-9">
+                  <div class="col-12 col-md-9">
                     <h3 class="font-orange font-weight-regular">Production</h3>
                     <p>Depending on whether it's an animated or live-action video, we'll make sure it's of highest
                     quality. When producing the video, we'll provide two revisions so that you're 100% happy
@@ -154,12 +162,17 @@
                 style="font-size: 20px">get a free quote</button>
       </router-link>
     </div>
+
+    <modals></modals>
   </div>
 </template>
 
 <script>
+  import Modals from './PricingModals';
+
   export default {
-    name: "HomePage"
+    name: "HomePage",
+    components: {Modals}
   }
 </script>
 
@@ -174,12 +187,14 @@
     border-right: 1px solid #b0b0b0
   .col_section
     display: flex
-    justify-content: center
-    align-items: center
     padding: 0
-    span
-      position: absolute
-      text-transform: uppercase
+    a
+      display: flex
+      justify-content: center
+      align-items: center
+      span
+        position: absolute
+        text-transform: uppercase
   .icon
     display: flex
     justify-content: center
@@ -196,4 +211,15 @@
       border-radius: 9px
       background-color: #D98430
       font-size: 1.4rem
+
+  @media(max-width: 768px)
+    .col_section
+      span
+        font-size: 12px
+
+    .floating-btn
+      margin-left: -100px
+      button
+        width: 200px
+        font-size: 1rem
 </style>

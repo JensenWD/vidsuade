@@ -1,14 +1,12 @@
 <template>
   <div>
     <!-- Social media Modal -->
-    <div class="modal fade" id="socialMediaModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal " id="socialMediaModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
+        <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+          <span class="font-blue border-0" aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content pr-3 pr-md-5 pl-3 pl-md-5 pt-1 pb-3">
-          <div class="modal-header border-0">
-            <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
-              <span class="font-blue border-0" aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div class="modal-body text-center">
             <div class="row">
               <div class="col-12">
@@ -52,14 +50,12 @@
     </div>
 
     <!-- Sales process Modal -->
-    <div class="modal fade" id="salesProcessModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal " id="salesProcessModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
+        <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+          <span class="font-blue border-0" aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content pr-3 pr-md-5 pl-3 pl-md-5 pt-1 pb-3">
-          <div class="modal-header border-0">
-            <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
-              <span class="font-blue border-0" aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div class="modal-body text-center">
             <div class="row">
               <div class="col-12">
@@ -105,14 +101,12 @@
 
 
     <!-- Explainer Modal -->
-    <div class="modal fade" id="explainerModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal " id="explainerModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
+        <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+          <span class="font-blue border-0" aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content pr-3 pr-md-5 pl-3 pl-md-5 pt-1 pb-3">
-          <div class="modal-header border-0">
-            <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
-              <span class="font-blue border-0" aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div class="modal-body text-center">
             <div class="row">
               <div class="col-12">
@@ -158,14 +152,12 @@
     </div>
 
     <!-- Testimonial Modal -->
-    <div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal " id="testimonialModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
+        <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+          <span class="font-blue border-0" aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content pr-3 pr-md-5 pl-3 pl-md-5 pt-1 pb-3">
-          <div class="modal-header border-0">
-            <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
-              <span class="font-blue border-0" aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div class="modal-body text-center">
             <div class="row">
               <div class="col-12">
@@ -215,17 +207,38 @@
 
 <script>
   export default {
-    name: "PricingModals"
+    name: "PricingModals",
+    mounted() {
+      $('.quote').click(function () {
+        $('.modal').modal('hide');
+      })
+    }
   }
 </script>
 
 <style lang="sass" scoped>
+  .modal-lg
+    width: 100% !important
+    max-width: 100%
+    background: white
+    margin: 0
+    height: 100%
+    display: flex
+    align-items: center
+    .modal-content
+      max-width: 800px
+      margin: 0 auto
+      border: none
   .quote
     background: #E98000
     border-radius: 2px
     padding: 0.5rem 1.25rem
     margin: 1rem auto
   .close
+    position: absolute
+    right: 40px
+    top: 10px
+    z-index: 9999
     span
       font-size: 3rem
 </style>

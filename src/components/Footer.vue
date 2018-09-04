@@ -3,32 +3,37 @@
     <div class="row">
       <div class="container pt-2 pb-2">
         <div class="row align-items-center justify-content-around">
-          <div class="col text-center">
+          <div class="d-block d-sm-none col-12 mb-4 text-center">
+            <img src="../assets/home/Footer_Logo_Icon.png" style="max-width: 51px" class="img-fluid" alt="">
+          </div>
+          <div class="col-12 col-sm p-0 text-center">
             <router-link to="/about-us">
               <span class="text-uppercase font-white">About us</span>
             </router-link>
           </div>
-          <div class="col text-center">
+          <div class="d-none d-sm-block icon-border"></div>
+          <div class="col-12 col-sm p-0 text-center">
             <router-link to="/contact">
               <span class="text-uppercase font-white">Contact us</span>
             </router-link>
           </div>
-          <div class="col text-center">
+          <div class="d-none d-sm-block p-0 col-sm-2 text-center">
             <img src="../assets/home/Footer_Logo_Icon.png" style="max-width: 51px" class="img-fluid" alt="">
           </div>
-          <div class="col text-center">
+          <div class="col-12 col-sm p-0 text-center mr-sm-3">
             <router-link to="/privacy-policy">
               <span class="text-uppercase font-white">Privacy policy</span>
             </router-link>
           </div>
-          <div class="col text-center">
+          <div class="d-none d-sm-block icon-border"></div>
+          <div class="col-12 col-sm p-0 text-center">
             <router-link to="/terms">
               <span class="text-uppercase font-white">Legal</span>
             </router-link>
           </div>
         </div>
 
-        <div class="row mt-4 pt-2">
+        <div class="row mt-2 mt-sm-4 pt-2">
           <div class="col-12 text-center">
             <span class="font-white text-uppercase">Find us on social media</span>
           </div>
@@ -69,6 +74,12 @@
     max-width: 40px
   a:hover
     text-decoration: none
-  .col:nth-child(1), .col:nth-child(4)
-    border-right: 1px solid white
+  .icon-border
+    width: 1px !important
+    height: 20px
+    background: white
+
+  @media (max-width: 991px)
+    span
+      font-size: 13px
 </style>
