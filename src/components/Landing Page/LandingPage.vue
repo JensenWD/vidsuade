@@ -11,6 +11,7 @@
             </div>
         </div>
         <div class="row offer_section">
+
             <div id="form" class="col-6">
                 <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
                 <p><strong>Where should we send yur animation?*</strong></p>
@@ -34,10 +35,13 @@
                 <div class="drag-box">
                     Drop your files here
                 </div>
-                <span class="browse">+</span><span class="filename">Click to choose a file instead</span>
-                <p class="mt-3">Submit payment</p>
-                <div class="payment-form pl-3 pt-1 pb-1 mb-3">Click here for payment options</div>
-                <div class="total text-center">Total: $49.95</div>
+                <input type="file" class="hidden" id="browse-files">
+                <span class="browse mt-2 mb-4" @click="browse">+</span><span class="mb-4 mt-2 filename" @click="browse">Click to choose a file instead</span>
+                <!--<p class="mt-3">Submit payment</p>-->
+                <!--<div class="payment-form pl-3 pt-1 pb-1 mb-3">Click here for payment options</div>-->
+                <div id="card-element"></div>
+                <div id="card-errors" class="mt-2 hidden alert alert-danger" role="alert"></div>
+                <div class="mt-3 total text-center">Total: $49.95</div>
                 <div class="submit pt-1 pb-1 text-center mt-2">Animate my logo</div>
                 <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>
             </div>
@@ -225,6 +229,11 @@
 </template>
 
 <script>
+    let stripe = Stripe(`pk_test_EODlIgrDsj9wOZ3UfKK4RgKP`),
+        elements = stripe.elements(),
+        card = undefined;
+    import axios from 'axios';
+
     export default {
         name: "LandingPage",
         data() {
@@ -233,6 +242,42 @@
         mounted() {
             //hide nav && footer from landing page
             let url = window.location.toString();
+            let style = {
+                base: {
+                    border: '',
+                    color: 'white'
+                }
+            };
+            card = elements.create('card', style);
+            card.mount('#card-element');
+
+            card.addEventListener('change', function(event) {
+                let displayError = document.getElementById('card-errors');
+                if (event.error) {
+                    $('#card-errors').removeClass("hidden");
+                    $('.submit').attr('disabled' , true).css({'cursor' : 'not-allowed'});
+                    displayError.textContent = event.error.message;
+                } else {
+                    $('#card-errors').addClass("hidden");
+                    $('.submit').attr('disabled' , false).css({'cursor' : 'pointer'});
+                    displayError.textContent = '';
+                }
+            });
+
+            $('.submit').click(function () {
+               stripe.createToken(card).then((res) => {
+                   if (res.error) {
+                       let errorElement = document.getElementById('card-errors');
+                       errorElement.textContent = res.error.message;
+                   }
+                   else {
+                       console.log(res.token);
+                        axios.post('/process-payment', {
+                            stripeToken : res.token
+                        })
+                   }
+               });
+            });
 
             if (url.includes('landing')) {
                 $('nav').css({'display': 'none'});
@@ -260,7 +305,11 @@
                 $(this).text('dragging over!')
             })
         },
-        methods: {}
+        methods: {
+            browse () {
+                $('#browse-files').click();
+            }
+        }
     }
 </script>
 
@@ -391,8 +440,9 @@
         background-color: #F1F1F1;
         max-width: 400px;
         position: absolute;
-        right: 360px;
-        top: 200px;
+        right: 20%;
+        top: 20%;
+        z-index: 5;
     }
     #days, #hours, #minutes, #seconds {
         font-size: 42px;
@@ -410,12 +460,16 @@
         color: #FFFFFF;
         padding: 5px 10px;
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
+        display: inline-block;
+        width: 10%;
     }
     .filename {
         background-color: #E6E7E8;
         color: #ACAEB0;
         padding: 5px 10px;
+        display: inline-block;
+        width: 90%;
     }
     .payment-form {
         background-color: #727071;
@@ -453,5 +507,29 @@
         width: 250px;
         left: 100%;
         top: -10%;
+    }
+    .StripeElement {
+        background-color: white;
+        height: 40px;
+        padding: 10px 12px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        box-shadow: 0 1px 3px 0 #e6ebf1;
+        -webkit-transition: box-shadow 150ms ease;
+        transition: box-shadow 150ms ease;
+    }
+    .browse:hover, .filename:hover, .submit:hover {
+        cursor: pointer;
+    }
+    .StripeElement--focus {
+        box-shadow: 0 1px 3px 0 #cfd7df;
+    }
+
+    .StripeElement--invalid {
+        border-color: #fa755a;
+    }
+
+    .StripeElement--webkit-autofill {
+        background-color: #fefde5 !important;
     }
 </style>
