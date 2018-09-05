@@ -48,6 +48,7 @@
                                             <option value="Sales process">Sales process</option>
                                             <option value="Testimonial">Testimonial</option>
                                             <option value="Explainer">Explainer</option>
+                                            <option value="Other">Other</option>
                                         </select>
                                     </div>
                                 </div>
@@ -124,7 +125,13 @@
 
 <script>
     export default {
-        name: "Contact"
+        name: "Contact",
+        mounted() {
+            let s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "https://cdn.ywxi.net/js/1.js";
+            $("head").append(s);
+        }
     }
 </script>
 

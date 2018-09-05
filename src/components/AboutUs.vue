@@ -14,7 +14,7 @@
       <div class="col-12">
         <router-link to="/contact">
           <button class="btn top-btn text-uppercase p-2 pr-4 pl-4 mt-1 font-white helvetica font-weight-regular"
-                  style="font-size: 20px">get a free quote</button>
+                  style="font-size: 20px">get my free quote</button>
         </router-link>
       </div>
     </div>
@@ -44,6 +44,10 @@
         </div>
 
         <div class="row">
+          <div class="p-0 d-block d-lg-none col-12 col-lg-5 col-xl-4 text-right">
+            <img src="../assets/about/About_Us_Preproduction_Photo.png" alt="" class="img-fluid">
+          </div>
+
           <div class="col-12 col-lg-7 col-xl-8 d-flex justify-content-center p-4 p-xl-5 flex-column align-items-start">
             <h4 class="font-blue">Pre-production</h4>
             <p>After strategizing and creating a highly engaging and persuasive script, we'll
@@ -52,7 +56,7 @@
               make sure that it's a smooth and seamless process.</p>
           </div>
 
-          <div class="p-0 col-12 col-lg-5 col-xl-4 text-right">
+          <div class="p-0 d-none d-lg-block col-12 col-lg-5 col-xl-4 text-right">
             <img src="../assets/about/About_Us_Preproduction_Photo.png" alt="" class="img-fluid">
           </div>
         </div>
@@ -77,7 +81,7 @@
       <h2 class="font-white font-weight-bold">Want to get started?</h2>
       <router-link to="/contact">
         <button class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-blue helvetica font-weight-regular"
-                style="font-size: 20px">get a free quote</button>
+                style="font-size: 20px">get my free quote</button>
       </router-link>
     </div>
   </div>

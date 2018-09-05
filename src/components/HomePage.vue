@@ -14,7 +14,7 @@
 
       <div class="position-absolute floating-btn">
         <router-link to="/contact">
-          <button class="btn text-uppercase font-white">Get a free quote</button>
+          <button class="btn text-uppercase font-white">get my free quote</button>
         </router-link>
       </div>
 
@@ -159,7 +159,7 @@
       <h2 class="font-white font-weight-bold">Want to get started?</h2>
       <router-link to="/contact">
         <button class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-blue helvetica font-weight-regular"
-                style="font-size: 20px">get a free quote</button>
+                style="font-size: 20px">get my free quote</button>
       </router-link>
     </div>
 

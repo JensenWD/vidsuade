@@ -240,6 +240,12 @@
             return {}
         },
         mounted() {
+            let s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "https://cdn.ywxi.net/js/1.js";
+            $("head").append(s);
+
+
             //hide nav && footer from landing page
             let url = window.location.toString();
             let style = {

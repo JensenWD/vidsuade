@@ -11,6 +11,9 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav nav mr-lg-4">
                     <li class="nav-item active">
+                        <router-link class="nav-link mr-lg-4" to="/">Home</router-link>
+                    </li>
+                    <li class="nav-item active">
                         <router-link class="nav-link mr-lg-4" to="/why-video">Why video?</router-link>
                     </li>
                     <li class="nav-item">
@@ -37,14 +40,14 @@
                 if ($(window).scrollTop() === 0) {
                     if ((window.location.href.indexOf("privacy-policy") > -1) || (window.location.href.indexOf("terms") > -1)) {
                         nav.removeClass('bg-transparent');
-                        nav.addClass('bg-dark');
+                        nav.addClass('bg-color');
                     } else {
-                        nav.removeClass('bg-dark');
+                        nav.removeClass('bg-color');
                         nav.addClass('bg-transparent');
                     }
                 } else {
                     nav.removeClass('bg-transparent');
-                    nav.addClass('bg-dark');
+                    nav.addClass('bg-color');
                 }
             });
         }
@@ -52,6 +55,9 @@
 </script>
 
 <style lang="sass" scoped>
+    .bg-color
+        background: #004f75 !important
+    
     .navbar
         position: absolute
         left: 0
@@ -63,6 +69,7 @@
         color: white !important
         text-align: center
         text-transform: uppercase
+        font-size: 16px
     .logo
         max-width: 150px
         width: 100%

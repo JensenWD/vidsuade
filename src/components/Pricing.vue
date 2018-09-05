@@ -19,7 +19,7 @@
                 <div>
                   <span class="price font-grey">$500-$1k</span>
                 </div>
-                <router-link to="/contact"><button class="btn font-white">Get a Quote</button></router-link>
+                <router-link to="/contact"><button class="btn font-white">Get my quote</button></router-link>
                 <p class="font-grey">Showcase your brand in a creative way. This is the best to create engagement on
                   social media
                   posts.</p>
@@ -43,7 +43,7 @@
                 <div>
                   <span class="price font-grey">$2k-$8k</span>
                 </div>
-                <router-link to="/contact"><button class="btn font-white">Get a Quote</button></router-link>
+                <router-link to="/contact"><button class="btn font-white">Get my quote</button></router-link>
                 <p class="font-grey">Let your website answer all of your customers' questions and shorten your sales cycle.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
                 <ul class="font-grey text-left m-0 pl-2">
@@ -65,7 +65,7 @@
                 <div>
                   <span class="price font-grey">$5k-$10k</span>
                 </div>
-                <router-link to="/contact"><button class="btn font-white">Get a Quote</button></router-link>
+                <router-link to="/contact"><button class="btn font-white">Get my quote</button></router-link>
                 <p class="font-grey">Provides social proof and establishes trust with your company. Highly effective at converting leads.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
                 <ul class="font-grey text-left m-0 pl-2">
@@ -87,7 +87,7 @@
                 <div>
                   <span class="price font-grey">$8k-$15k</span>
                 </div>
-                <router-link to="/contact"><button class="btn font-white">Get a Quote</button></router-link>
+                <router-link to="/contact"><button class="btn font-white">Get my quote</button></router-link>
                 <p class="font-grey">Presents viewers with their problem and provides them with your solution. Highly effective at capturing leads.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
                 <ul class="font-grey text-left m-0 pl-2">
@@ -116,7 +116,7 @@
           <div class="col-12 col-lg-7 p-3 pl-4">
             <h3 class="font-blue helvetica font-weight-bold">Custom package</h3>
             <p>Need a combination of videos? Or maybe you need an entire funnel process of videos? If you do, you'll enjoy a discounted rate. Let's chat about your specific needs.</p>
-            <router-link to="/contact"><button class="btn font-white">Get a Quote</button></router-link>
+            <router-link to="/contact"><button class="btn font-white">Get my quote</button></router-link>
           </div>
         </div>
       </div>
@@ -311,18 +311,15 @@
 </script>
 
 <style lang="sass" scoped>
-
-  .table_separator
-    margin-top: 120px
-
   .hero_bg
     background-image: url("../assets/pricing/Pricing_Hero_Photo.png")
     background-size: cover
     padding-bottom: 500px
 
   .pricing_tables_wrapper
-    position: absolute
-    top: 250px
+    top: 0
+    position: static
+    margin-top: -500px
     .card
       border-radius: 0
       padding: 1.5rem 1.75rem
@@ -421,30 +418,17 @@
       >.row
         > .col-12
           margin-top: 1rem
-    .table_separator
-      margin-top: 420px
 
   @media(max-width: 991px)
     .table_separator
-      margin-top: 520px
+      margin-top: 0px
     .custom_package
       p
         font-size: 14px
 
   @media(max-width: 767px)
-    .table_separator
-      margin-top: 790px
-
     #faq
       .card-header
         a
           font-size: 12px
-
-  @media(max-width: 575px)
-    .pricing_tables_wrapper
-      top: 290px
-    .table_separator
-      margin-top: 1340px
-
-
 </style>
