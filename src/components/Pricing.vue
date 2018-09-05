@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row hero_bg text-center pt-5 font-white">
-      <div class="col-12 mb-5 mt-4">
+      <div class="col-12 mb-5 mt-5">
         <h1 class="font-weight-bold helvetica">Pricing</h1>
         <span class="fs-28 helvetica font-weight-light">Find out which tactical video you need below.</span>
       </div>
@@ -24,7 +24,7 @@
                   social media
                   posts.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
-                <ul class="font-grey text-left">
+                <ul class="font-grey text-left m-0 pl-2">
                   <li>(3) 10-30 second videos</li>
                   <li>Motion graphics</li>
                   <li>Delivery of each video in the appropriate format for each of your social channels</li>
@@ -44,14 +44,12 @@
                   <span class="price font-grey">$2k-$8k</span>
                 </div>
                 <router-link to="/contact"><button class="btn font-white">Get a Quote</button></router-link>
-                <p class="font-grey">Showcase your brand in a creative way. This is the best to create engagement on
-                  social media
-                  posts.</p>
+                <p class="font-grey">Let your website answer all of your customers' questions and shorten your sales cycle.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
-                <ul class="font-grey text-left">
-                  <li>(3) 10-30 second videos</li>
-                  <li>Motion graphics</li>
-                  <li>Delivery of each video in the appropriate format for each of your social channels</li>
+                <ul class="font-grey text-left m-0 pl-2">
+                  <li>Scripts written by professional copywriters</li>
+                  <li>Professional 4k HD video</li>
+                  <li>Highly targeted call-to-action & marketing strategy</li>
                 </ul>
 
                 <a href="#/" data-toggle="modal" data-target="#salesProcessModal" class="font-blue learn-btn">Learn more</a>
@@ -68,14 +66,12 @@
                   <span class="price font-grey">$5k-$10k</span>
                 </div>
                 <router-link to="/contact"><button class="btn font-white">Get a Quote</button></router-link>
-                <p class="font-grey">Showcase your brand in a creative way. This is the best to create engagement on
-                  social media
-                  posts.</p>
+                <p class="font-grey">Provides social proof and establishes trust with your company. Highly effective at converting leads.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
-                <ul class="font-grey text-left">
-                  <li>(3) 10-30 second videos</li>
-                  <li>Motion graphics</li>
-                  <li>Delivery of each video in the appropriate format for each of your social channels</li>
+                <ul class="font-grey text-left m-0 pl-2">
+                  <li>Questions written to evoke a story</li>
+                  <li>Professional 4k HD video</li>
+                  <li>Highly targeted call-to-action & marketing strategy</li>
                 </ul>
 
                 <a href="#/" data-toggle="modal" data-target="#testimonialModal" class="font-blue learn-btn">Learn more</a>
@@ -92,14 +88,12 @@
                   <span class="price font-grey">$8k-$15k</span>
                 </div>
                 <router-link to="/contact"><button class="btn font-white">Get a Quote</button></router-link>
-                <p class="font-grey">Showcase your brand in a creative way. This is the best to create engagement on
-                  social media
-                  posts.</p>
+                <p class="font-grey">Presents viewers with their problem and provides them with your solution. Highly effective at capturing leads.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
-                <ul class="font-grey text-left">
-                  <li>(3) 10-30 second videos</li>
-                  <li>Motion graphics</li>
-                  <li>Delivery of each video in the appropriate format for each of your social channels</li>
+                <ul class="font-grey text-left m-0 pl-2">
+                  <li>Scripts written by professional copywriters</li>
+                  <li>Professional 4k HD video</li>
+                  <li>Highly targeted call-to-action & marketing strategy</li>
                 </ul>
 
                 <a href="#/" data-toggle="modal" data-target="#explainerModal" class="font-blue learn-btn">Learn more</a>
@@ -139,12 +133,12 @@
       </div>
     </div>
 
-    <div class="row justify-content-center mt-4">
+    <div class="row justify-content-center mt-2">
      <div class="col-12">
-       <h3 class="text-center">Frequently Asked Questions</h3>
+       <h2 class="text-center helvetica font-weight-light">Frequently asked questions</h2>
      </div>
 
-      <div class="container mb-4">
+      <div class="container mt-4 mb-4">
         <div id="faq" role="tablist" aria-multiselectable="true">
 
           <div class="card">
@@ -317,17 +311,12 @@
 </script>
 
 <style lang="sass" scoped>
-  .bg-img
-    background-image: url('../assets/pricing/Custom_Package_Photo.png')
-    background-size: cover
-    background-repeat: no-repeat
-    height: 299px
 
   .table_separator
     margin-top: 120px
 
   .hero_bg
-    background-image: url("../assets/pricing/Pricing_Hero_Photo@2x.png")
+    background-image: url("../assets/pricing/Pricing_Hero_Photo.png")
     background-size: cover
     padding-bottom: 500px
 
@@ -344,6 +333,7 @@
         font-size: 2.2rem
       p
         text-align: left
+        line-height: 20px
       button
         background: #E98000
         border-radius: 2px
@@ -352,6 +342,8 @@
       .learn-btn
         text-decoration: underline
         font-style: italic
+      ul
+        margin-bottom: 0.75rem !important
 
   .large
     font-size: 3.4rem
@@ -360,11 +352,20 @@
   .custom_package
     box-shadow: 0 2px 5px #b7b7b7
     background: white
+    max-width: 800px
+    p
+      font-size: 16px
+      line-height: 20px
     button
       background: #E98000
       border-radius: 2px
       padding: 0.5rem 1.25rem
       margin: 1rem auto
+    .bg-img
+      background-image: url('../assets/pricing/Custom_Package_Photo.png')
+      background-size: cover
+      background-repeat: no-repeat
+      height: 245px
 
   .large-text
     font-size: 1.7rem

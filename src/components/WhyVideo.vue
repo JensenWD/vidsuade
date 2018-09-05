@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="row hero_bg text-center pb-5 pt-5 font-white">
-      <div class="col-12 mb-5 mt-4">
-        <h1 class="font-weight-bold helvetica">Why video?</h1>
-        <span class="helvetica fs-28 font-weight-light">Leveraging video marketing is a powerful strategy.</span>
+      <div class="col-12 mb-3 mt-5">
+        <h1 class="font-weight-bold helvetica pb-2">Why video?</h1>
+        <h4 class="helvetica font-weight-light">Leveraging video marketing is a powerful strategy.</h4>
       </div>
       <div class="col-12">
         <iframe src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
@@ -17,8 +17,8 @@
     </div>
 
     <div class="row justify-content-center">
-      <div class="container">
-        <div class="row pt-4 pb-5">
+      <div class="container pb-3">
+        <div class="row pt-4 pb-3">
           <div class="col-3 pr-3 text-center">
             <img src="../assets/why-video/01_Attention_Photo.png" alt="" class="img-fluid">
           </div>

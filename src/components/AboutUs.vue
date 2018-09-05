@@ -1,13 +1,12 @@
 <template>
   <div>
     <div class="row hero_bg text-center pb-5 pt-5 font-white">
-      <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mb-5 mt-4">
+      <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mb-5 mt-5">
         <h1 class="font-weight-bold helvetica">Why choose us?</h1>
-        <p class="helvetica font-weight-light text-left">At Vidsuade we provide a complete video solution, from
+        <p class="text-left helvetica pt-3">At Vidsuade we provide a complete video solution, from
         effectively writing scripts meant to persuade and convert to producing
         professional videos that generate leads, increase conversion rates, and boosts sales.</p>
-        <br>
-        <p class="text-left">We know producing effective videos can be overwhelming between copywriting, techincal
+        <p class="text-left helvetica">We know producing effective videos can be overwhelming between copywriting, techincal
         camera knowledge and video editing skills... So let us professionals worry about that and you
         just sit back and enjoy the sweet end result - increase ROI.</p>
       </div>
@@ -29,12 +28,12 @@
     <div class="row sections">
       <div class="col-12">
         <div class="row">
-          <div class="p-0 col-12 col-md-4">
+          <div class="p-0 col-12 s_1_bg col-lg-5 col-xl-4">
             <img src="../assets/about/About_Us_Scriptwriting_Photo.png" alt="" class="img-fluid">
           </div>
 
-          <div class="col-12 col-md-8 d-flex justify-content-center p-3 p-md-5 flex-column align-items-start">
-            <h4 class="font-blue">Stratey and scriptwriting</h4>
+          <div class="col-12 col-lg-7 col-xl-8 d-flex justify-content-center p-4 p-xl-5 flex-column align-items-start">
+            <h4 class="font-blue">Strategy and scriptwriting</h4>
             <p>Here at Vidsuade we have a background in digital marketing and utilize
               our expertise to come up with a strategy to meet specific goals. We start
               with learning your industry and learning what makes your business stand out in that industry.
@@ -45,7 +44,7 @@
         </div>
 
         <div class="row">
-          <div class="col-12 col-md-8 d-flex justify-content-center p-3 p-md-5 flex-column align-items-start">
+          <div class="col-12 col-lg-7 col-xl-8 d-flex justify-content-center p-4 p-xl-5 flex-column align-items-start">
             <h4 class="font-blue">Pre-production</h4>
             <p>After strategizing and creating a highly engaging and persuasive script, we'll
               storyboard and organize the shoot so that you'll know exactly what to expect. Don't worry we'll work with you so that you're happy
@@ -53,17 +52,17 @@
               make sure that it's a smooth and seamless process.</p>
           </div>
 
-          <div class="p-0 col-12 col-md-4 text-right">
+          <div class="p-0 col-12 col-lg-5 col-xl-4 text-right">
             <img src="../assets/about/About_Us_Preproduction_Photo.png" alt="" class="img-fluid">
           </div>
         </div>
 
         <div class="row">
-          <div class="p-0 col-12 col-md-4">
+          <div class="p-0 col-12 col-lg-5 col-xl-4">
             <img src="../assets/about/About_Us_Production_Photo.png" alt="" class="img-fluid">
           </div>
 
-          <div class="col-12 col-md-8 d-flex justify-content-center p-3 p-md-5 flex-column align-items-start">
+          <div class="col-12 col-lg-7 col-xl-8 d-flex justify-content-center p-4 p-xl-5 flex-column align-items-start">
             <h4 class="font-blue">Production</h4>
             <p>Depending on whether it's an animated or live-action video, we'll make sure it's of
               highest quality. When producing the video, we'll provide two revisions so that you're
@@ -94,11 +93,27 @@
   .hero_bg
     background-image: url("../assets/about/About_Us_BG_Photo@2x.png")
     background-size: cover
+
+  /*.s_1_bg*/
+    /*background-image: url("../assets/about/About_Us_Scriptwriting_Photo.png")*/
+    /*background-size: cover*/
+    /*background-position: center*/
+    /*background-repeat: no-repeat*/
+    /*height: 300px*/
+
   .top-btn
     background: #E98000
     margin: auto
+
   .sections
     .row:nth-child(2n-1)
       background: #e9e9e9
+    img
+      width: 100%
+
+  @media(max-width: 1400px)
+    .sections
+      p
+        font-size: 15px
 
 </style>

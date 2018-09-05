@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="row hero_bg text-center pb-5 pt-5 font-white">
-      <div class="col-12 mb-5 mt-4">
-        <h1 class="font-weight-bold helvetica">Videos that convert</h1>
+      <div class="col-12 mb-3 mt-5">
+        <h1 class="font-weight-bold helvetica pb-2">Videos that convert</h1>
         <h4 class="helvetica font-weight-light">Videos made to increase sales for business.</h4>
       </div>
       <div class="col-12">
@@ -131,7 +131,7 @@
                     <h3 class="font-orange font-weight-regular">Pre-Production</h3>
                     <p>After strategizing and creating a highly engaging and persuasive script, we'll
                     storyboard and organize the shoot so that you'll know exactly what to expect. Don't worry
-                    we'll wor with you so that you're happy with the direction of the video and that
+                    we'll work with you so that you're happy with the direction of the video and that
                     there aren't any surprises.</p>
                   </div>
                 </div>
@@ -178,7 +178,7 @@
 
 <style lang="sass" scoped>
   .hero_bg
-    background-image: url("../assets/home/Home_Hero_Photo@2x.png")
+    background-image: url("../assets/home/Home_Hero_Photo.png")
     background-size: cover
   .section2_bg
     background-image: url("../assets/home/Home_Why_Video_Photo.png")
@@ -189,6 +189,7 @@
     display: flex
     padding: 0
     a
+      width: 100%
       display: flex
       justify-content: center
       align-items: center

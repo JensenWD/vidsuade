@@ -49,7 +49,7 @@
     url('assets/gilroy_light/gilroy_light.eot')  format('eot')
 
   .fs-28
-    font-size: 28px !important
+    font-size: 26px !important
     line-height: 24px
 
   .fs-16
@@ -60,11 +60,12 @@
     text-decoration: none
 
   .helvetica
-    font-family: 'Helvetica Neue', sans-serif
+    font-family: 'Helvetica Neue', sans-serif !important
 
   h1, h2
     font-size: 3rem
     font-family: 'Gilroy_bold', sans-serif !important
+    line-height: 40px
 
   h3, h4, h5
     font-family: 'Gilroy', sans-serif !important
@@ -95,8 +96,8 @@
 
   iframe
     width: 100%
-    max-width: 685px
-    height: 390px
+    max-width: 615px
+    height: 340px
 
   @media(max-width: 767px)
     .fs-28
