@@ -39,14 +39,14 @@
                 let nav = $(".navbar");
                 if ($(window).scrollTop() === 0) {
                     if ((window.location.href.indexOf("privacy-policy") > -1) || (window.location.href.indexOf("terms") > -1)) {
-                        nav.removeClass('bg-transparent');
+                        //nav.removeClass('bg-transparent');
                         nav.addClass('bg-color');
                     } else {
                         nav.removeClass('bg-color');
-                        nav.addClass('bg-transparent');
+                        //nav.addClass('bg-transparent');
                     }
                 } else {
-                    nav.removeClass('bg-transparent');
+                    //nav.removeClass('bg-transparent');
                     nav.addClass('bg-color');
                 }
             });
@@ -78,7 +78,10 @@
         .navbar
             border-top: 1px solid #a8a8a8
             border-bottom: 1px solid #a8a8a8
-            background: white !important
+            background: white
         .nav-item, .nav-link
             color: grey !important
+        .bg-color
+          .nav-item, .nav-link
+            color: white !important
 </style>

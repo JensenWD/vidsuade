@@ -2,7 +2,7 @@
   <div id="app">
     <div class="container-fluid">
       <div class="row sticky-top">
-        <ad-bar></ad-bar>
+        <!--<ad-bar></ad-bar>-->
         <header-menu></header-menu>
       </div>
 

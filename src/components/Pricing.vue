@@ -2,7 +2,7 @@
   <div>
     <div class="row hero_bg text-center pt-5 font-white">
       <div class="col-12 mb-5 mt-5">
-        <h1 class="font-weight-bold helvetica">Pricing</h1>
+        <h1 class="">Pricing</h1>
         <span class="fs-28 helvetica font-weight-light">Find out which tactical video you need below.</span>
       </div>
     </div>
@@ -104,7 +104,7 @@
       </div>
     </div>
 
-    <div class="row table_separator text-center mb-4">
+    <div class="row table_separator text-center mt-4 mb-4">
       <div class="col-12"><span class="large font-blue">- or -</span></div>
     </div>
 

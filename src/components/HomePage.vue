@@ -2,11 +2,12 @@
   <div>
     <div class="row hero_bg text-center pb-5 pt-5 font-white">
       <div class="col-12 mb-3 mt-5">
-        <h1 class="font-weight-bold helvetica pb-2">Videos that convert</h1>
+        <h1 class="">Videos that convert</h1>
         <h4 class="helvetica font-weight-light">Videos made to increase sales for business.</h4>
       </div>
       <div class="col-12">
-        <iframe src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
+        <button class="btn d-block m-auto d-md-none" type="button" id="iframewebpage" data-src="https://www.youtube.com/embed/s7Zaw7e6pY4">View example</button>
+        <iframe class="d-none d-md-inline" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
       </div>
     </div>
 
@@ -172,11 +173,24 @@
 
   export default {
     name: "HomePage",
-    components: {Modals}
+    components: {Modals},
+    mounted() {
+      $("#iframewebpage").click(function(){
+        $(this).replaceWith("<iframe class='col-12 d-block d-md-none' src="+$(this).data('src')+"></iframe>");
+        $("iframe").attr({
+          allowfullscreen: "true",
+          frameborder:"0"
+        });
+      });
+    }
   }
 </script>
 
 <style lang="sass" scoped>
+  #iframewebpage
+    background-color: #D98430
+    color: white
+    padding: 0.35rem 1.2rem
   .hero_bg
     background-image: url("../assets/home/Home_Hero_Photo.png")
     background-size: cover

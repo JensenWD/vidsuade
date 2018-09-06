@@ -2,7 +2,7 @@
   <div>
     <div class="row hero_bg text-center pb-5 pt-5 font-white">
       <div class="col-12 mb-3 mt-5">
-        <h1 class="font-weight-bold helvetica pb-2">Why video?</h1>
+        <h1 class="">Why video?</h1>
         <h4 class="helvetica font-weight-light">Leveraging video marketing is a powerful strategy.</h4>
       </div>
       <div class="col-12">

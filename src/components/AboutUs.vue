@@ -2,7 +2,7 @@
   <div>
     <div class="row hero_bg text-center pb-5 pt-5 font-white">
       <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mb-5 mt-5">
-        <h1 class="font-weight-bold helvetica">Why choose us?</h1>
+        <h1 class="">Why choose us?</h1>
         <p class="text-left helvetica pt-3">At Vidsuade we provide a complete video solution, from
         effectively writing scripts meant to persuade and convert to producing
         professional videos that generate leads, increase conversion rates, and boosts sales.</p>

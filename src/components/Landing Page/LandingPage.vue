@@ -12,7 +12,11 @@
         </div>
         <div class="row offer_section">
 
-            <iframe class="col-12 video" width="560" height="315" src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"
+          <div class="col-12">
+            <button class="btn d-block d-md-none m-auto" type="button" id="iframewebpage" data-src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0">View example</button>
+          </div>
+
+            <iframe class="col-8 d-none d-md-block video" width="560" height="415" src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
          <div class="col-6">
@@ -263,10 +267,21 @@
             return {}
         },
         mounted() {
+          $("#iframewebpage").click(function(){
+            $(this).replaceWith("<iframe class='col-12 d-block d-md-none' src="+$(this).data('src')+"></iframe>");
+            $("iframe").attr({
+              height: "500",
+              allowfullscreen: "true",
+              frameborder:"0"
+            });
+          });
+
+
             let s = document.createElement("script");
             s.type = "text/javascript";
             s.src = "https://cdn.ywxi.net/js/1.js";
-            $("head").append(s);
+            s.async = true;
+            $("body").append(s);
 
 
             //hide nav && footer from landing page
@@ -395,6 +410,11 @@
 </script>
 
 <style scoped>
+  #iframewebpage {
+    background-color: #D98430;
+    color: white;
+    padding: 0.35rem 1.2rem;
+  }
     .hidden {
         display: none;
     }
