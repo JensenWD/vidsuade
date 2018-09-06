@@ -14,9 +14,11 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "cross-env": "^5.2.0",
+    "express": "^4.16.3",
     "laravel-mix": "^2.1.11",
-    "stripe": "^6.7.0",
+    "stripe": "^6.10.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

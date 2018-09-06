@@ -15,39 +15,57 @@
             <iframe class="col-12 video" width="560" height="315" src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-            <div id="form" class="col-6">
-                <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
-                <p><strong>Where should we send yur animation?*</strong></p>
-                <div class="row ml-1 mr-1 mb-2 mt-2">
-                    <input class="col-6 fn mr-1" type="text" placeholder="First Name">
-                    <input class="col-6 ln ml-1" type="text" placeholder="Last Name">
-                </div>
-                <div class="row ml-1 mr-1 mb-2 mt-2">
-                    <input class="col-12" type="email" placeholder="Email" style="width: 100%;">
-                </div>
-                <div class="row ml-1 mr-1 mb-2 mt-2">
-                    <input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">
-                </div>
-                <div class="row ml-1 mr-1 mb-2 mt-2">
-                    <input class="col-12" type="text" placeholder="Phone Number" style="width: 100%;">
-                </div>
-                <p><strong style="font-size: 14px;">Upload your logo* </strong>
-                    <span style="font-size: 10px;">(Vector file preferred - 25mb max file size)
-                    </span>
-                </p>
-                <div class="drag-box">
-                    Drop your files here
-                </div>
-                <input type="file" class="hidden" id="browse-files">
-                <span class="browse mt-2 mb-4" @click="browse">+</span><span class="mb-4 mt-2 filename" @click="browse">Click to choose a file instead</span>
-                <!--<p class="mt-3">Submit payment</p>-->
-                <!--<div class="payment-form pl-3 pt-1 pb-1 mb-3">Click here for payment options</div>-->
-                <div id="card-element"></div>
-                <div id="card-errors" class="mt-2 hidden alert alert-danger" role="alert"></div>
-                <div class="mt-3 total text-center">Total: $49.95</div>
-                <div class="submit pt-1 pb-1 text-center mt-2">Animate my logo</div>
-                <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>
-            </div>
+         <div class="col-6">
+           <form action="/charge" method="post" id="payment-form">
+             <div class="form-row">
+               <label for="card-element">
+                 Credit or debit card
+               </label>
+               <div class="col-6" id="card-element">
+                 <!-- A Stripe Element will be inserted here. -->
+               </div>
+
+               <!-- Used to display form errors. -->
+               <div id="card-errors" role="alert"></div>
+             </div>
+
+             <button>Submit Payment</button>
+           </form>
+         </div>
+
+          <!--<div id="form" class="col-6">-->
+                <!--<p class="mt-3" style="font-size: 22px">Get your logo animated!</p>-->
+                <!--<p><strong>Where should we send yur animation?*</strong></p>-->
+                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
+                    <!--<input class="col-6 fn mr-1" type="text" name="fname" placeholder="First Name">-->
+                    <!--<input class="col-6 ln ml-1" type="text" name="lname" placeholder="Last Name">-->
+                <!--</div>-->
+                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
+                    <!--<input class="col-12" type="email" placeholder="Email" id="stripeEmail" name="stripeEmail" style="width: 100%;">-->
+                <!--</div>-->
+                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
+                    <!--<input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">-->
+                <!--</div>-->
+                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
+                    <!--<input class="col-12" type="text" placeholder="Phone Number" style="width: 100%;">-->
+                <!--</div>-->
+                <!--<p><strong style="font-size: 14px;">Upload your logo* </strong>-->
+                    <!--<span style="font-size: 10px;">(Vector file preferred - 25mb max file size)-->
+                    <!--</span>-->
+                <!--</p>-->
+                <!--<div class="drag-box">-->
+                    <!--Drop your files here-->
+                <!--</div>-->
+                <!--<input type="file" class="hidden" id="browse-files">-->
+                <!--<span class="browse mt-2 mb-4" @click="browse">+</span><span class="mb-4 mt-2 filename" @click="browse">Click to choose a file instead</span>-->
+                <!--&lt;!&ndash;<p class="mt-3">Submit payment</p>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="payment-form pl-3 pt-1 pb-1 mb-3">Click here for payment options</div>&ndash;&gt;-->
+                <!--<div id="card-element"></div>-->
+                <!--<div id="card-errors" class="mt-2 hidden alert alert-danger" role="alert"></div>-->
+                <!--<div class="mt-3 total text-center">Total: $49.95</div>-->
+                <!--<div class="submit pt-1 pb-1 text-center mt-2">Animate my logo</div>-->
+                <!--<router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>-->
+            <!--</div>-->
             <div class="col-6">
                 <span class="section-heading mb-4" style="display: block;">What you'll get</span>
                 <div class="row mt-3">
@@ -253,42 +271,94 @@
 
             //hide nav && footer from landing page
             let url = window.location.toString();
-            let style = {
-                base: {
-                    border: '',
-                    color: 'white'
-                }
-            };
-            card = elements.create('card', style);
-            card.mount('#card-element');
+            // let style = {
+            //     base: {
+            //         border: '',
+            //         color: 'white'
+            //     }
+            // };
 
-            card.addEventListener('change', function (event) {
-                let displayError = document.getElementById('card-errors');
-                if (event.error) {
-                    $('#card-errors').removeClass("hidden");
-                    $('.submit').attr('disabled', true).css({'cursor': 'not-allowed'});
-                    displayError.textContent = event.error.message;
-                } else {
-                    $('#card-errors').addClass("hidden");
-                    $('.submit').attr('disabled', false).css({'cursor': 'pointer'});
-                    displayError.textContent = '';
-                }
-            });
 
-            $('.submit').click(function () {
-                stripe.createToken(card).then((res) => {
-                    if (res.error) {
-                        let errorElement = document.getElementById('card-errors');
-                        errorElement.textContent = res.error.message;
-                    }
-                    else {
-                        console.log(res.token);
-                        axios.post('/process-payment', {
-                            stripeToken: res.token
-                        })
-                    }
-                });
+          // Create a Stripe client.
+          var stripe = Stripe('pk_test_EODlIgrDsj9wOZ3UfKK4RgKP');
+
+// Create an instance of Elements.
+          var elements = stripe.elements();
+
+// Custom styling can be passed to options when creating an Element.
+// (Note that this demo uses a wider set of styles than the guide below.)
+          var style = {
+            base: {
+              color: '#32325d',
+              lineHeight: '18px',
+              fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+              fontSmoothing: 'antialiased',
+              fontSize: '16px',
+              '::placeholder': {
+                color: '#aab7c4'
+              }
+            },
+            invalid: {
+              color: '#fa755a',
+              iconColor: '#fa755a'
+            }
+          };
+
+// Create an instance of the card Element.
+          var card = elements.create('card', {style: style});
+
+// Add an instance of the card Element into the `card-element` <div>.
+          card.mount('#card-element');
+
+// Handle real-time validation errors from the card Element.
+          card.addEventListener('change', function(event) {
+            var displayError = document.getElementById('card-errors');
+            if (event.error) {
+              displayError.textContent = event.error.message;
+            } else {
+              displayError.textContent = '';
+            }
+          });
+
+// Handle form submission.
+          var form = document.getElementById('payment-form');
+          form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            stripe.createToken(card).then(function(result) {
+              if (result.error) {
+                // Inform the customer that there was an error.
+                var errorElement = document.getElementById('card-errors');
+                errorElement.textContent = result.error.message;
+              } else {
+                // Send the token to your server.
+                stripeTokenHandler(result.token);
+              }
             });
+          });
+
+          function stripeTokenHandler(token) {
+            // Insert the token ID into the form so it gets submitted to the server
+            var form = document.getElementById('payment-form');
+            var hiddenInput = document.createElement('input');
+            hiddenInput.setAttribute('type', 'hidden');
+            hiddenInput.setAttribute('name', 'stripeToken');
+            hiddenInput.setAttribute('value', token.id);
+            form.appendChild(hiddenInput);
+
+            //Delete this and pull from form email
+            var hiddenInput = document.createElement('input');
+            hiddenInput.setAttribute('type', 'hidden');
+            hiddenInput.setAttribute('name', 'stripeEmail');
+            hiddenInput.setAttribute('value', 'automated@gmail.com');
+            form.appendChild(hiddenInput);
+
+            // Submit the form
+            form.submit();
+          }
+
+
+
 
             if (url.includes('landing')) {
                 $('nav').css({'display': 'none'});

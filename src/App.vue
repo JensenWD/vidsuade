@@ -65,7 +65,7 @@
   h1, h2
     font-size: 3rem
     font-family: 'Gilroy_bold', sans-serif !important
-    line-height: 40px
+    line-height: 47px
 
   h3, h4, h5
     font-family: 'Gilroy', sans-serif !important
