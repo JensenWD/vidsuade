@@ -12,6 +12,9 @@
         </div>
         <div class="row offer_section">
 
+            <iframe class="col-12 video" width="560" height="315" src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
             <div id="form" class="col-6">
                 <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
                 <p><strong>Where should we send yur animation?*</strong></p>
@@ -208,7 +211,7 @@
                     in my agency to keep coming back for more! I highly recommend Vidsuade.”</p>
                 <br>
                 <p>- Garrett Seiger<br>
-                President of Pirate Labs</p>
+                    President of Pirate Labs</p>
             </div>
         </div>
         <div class="row footer pt-3">
@@ -219,8 +222,10 @@
             </div>
             <div class="col-6">
                 <div class="footer-links">
-                    <router-link class="mr-sm-2 ml-sm-2" to="/about-us">About Us</router-link>|
-                    <router-link class="mr-sm-2 ml-sm-2" to="/privacy-policy">Privacy Policy</router-link>|
+                    <router-link class="mr-sm-2 ml-sm-2" to="/about-us">About Us</router-link>
+                    |
+                    <router-link class="mr-sm-2 ml-sm-2" to="/privacy-policy">Privacy Policy</router-link>
+                    |
                     <router-link class="ml-sm-2" to="/contact-us">Contact Us</router-link>
                 </div>
             </div>
@@ -257,32 +262,32 @@
             card = elements.create('card', style);
             card.mount('#card-element');
 
-            card.addEventListener('change', function(event) {
+            card.addEventListener('change', function (event) {
                 let displayError = document.getElementById('card-errors');
                 if (event.error) {
                     $('#card-errors').removeClass("hidden");
-                    $('.submit').attr('disabled' , true).css({'cursor' : 'not-allowed'});
+                    $('.submit').attr('disabled', true).css({'cursor': 'not-allowed'});
                     displayError.textContent = event.error.message;
                 } else {
                     $('#card-errors').addClass("hidden");
-                    $('.submit').attr('disabled' , false).css({'cursor' : 'pointer'});
+                    $('.submit').attr('disabled', false).css({'cursor': 'pointer'});
                     displayError.textContent = '';
                 }
             });
 
             $('.submit').click(function () {
-               stripe.createToken(card).then((res) => {
-                   if (res.error) {
-                       let errorElement = document.getElementById('card-errors');
-                       errorElement.textContent = res.error.message;
-                   }
-                   else {
-                       console.log(res.token);
+                stripe.createToken(card).then((res) => {
+                    if (res.error) {
+                        let errorElement = document.getElementById('card-errors');
+                        errorElement.textContent = res.error.message;
+                    }
+                    else {
+                        console.log(res.token);
                         axios.post('/process-payment', {
-                            stripeToken : res.token
+                            stripeToken: res.token
                         })
-                   }
-               });
+                    }
+                });
             });
 
             if (url.includes('landing')) {
@@ -312,7 +317,7 @@
             })
         },
         methods: {
-            browse () {
+            browse() {
                 $('#browse-files').click();
             }
         }
@@ -323,6 +328,7 @@
     .hidden {
         display: none;
     }
+
     .landing {
         font-family: 'Avenir', Helvetica, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -368,22 +374,27 @@
         padding-left: 15%;
         padding-right: 15%;
     }
+
     .offer_section {
-        margin-top: 200px
+        margin-top: 255px
     }
+
     .checkmark {
         width: 40px;
         display: block;
         float: left;
     }
+
     .section-heading {
         color: #7B7A7B;
         font-size: 30px;
         font-weight: 700;
     }
+
     .proscons {
         font-size: 20px;
     }
+
     .offer {
         width: 90%;
     }
@@ -413,8 +424,9 @@
     .long_text {
         color: #7B7A7B;
     }
+
     .cta {
-       background-color: #E98000;
+        background-color: #E98000;
         color: #FFFFFF;
         padding: 10px 15px;
         font-size: 26px;
@@ -423,37 +435,45 @@
         max-width: 400px;
         text-align: center;
     }
+
     .cta:hover {
         text-decoration: none;
     }
+
     .testimonial {
         color: #FFFFFF;
     }
+
     .footer {
         background-color: #727071;
         color: #FFFFFF;
     }
+
     .footer-links {
         float: right;
     }
+
     .footer-links a {
         color: #FFFFFF;
     }
+
     #form {
         border: 1px solid #DEDEDE;
-        border-radius: 5px;
+        border-radius: 20px;
         border-top: 3px solid #EA8F22;
         background-color: #F1F1F1;
         max-width: 400px;
         position: absolute;
         right: 20%;
-        top: 20%;
+        top: 23%;
         z-index: 5;
     }
+
     #days, #hours, #minutes, #seconds {
         font-size: 42px;
         font-weight: 500;
     }
+
     .drag-box {
         background-color: #FFFFFF;
         padding: 25px 40px;
@@ -461,6 +481,7 @@
         outline: 2px dashed grey;
         outline-offset: -8px;
     }
+
     .browse {
         background-color: #009EE9;
         color: #FFFFFF;
@@ -470,6 +491,7 @@
         display: inline-block;
         width: 10%;
     }
+
     .filename {
         background-color: #E6E7E8;
         color: #ACAEB0;
@@ -477,16 +499,19 @@
         display: inline-block;
         width: 90%;
     }
+
     .payment-form {
         background-color: #727071;
         color: #FFFFFF;
 
     }
+
     .total {
         font-size: 22px;
         color: #727071;
         font-weight: 700;
     }
+
     .submit {
         background-color: #e98000;
         color: #FFFFFF;
@@ -494,6 +519,7 @@
         margin: auto;
         max-width: 250px;
     }
+
     .privacy {
         color: #888788;
         font-size: 12px;
@@ -501,19 +527,23 @@
         display: block;
         margin: auto;
     }
+
     input {
         border: 0;
         color: #B8BABC;
     }
+
     .fn, .ln {
         max-width: 48.7%;
     }
+
     .arrow {
         position: absolute;
         width: 250px;
         left: 100%;
         top: -10%;
     }
+
     .StripeElement {
         background-color: white;
         height: 40px;
@@ -524,9 +554,11 @@
         -webkit-transition: box-shadow 150ms ease;
         transition: box-shadow 150ms ease;
     }
+
     .browse:hover, .filename:hover, .submit:hover {
         cursor: pointer;
     }
+
     .StripeElement--focus {
         box-shadow: 0 1px 3px 0 #cfd7df;
     }
@@ -537,5 +569,54 @@
 
     .StripeElement--webkit-autofill {
         background-color: #fefde5 !important;
+    }
+
+    .video {
+        position: absolute;
+        top: 29%;
+    }
+
+    @media screen and (max-width: 1540px) {
+        #form {
+            right: 16%;
+            top: 29%;
+        }
+
+        .video {
+            position: absolute;
+            top: 35%;
+            width: 500px;
+            height: 282px;
+        }
+    }
+
+    @media screen and (max-width: 1320px) {
+        #form {
+            right: 10%;
+            top: 35%;
+        }
+
+        .video {
+            top: 40%;
+        }
+    }
+
+    @media screen and (max-width: 1220px) {
+        #form {
+            position: initial;
+            float: left;
+        }
+
+        .video {
+            position: initial;
+        }
+
+        .offer_section {
+            margin-top: 50px;
+        }
+
+        .arrow {
+            display: none;
+        }
     }
 </style>
