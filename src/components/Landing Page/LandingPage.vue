@@ -12,56 +12,60 @@
         </div>
         <div class="row offer_section">
 
-          <div class="col-12">
-            <button class="btn d-block d-md-none m-auto" type="button" id="iframewebpage" data-src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0">View example</button>
-          </div>
+            <div class="col-12">
+                <button class="btn d-block d-md-none m-auto" type="button" id="iframewebpage"
+                        data-src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0">View example
+                </button>
+            </div>
 
-            <iframe class="col-8 d-none d-md-block video" width="560" height="415" src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"
+            <iframe class="col-8 d-none d-md-block video" width="560" height="415"
+                    src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-         <div class="col-md-6 col-xs-12" id="form">
-             <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
-             <p><strong>Where should we send yur animation?*</strong></p>
-             <div class="row ml-1 mr-1 mb-2 mt-2">
-             <input class="col-lg-6 col-xs-12 fn" type="text" name="fname" placeholder="First Name">
-             <input class="col-lg-6 col-xs-12 ln" type="text" name="lname" placeholder="Last Name">
-             </div>
-             <div class="row ml-1 mr-1 mb-2 mt-2">
-             <input class="col-12" type="email" placeholder="Email" id="stripeEmail" name="stripeEmail" style="width: 100%;">
-             </div>
-             <div class="row ml-1 mr-1 mb-2 mt-2">
-             <input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">
-             </div>
-             <div class="row ml-1 mr-1 mb-2 mt-2">
-             <input class="col-12" type="text" placeholder="Phone Number" style="width: 100%;">
-             </div>
-             <p><strong style="font-size: 14px;">Upload your logo* </strong>
-             <span style="font-size: 10px;">(Vector file preferred - 25mb max file size)
+            <div class="col-md-6 col-xs-12" id="form">
+                <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
+                <p><strong>Where should we send yur animation?*</strong></p>
+                <div class="row ml-1 mr-1 mb-2 mt-2">
+                    <input class="col-lg-6 col-xs-12 fn" type="text" name="fname" placeholder="First Name">
+                    <input class="col-lg-6 col-xs-12 ln" type="text" name="lname" placeholder="Last Name">
+                </div>
+                <div class="row ml-1 mr-1 mb-2 mt-2">
+                    <input class="col-12" type="email" placeholder="Email" id="stripeEmail" name="stripeEmail"
+                           style="width: 100%;">
+                </div>
+                <div class="row ml-1 mr-1 mb-2 mt-2">
+                    <input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">
+                </div>
+                <div class="row ml-1 mr-1 mb-2 mt-2">
+                    <input class="col-12" type="text" placeholder="Phone Number" style="width: 100%;">
+                </div>
+                <p><strong style="font-size: 14px;">Upload your logo* </strong>
+                    <span style="font-size: 10px;">(Vector file preferred - 25mb max file size)
              </span>
-             </p>
-             <div class="drag-box">
-             Drop your files here
-             </div>
-             <input type="file" class="hidden" id="browse-files">
-             <span class="browse mt-2 mb-4" @click="browse">+</span><span class="mb-4 mt-2 filename" @click="browse">Click to choose a file instead</span>
-             <p class=""><strong>Submit payment*</strong></p>
-           <form action="/charge" method="post" id="payment-form">
-             <div class="form-row">
-               <!--<label for="card-element">-->
-                 <!--Credit or debit card-->
-               <!--</label>-->
-               <div class="col-12" id="card-element">
-                 <!-- A Stripe Element will be inserted here. -->
-               </div>
+                </p>
+                <div class="drag-box">
+                    Drop your files here
+                </div>
+                <input type="file" class="hidden" id="browse-files">
+                <span class="browse mt-2 mb-4" @click="browse">+</span><span class="mb-4 mt-2 filename" @click="browse">Click to choose a file instead</span>
+                <p class=""><strong>Submit payment*</strong></p>
+                <form action="/charge" method="post" id="payment-form">
+                    <div class="form-row">
+                        <!--<label for="card-element">-->
+                        <!--Credit or debit card-->
+                        <!--</label>-->
+                        <div class="col-12" id="card-element">
+                            <!-- A Stripe Element will be inserted here. -->
+                        </div>
 
-               <!-- Used to display form errors. -->
-               <div id="card-errors" role="alert"></div>
-             </div>
+                        <!-- Used to display form errors. -->
+                        <div id="card-errors" role="alert"></div>
+                    </div>
 
-             <button class="submit pt-1 pb-1 text-center mt-4">Animate my logo</button>
-           </form>
-             <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>
-         </div>
+                    <button class="submit pt-1 pb-1 text-center mt-4">Animate my logo</button>
+                </form>
+                <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>
+            </div>
 
             <div class="col-md-6 col-xs-12 what_you_get">
                 <span class="section-heading mb-4" style="display: block;">What you'll get</span>
@@ -261,14 +265,14 @@
             return {}
         },
         mounted() {
-          $("#iframewebpage").click(function(){
-            $(this).replaceWith("<iframe class='col-12 d-block d-md-none' src="+$(this).data('src')+"></iframe>");
-            $("iframe").attr({
-              height: "500",
-              allowfullscreen: "true",
-              frameborder:"0"
+            $("#iframewebpage").click(function () {
+                $(this).replaceWith("<iframe class='col-12 d-block d-md-none' src=" + $(this).data('src') + "></iframe>");
+                $("iframe").attr({
+                    height: "500",
+                    allowfullscreen: "true",
+                    frameborder: "0"
+                });
             });
-          });
 
 
             let s = document.createElement("script");
@@ -288,85 +292,83 @@
             // };
 
 
-          // Create a Stripe client.
-          var stripe = Stripe('pk_test_EODlIgrDsj9wOZ3UfKK4RgKP');
+            // Create a Stripe client.
+            var stripe = Stripe('pk_test_EODlIgrDsj9wOZ3UfKK4RgKP');
 
 // Create an instance of Elements.
-          var elements = stripe.elements();
+            var elements = stripe.elements();
 
 // Custom styling can be passed to options when creating an Element.
 // (Note that this demo uses a wider set of styles than the guide below.)
-          var style = {
-            base: {
-              color: '#32325d',
-              lineHeight: '18px',
-              fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-              fontSmoothing: 'antialiased',
-              fontSize: '16px',
-              '::placeholder': {
-                color: '#aab7c4'
-              }
-            },
-            invalid: {
-              color: '#fa755a',
-              iconColor: '#fa755a'
-            }
-          };
+            var style = {
+                base: {
+                    color: '#32325d',
+                    lineHeight: '18px',
+                    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+                    fontSmoothing: 'antialiased',
+                    fontSize: '16px',
+                    '::placeholder': {
+                        color: '#aab7c4'
+                    }
+                },
+                invalid: {
+                    color: '#fa755a',
+                    iconColor: '#fa755a'
+                }
+            };
 
 // Create an instance of the card Element.
-          var card = elements.create('card', {style: style});
+            var card = elements.create('card', {style: style});
 
 // Add an instance of the card Element into the `card-element` <div>.
-          card.mount('#card-element');
+            card.mount('#card-element');
 
 // Handle real-time validation errors from the card Element.
-          card.addEventListener('change', function(event) {
-            var displayError = document.getElementById('card-errors');
-            if (event.error) {
-              displayError.textContent = event.error.message;
-            } else {
-              displayError.textContent = '';
-            }
-          });
+            card.addEventListener('change', function (event) {
+                var displayError = document.getElementById('card-errors');
+                if (event.error) {
+                    displayError.textContent = event.error.message;
+                } else {
+                    displayError.textContent = '';
+                }
+            });
 
 // Handle form submission.
-          var form = document.getElementById('payment-form');
-          form.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            stripe.createToken(card).then(function(result) {
-              if (result.error) {
-                // Inform the customer that there was an error.
-                var errorElement = document.getElementById('card-errors');
-                errorElement.textContent = result.error.message;
-              } else {
-                // Send the token to your server.
-                stripeTokenHandler(result.token);
-              }
-            });
-          });
-
-          function stripeTokenHandler(token) {
-            // Insert the token ID into the form so it gets submitted to the server
             var form = document.getElementById('payment-form');
-            var hiddenInput = document.createElement('input');
-            hiddenInput.setAttribute('type', 'hidden');
-            hiddenInput.setAttribute('name', 'stripeToken');
-            hiddenInput.setAttribute('value', token.id);
-            form.appendChild(hiddenInput);
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
 
-            //Delete this and pull from form email
-            // var hiddenInput = document.createElement('input');
-            // hiddenInput.setAttribute('type', 'hidden');
-            // hiddenInput.setAttribute('name', 'stripeEmail');
-            // hiddenInput.setAttribute('value', 'automated@gmail.com');
-            // form.appendChild(hiddenInput);
+                stripe.createToken(card).then(function (result) {
+                    if (result.error) {
+                        // Inform the customer that there was an error.
+                        var errorElement = document.getElementById('card-errors');
+                        errorElement.textContent = result.error.message;
+                    } else {
+                        // Send the token to your server.
+                        stripeTokenHandler(result.token);
+                    }
+                });
+            });
 
-            // Submit the form
-            form.submit();
-          }
+            function stripeTokenHandler(token) {
+                // Insert the token ID into the form so it gets submitted to the server
+                var form = document.getElementById('payment-form');
+                var hiddenInput = document.createElement('input');
+                hiddenInput.setAttribute('type', 'hidden');
+                hiddenInput.setAttribute('name', 'stripeToken');
+                hiddenInput.setAttribute('value', token.id);
+                form.appendChild(hiddenInput);
 
+                //Delete this and pull from form email
+                // var hiddenInput = document.createElement('input');
+                // hiddenInput.setAttribute('type', 'hidden');
+                // hiddenInput.setAttribute('name', 'stripeEmail');
+                // hiddenInput.setAttribute('value', 'automated@gmail.com');
+                // form.appendChild(hiddenInput);
 
+                // Submit the form
+                form.submit();
+            }
 
 
             if (url.includes('landing')) {
@@ -404,11 +406,12 @@
 </script>
 
 <style scoped>
-  #iframewebpage {
-    background-color: #D98430;
-    color: white;
-    padding: 0.35rem 1.2rem;
-  }
+    #iframewebpage {
+        background-color: #D98430;
+        color: white;
+        padding: 0.35rem 1.2rem;
+    }
+
     .hidden {
         display: none;
     }
@@ -709,6 +712,7 @@
         .arrow {
             display: none;
         }
+
         .special_offer_1 {
             float: right;
         }
@@ -718,41 +722,42 @@
             padding-left: 50px;
         }
 
-        .looping-gif iframe{
+        .looping-gif iframe {
             display: block;
             margin: auto;
         }
     }
 
-  @media screen and (max-width: 1160px) {
-      .offer_section, .special_offer_1, .limited_time, .long_text, .testimonial, .footer {
-          padding-left: 10%;
-          padding-right: 10%;
-      }
-  }
+    @media screen and (max-width: 1160px) {
+        .offer_section, .special_offer_1, .limited_time, .long_text, .testimonial, .footer {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
 
-      @media screen and (max-width: 1040px) {
+    @media screen and (max-width: 1040px) {
 
-      .offer_section {
-          margin-top: 50px;
-      }
-      .special_offer {
-          float: right;
-      }
+        .offer_section {
+            margin-top: 50px;
+        }
 
-      .what_you_get {
-          margin-top: 50px;
-          padding-left: 50px;
-      }
+        .special_offer {
+            float: right;
+        }
 
-      .offer {
-          display: block;
-          margin: auto;
-          float: none;
-      }
+        .what_you_get {
+            margin-top: 50px;
+            padding-left: 50px;
+        }
 
-      .checkmark {
-          width: 30px;
-      }
-  }
+        .offer {
+            display: block;
+            margin: auto;
+            float: none;
+        }
+
+        .checkmark {
+            width: 30px;
+        }
+    }
 </style>
