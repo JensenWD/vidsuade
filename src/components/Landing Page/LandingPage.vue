@@ -5,9 +5,9 @@
             <span></span>
         </div>
         <div class="row hero_bg pb-5 pt-5">
-            <div class="col-6 mb-5 mt-4 header-content">
-                <h1>Animate your logo<br>for only 49.95!</h1>
-                <p>spice up your promotional videos by using<br>an animated version on your logo</p>
+            <div class="col-lg-6 col-sm-12 mb-5 mt-4 header-content">
+                <h1 class="title">Animate your logo for only 49.95!</h1>
+                <p class="sub-title">spice up your promotional videos by using an animated version on your logo</p>
             </div>
         </div>
         <div class="row offer_section">
@@ -19,13 +19,38 @@
             <iframe class="col-8 d-none d-md-block video" width="560" height="415" src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-         <div class="col-6">
+         <div class="col-md-6 col-xs-12" id="form">
+             <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
+             <p><strong>Where should we send yur animation?*</strong></p>
+             <div class="row ml-1 mr-1 mb-2 mt-2">
+             <input class="col-lg-6 col-xs-12 fn" type="text" name="fname" placeholder="First Name">
+             <input class="col-lg-6 col-xs-12 ln" type="text" name="lname" placeholder="Last Name">
+             </div>
+             <div class="row ml-1 mr-1 mb-2 mt-2">
+             <input class="col-12" type="email" placeholder="Email" id="stripeEmail" name="stripeEmail" style="width: 100%;">
+             </div>
+             <div class="row ml-1 mr-1 mb-2 mt-2">
+             <input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">
+             </div>
+             <div class="row ml-1 mr-1 mb-2 mt-2">
+             <input class="col-12" type="text" placeholder="Phone Number" style="width: 100%;">
+             </div>
+             <p><strong style="font-size: 14px;">Upload your logo* </strong>
+             <span style="font-size: 10px;">(Vector file preferred - 25mb max file size)
+             </span>
+             </p>
+             <div class="drag-box">
+             Drop your files here
+             </div>
+             <input type="file" class="hidden" id="browse-files">
+             <span class="browse mt-2 mb-4" @click="browse">+</span><span class="mb-4 mt-2 filename" @click="browse">Click to choose a file instead</span>
+             <p class=""><strong>Submit payment*</strong></p>
            <form action="/charge" method="post" id="payment-form">
              <div class="form-row">
-               <label for="card-element">
-                 Credit or debit card
-               </label>
-               <div class="col-6" id="card-element">
+               <!--<label for="card-element">-->
+                 <!--Credit or debit card-->
+               <!--</label>-->
+               <div class="col-12" id="card-element">
                  <!-- A Stripe Element will be inserted here. -->
                </div>
 
@@ -33,44 +58,12 @@
                <div id="card-errors" role="alert"></div>
              </div>
 
-             <button>Submit Payment</button>
+             <button class="submit pt-1 pb-1 text-center mt-4">Animate my logo</button>
            </form>
+             <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>
          </div>
 
-          <!--<div id="form" class="col-6">-->
-                <!--<p class="mt-3" style="font-size: 22px">Get your logo animated!</p>-->
-                <!--<p><strong>Where should we send yur animation?*</strong></p>-->
-                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
-                    <!--<input class="col-6 fn mr-1" type="text" name="fname" placeholder="First Name">-->
-                    <!--<input class="col-6 ln ml-1" type="text" name="lname" placeholder="Last Name">-->
-                <!--</div>-->
-                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
-                    <!--<input class="col-12" type="email" placeholder="Email" id="stripeEmail" name="stripeEmail" style="width: 100%;">-->
-                <!--</div>-->
-                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
-                    <!--<input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">-->
-                <!--</div>-->
-                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
-                    <!--<input class="col-12" type="text" placeholder="Phone Number" style="width: 100%;">-->
-                <!--</div>-->
-                <!--<p><strong style="font-size: 14px;">Upload your logo* </strong>-->
-                    <!--<span style="font-size: 10px;">(Vector file preferred - 25mb max file size)-->
-                    <!--</span>-->
-                <!--</p>-->
-                <!--<div class="drag-box">-->
-                    <!--Drop your files here-->
-                <!--</div>-->
-                <!--<input type="file" class="hidden" id="browse-files">-->
-                <!--<span class="browse mt-2 mb-4" @click="browse">+</span><span class="mb-4 mt-2 filename" @click="browse">Click to choose a file instead</span>-->
-                <!--&lt;!&ndash;<p class="mt-3">Submit payment</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="payment-form pl-3 pt-1 pb-1 mb-3">Click here for payment options</div>&ndash;&gt;-->
-                <!--<div id="card-element"></div>-->
-                <!--<div id="card-errors" class="mt-2 hidden alert alert-danger" role="alert"></div>-->
-                <!--<div class="mt-3 total text-center">Total: $49.95</div>-->
-                <!--<div class="submit pt-1 pb-1 text-center mt-2">Animate my logo</div>-->
-                <!--<router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>-->
-            <!--</div>-->
-            <div class="col-6">
+            <div class="col-md-6 col-xs-12 what_you_get">
                 <span class="section-heading mb-4" style="display: block;">What you'll get</span>
                 <div class="row mt-3">
                     <div class="col-1 pr-3">
@@ -106,8 +99,9 @@
                 </div>
             </div>
         </div>
-        <div class="row special_offer mt-5">
-            <div class="col-6">
+
+        <div class="row special_offer_1 mt-5">
+            <div class="col-xl-6 col-lg-12">
                 <span class="section-heading mb-4" style="display: block;">Special Offer</span>
                 <img class="offer" src="../../assets/landing/Offer.png" alt="">
                 <img class="arrow" src="../../assets/landing/Arrow.png" alt="">
@@ -121,10 +115,10 @@
             </div>
         </div>
         <div class="row limited_time">
-            <div class="col-6">
+            <div class="col-lg-6 col-md-12">
                 <span class="timer-title">Limited-time offer!</span>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-12">
                 <div class="timer-block">
                     <div id="days">06</div>
                     <div>Days</div>
@@ -188,17 +182,17 @@
                 </p>
             </div>
         </div>
-        <div class="row long_text mt-5">
-            <div class="col-4 looping-gif">
-                <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
+        <div class="row long_text mt-1">
+            <div class="col-xl-6 col-lg-12 looping-gif">
+                <div style="">
                     <iframe src="https://giphy.com/embed/5towk7UXRZh4p1LqqI" width="100%" height="100%"
-                            style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                 </div>
             </div>
         </div>
         <div class="row long_text mt-5">
             <div class="col-12 section-heading">
-                Where to use you<br>animated logo
+                Where to use your<br>animated logo
             </div>
         </div>
         <div class="row long_text mt-5">
@@ -362,11 +356,11 @@
             form.appendChild(hiddenInput);
 
             //Delete this and pull from form email
-            var hiddenInput = document.createElement('input');
-            hiddenInput.setAttribute('type', 'hidden');
-            hiddenInput.setAttribute('name', 'stripeEmail');
-            hiddenInput.setAttribute('value', 'automated@gmail.com');
-            form.appendChild(hiddenInput);
+            // var hiddenInput = document.createElement('input');
+            // hiddenInput.setAttribute('type', 'hidden');
+            // hiddenInput.setAttribute('name', 'stripeEmail');
+            // hiddenInput.setAttribute('value', 'automated@gmail.com');
+            // form.appendChild(hiddenInput);
 
             // Submit the form
             form.submit();
@@ -460,7 +454,7 @@
         font-family: 'Avenir', Helvetica, sans-serif;
     }
 
-    .offer_section, .special_offer, .limited_time, .long_text, .testimonial, .footer {
+    .offer_section, .special_offer_1, .limited_time, .long_text, .testimonial, .footer {
         padding-left: 15%;
         padding-right: 15%;
     }
@@ -604,6 +598,7 @@
 
     .submit {
         background-color: #e98000;
+        display: block;
         color: #FFFFFF;
         font-size: 18px;
         margin: auto;
@@ -623,8 +618,8 @@
         color: #B8BABC;
     }
 
-    .fn, .ln {
-        max-width: 48.7%;
+    .fn {
+
     }
 
     .arrow {
@@ -663,27 +658,29 @@
 
     .video {
         position: absolute;
-        top: 29%;
+        top: 27%;
+        width: 600px;
+        height: 321px;
     }
 
     @media screen and (max-width: 1540px) {
         #form {
             right: 16%;
-            top: 29%;
+            top: 26%;
         }
 
         .video {
             position: absolute;
-            top: 35%;
+            top: 30%;
             width: 500px;
-            height: 282px;
+            height: 265px;
         }
     }
 
     @media screen and (max-width: 1320px) {
         #form {
             right: 10%;
-            top: 35%;
+            top: 33%;
         }
 
         .video {
@@ -695,10 +692,14 @@
         #form {
             position: initial;
             float: left;
+            margin-top: 50px;
         }
 
         .video {
             position: initial;
+            display: block;
+            margin: auto;
+            height: 302px;
         }
 
         .offer_section {
@@ -708,5 +709,50 @@
         .arrow {
             display: none;
         }
+        .special_offer_1 {
+            float: right;
+        }
+
+        .what_you_get {
+            margin-top: 50px;
+            padding-left: 50px;
+        }
+
+        .looping-gif iframe{
+            display: block;
+            margin: auto;
+        }
     }
+
+  @media screen and (max-width: 1160px) {
+      .offer_section, .special_offer_1, .limited_time, .long_text, .testimonial, .footer {
+          padding-left: 10%;
+          padding-right: 10%;
+      }
+  }
+
+      @media screen and (max-width: 1040px) {
+
+      .offer_section {
+          margin-top: 50px;
+      }
+      .special_offer {
+          float: right;
+      }
+
+      .what_you_get {
+          margin-top: 50px;
+          padding-left: 50px;
+      }
+
+      .offer {
+          display: block;
+          margin: auto;
+          float: none;
+      }
+
+      .checkmark {
+          width: 30px;
+      }
+  }
 </style>
