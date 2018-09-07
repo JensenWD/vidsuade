@@ -421,8 +421,45 @@
 
             });
 
-            $('.drag-box').on('dragover', function () {
-                $(this).text('dragging over!')
+            $('.drag-box').on("dragover",function(e){
+                //e = e || event;
+                e.preventDefault();
+                e.stopPropagation();
+                e.dataTransfer = e.originalEvent.dataTransfer;
+                e.dataTransfer.dropEffect = 'copy';
+            });
+
+
+            $('.drag-box').on('drop', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                e.dataTransfer = e.originalEvent.dataTransfer;
+
+                if (e.dataTransfer.items) {
+                    // Use DataTransferItemList interface to access the file(s)
+                    for (var i = 0; i < e.dataTransfer.items.length; i++) {
+                        // If dropped items aren't files, reject them
+                        if (e.dataTransfer.items[i].kind === 'file') {
+                            var file = e.dataTransfer.items[i].getAsFile();
+                            console.log('... file[' + i + '].name = ' + file.name);
+                            $('.filename').text(file.name);
+                            $('#file').files = file;
+                        }
+                    }
+                } else {
+                    // Use DataTransfer interface to access the file(s)
+                    for (var i = 0; i < e.dataTransfer.files.length; i++) {
+                        console.log('... file[' + i + '].name = ' + e.dataTransfer.files[i].name);
+                    }
+                }
+                if (e.dataTransfer.items) {
+                    // Use DataTransferItemList interface to remove the drag data
+                    e.dataTransfer.items.clear();
+                } else {
+                    // Use DataTransfer interface to remove the drag data
+                    e.dataTransfer.clearData();
+                }
+                $(this).text('File Added Successfilly!')
             })
         },
         methods: {
