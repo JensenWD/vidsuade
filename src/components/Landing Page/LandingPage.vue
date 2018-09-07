@@ -360,9 +360,10 @@
                     stripeToken: token.id,
                     stripeEmail: 'test@test.com'
                 }).then(function (res) {
+                    //window.location = 'https://mailchi.mp/vidsuade/logo_thankyou';
                         if (res.status === 200)
                         {
-                            window.loccation = 'https://mailchi.mp/vidsuade/logo_thankyou';
+                            window.location = 'https://mailchi.mp/vidsuade/logo_thankyou';
                         }
                 }).catch(function (err) {
                         console.log(err);
