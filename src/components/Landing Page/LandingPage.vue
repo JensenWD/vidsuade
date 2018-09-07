@@ -5,7 +5,7 @@
             <span></span>
         </div>
         <div class="row hero_bg pb-5 pt-5">
-            <div class="col-lg-6 col-sm-12 mb-5 mt-4 header-content">
+            <div class="col-lg-6 col-md-12 header-content">
                 <h1 class="title">Animate your logo for only 49.95!</h1>
                 <p class="sub-title">spice up your promotional videos by using an animated version on your logo</p>
             </div>
@@ -73,15 +73,15 @@
                     <div class="col-1 pr-3">
                         <img class="checkmark" src="../../assets/landing/Check_Mark.png" alt="">
                     </div>
-                    <div class="col-11 pl-4">
+                    <div class="col-11 pl-4 procon-text">
                         <span class="proscons">Up to a 5-second full HD 1080p 2D animation of your logo in .mov and .mp4 formats</span>
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-1 pr-3">
+                    <div class="col-1 pr-3 ">
                         <img class="checkmark" src="../../assets/landing/Check_Mark.png" alt="">
                     </div>
-                    <div class="col-11 pl-4">
+                    <div class="col-11 pl-4 procon-text">
                         <span class="proscons">Fully animated logo with sound effects/music</span>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                     <div class="col-1 pr-3">
                         <img class="checkmark" src="../../assets/landing/Check_Mark.png" alt="">
                     </div>
-                    <div class="col-11 pl-4">
+                    <div class="col-11 pl-4 procon-text">
                         <span class="proscons">Quick turn-around (3-5 business days)</span>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                     <div class="col-1 pr-3">
                         <img class="checkmark" src="../../assets/landing/X_Icon.png" alt="">
                     </div>
-                    <div class="col-11 pl-4">
+                    <div class="col-11 pl-4 procon-text">
                         <span class="proscons">A video you won’t be proud of</span>
                     </div>
                 </div>
@@ -235,18 +235,18 @@
             </div>
         </div>
         <div class="row footer pt-3">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
                 <p>
                     © Copyright 2018 Vidsuade - All Rights Reserved.
                 </p>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
                 <div class="footer-links">
-                    <router-link class="mr-sm-2 ml-sm-2" to="/about-us">About Us</router-link>
+                    <router-link class="mr-sm-2 ml-sm-2 f-link" to="/about-us">About Us</router-link>
                     |
-                    <router-link class="mr-sm-2 ml-sm-2" to="/privacy-policy">Privacy Policy</router-link>
+                    <router-link class="mr-sm-2 ml-sm-2 f-link" to="/privacy-policy">Privacy Policy</router-link>
                     |
-                    <router-link class="ml-sm-2" to="/contact-us">Contact Us</router-link>
+                    <router-link class="ml-sm-2 f-link" to="/contact-us">Contact Us</router-link>
                 </div>
             </div>
         </div>
@@ -352,22 +352,22 @@
 
             function stripeTokenHandler(token) {
                 // Insert the token ID into the form so it gets submitted to the server
-                var form = document.getElementById('payment-form');
-                var hiddenInput = document.createElement('input');
-                hiddenInput.setAttribute('type', 'hidden');
-                hiddenInput.setAttribute('name', 'stripeToken');
-                hiddenInput.setAttribute('value', token.id);
-                form.appendChild(hiddenInput);
+                var form = document.getElementById('mc-form');
 
-                //Delete this and pull from form email
-                // var hiddenInput = document.createElement('input');
-                // hiddenInput.setAttribute('type', 'hidden');
-                // hiddenInput.setAttribute('name', 'stripeEmail');
-                // hiddenInput.setAttribute('value', 'automated@gmail.com');
-                // form.appendChild(hiddenInput);
 
                 // Submit the form
-                form.submit();
+                axios.post('/charge', {
+                    stripeToken: token.id,
+                    stripeEmail: 'test@test.com'
+                }).then(function (res) {
+                        if (res.status === 200)
+                        {
+                            window.loccation = 'https://mailchi.mp/vidsuade/logo_thankyou';
+                        }
+                }).catch(function (err) {
+                        console.log(err);
+                });
+
             }
 
 
@@ -376,8 +376,36 @@
                 $('.footer_bg').css({'display': 'none'});
             }
 
-            let date = new Date();
-            date.setDate(date.getDate() + 7);
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for(var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            let date = '';
+            let cookie = getCookie("landed");
+
+            if(cookie === "")
+            {
+                date = new Date();
+                date.setDate(date.getDate() + 7);
+                document.cookie = "landed=" + date;
+            }
+            else
+            {
+                date = new Date(cookie);
+            }
+            console.log(date);
+
             date = date.getTime();
 
             setInterval(function () {
@@ -450,6 +478,9 @@
 
     .header-content {
         color: #FFFFFF;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        max-width: 500px;
     }
 
     .header-content h1 {
@@ -621,8 +652,11 @@
         color: #B8BABC;
     }
 
+    .fn, .ln {
+        max-width: 45% !important;
+    }
     .fn {
-
+        margin-right: 35px;
     }
 
     .arrow {
@@ -661,7 +695,7 @@
 
     .video {
         position: absolute;
-        top: 27%;
+        top: 29%;
         width: 600px;
         height: 321px;
     }
@@ -674,7 +708,7 @@
 
         .video {
             position: absolute;
-            top: 30%;
+            top: 35%;
             width: 500px;
             height: 265px;
         }
@@ -696,6 +730,16 @@
             position: initial;
             float: left;
             margin-top: 50px;
+        }
+        .header-content {
+            margin-bottom: 10px;
+        }
+        .procon-text {
+            max-width: 80%;
+            font-size: 14px !important;
+        }
+        .procon-text span {
+            font-size: 18px !important;
         }
 
         .video {
@@ -760,4 +804,74 @@
             width: 30px;
         }
     }
+
+    @media screen and (max-width: 985px) {
+        .fn, .ln {
+            max-width: 100% !important;
+        }
+        .fn {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .filename {
+            font-size: 17.5px;
+        }
+    }
+
+    @media screen and (max-width: 985px) {
+        #form {
+            float: none;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .footer p, .f-link
+        {
+            font-size: 12px;
+            text-align: center;
+        }
+        .timer-title {
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .offer_section, .special_offer_1, .limited_time, .long_text, .testimonial, .footer {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .fn, .ln {
+            max-width: 100% !important;
+        }
+        .fn {
+            margin-bottom: 10px;
+        }
+        .filename {
+            font-size: 17.5px;
+        }
+        .footer p, .footer-links
+        {
+            display: block;
+            float: none;
+            margin: auto;
+            text-align: center;
+        }
+        .footer-links {
+            margin-top: 5px;
+        }
+        .timer-title {
+            font-size: 28px;
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+        .timer-block #days,  .timer-block #hours, .timer-block #minutes, .timer-block #seconds {
+            font-size: 22px;
+        }
+        .timer-block #days + div,  .timer-block #hours + div, .timer-block #minutes + div, .timer-block #seconds + div {
+            font-size: 15px;
+        }
+    }
+
 </style>
