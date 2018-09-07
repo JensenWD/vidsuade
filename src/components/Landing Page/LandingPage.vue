@@ -5,86 +5,83 @@
             <span></span>
         </div>
         <div class="row hero_bg pb-5 pt-5">
-            <div class="col-6 mb-5 mt-4 header-content">
-                <h1>Animate your logo<br>for only 49.95!</h1>
-                <p>spice up your promotional videos by using<br>an animated version on your logo</p>
+            <div class="col-lg-6 col-md-12 header-content">
+                <h1 class="title">Animate your logo for only 49.95!</h1>
+                <p class="sub-title">spice up your promotional videos by using an animated version on your logo</p>
             </div>
         </div>
         <div class="row offer_section">
 
-          <div class="col-12">
-            <button class="btn d-block d-md-none m-auto" type="button" id="iframewebpage" data-src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0">View example</button>
-          </div>
+            <div class="col-12">
+                <button class="btn d-block d-md-none m-auto" type="button" id="iframewebpage"
+                        data-src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0">View example
+                </button>
+            </div>
 
-            <iframe class="col-8 d-none d-md-block video" width="560" height="415" src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"
+            <iframe class="col-8 d-none d-md-block video" width="560" height="415"
+                    src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-         <div class="col-6">
-           <form action="/charge" method="post" id="payment-form">
-             <div class="form-row">
-               <label for="card-element">
-                 Credit or debit card
-               </label>
-               <div class="col-6" id="card-element">
-                 <!-- A Stripe Element will be inserted here. -->
-               </div>
+            <div class="col-md-6 col-xs-12" id="form">
+                <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
+                <p><strong>Where should we send yur animation?*</strong></p>
+                <div class="row ml-1 mr-1 mb-2 mt-2">
+                    <input class="col-lg-6 col-xs-12 fn" type="text" name="fname" placeholder="First Name">
+                    <input class="col-lg-6 col-xs-12 ln" type="text" name="lname" placeholder="Last Name">
+                </div>
+                <div class="row ml-1 mr-1 mb-2 mt-2">
+                    <input class="col-12" type="email" placeholder="Email" id="stripeEmail" name="stripeEmail"
+                           style="width: 100%;">
+                </div>
+                <div class="row ml-1 mr-1 mb-2 mt-2">
+                    <input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">
+                </div>
+                <div class="row ml-1 mr-1 mb-2 mt-2">
+                    <input class="col-12" type="text" placeholder="Phone Number" style="width: 100%;">
+                </div>
+                <p><strong style="font-size: 14px;">Upload your logo* </strong>
+                    <span style="font-size: 10px;">(Vector file preferred - 25mb max file size)
+             </span>
+                </p>
+                <div class="drag-box">
+                    Drop your files here
+                </div>
+                <input type="file" class="hidden" id="browse-files">
+                <span class="browse mt-2 mb-4" @click="browse">+</span><span class="mb-4 mt-2 filename" @click="browse">Click to choose a file instead</span>
+                <p class=""><strong>Submit payment*</strong></p>
+                <form action="/charge" method="post" id="payment-form">
+                    <div class="form-row">
+                        <!--<label for="card-element">-->
+                        <!--Credit or debit card-->
+                        <!--</label>-->
+                        <div class="col-12" id="card-element">
+                            <!-- A Stripe Element will be inserted here. -->
+                        </div>
 
-               <!-- Used to display form errors. -->
-               <div id="card-errors" role="alert"></div>
-             </div>
+                        <!-- Used to display form errors. -->
+                        <div id="card-errors" role="alert"></div>
+                    </div>
 
-             <button>Submit Payment</button>
-           </form>
-         </div>
+                    <button class="submit pt-1 pb-1 text-center mt-4">Animate my logo</button>
+                </form>
+                <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>
+            </div>
 
-          <!--<div id="form" class="col-6">-->
-                <!--<p class="mt-3" style="font-size: 22px">Get your logo animated!</p>-->
-                <!--<p><strong>Where should we send yur animation?*</strong></p>-->
-                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
-                    <!--<input class="col-6 fn mr-1" type="text" name="fname" placeholder="First Name">-->
-                    <!--<input class="col-6 ln ml-1" type="text" name="lname" placeholder="Last Name">-->
-                <!--</div>-->
-                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
-                    <!--<input class="col-12" type="email" placeholder="Email" id="stripeEmail" name="stripeEmail" style="width: 100%;">-->
-                <!--</div>-->
-                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
-                    <!--<input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">-->
-                <!--</div>-->
-                <!--<div class="row ml-1 mr-1 mb-2 mt-2">-->
-                    <!--<input class="col-12" type="text" placeholder="Phone Number" style="width: 100%;">-->
-                <!--</div>-->
-                <!--<p><strong style="font-size: 14px;">Upload your logo* </strong>-->
-                    <!--<span style="font-size: 10px;">(Vector file preferred - 25mb max file size)-->
-                    <!--</span>-->
-                <!--</p>-->
-                <!--<div class="drag-box">-->
-                    <!--Drop your files here-->
-                <!--</div>-->
-                <!--<input type="file" class="hidden" id="browse-files">-->
-                <!--<span class="browse mt-2 mb-4" @click="browse">+</span><span class="mb-4 mt-2 filename" @click="browse">Click to choose a file instead</span>-->
-                <!--&lt;!&ndash;<p class="mt-3">Submit payment</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="payment-form pl-3 pt-1 pb-1 mb-3">Click here for payment options</div>&ndash;&gt;-->
-                <!--<div id="card-element"></div>-->
-                <!--<div id="card-errors" class="mt-2 hidden alert alert-danger" role="alert"></div>-->
-                <!--<div class="mt-3 total text-center">Total: $49.95</div>-->
-                <!--<div class="submit pt-1 pb-1 text-center mt-2">Animate my logo</div>-->
-                <!--<router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>-->
-            <!--</div>-->
-            <div class="col-6">
+            <div class="col-md-6 col-xs-12 what_you_get">
                 <span class="section-heading mb-4" style="display: block;">What you'll get</span>
                 <div class="row mt-3">
                     <div class="col-1 pr-3">
                         <img class="checkmark" src="../../assets/landing/Check_Mark.png" alt="">
                     </div>
-                    <div class="col-11 pl-4">
+                    <div class="col-11 pl-4 procon-text">
                         <span class="proscons">Up to a 5-second full HD 1080p 2D animation of your logo in .mov and .mp4 formats</span>
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-1 pr-3">
+                    <div class="col-1 pr-3 ">
                         <img class="checkmark" src="../../assets/landing/Check_Mark.png" alt="">
                     </div>
-                    <div class="col-11 pl-4">
+                    <div class="col-11 pl-4 procon-text">
                         <span class="proscons">Fully animated logo with sound effects/music</span>
                     </div>
                 </div>
@@ -92,7 +89,7 @@
                     <div class="col-1 pr-3">
                         <img class="checkmark" src="../../assets/landing/Check_Mark.png" alt="">
                     </div>
-                    <div class="col-11 pl-4">
+                    <div class="col-11 pl-4 procon-text">
                         <span class="proscons">Quick turn-around (3-5 business days)</span>
                     </div>
                 </div>
@@ -100,14 +97,15 @@
                     <div class="col-1 pr-3">
                         <img class="checkmark" src="../../assets/landing/X_Icon.png" alt="">
                     </div>
-                    <div class="col-11 pl-4">
+                    <div class="col-11 pl-4 procon-text">
                         <span class="proscons">A video you won’t be proud of</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row special_offer mt-5">
-            <div class="col-6">
+
+        <div class="row special_offer_1 mt-5">
+            <div class="col-xl-6 col-lg-12">
                 <span class="section-heading mb-4" style="display: block;">Special Offer</span>
                 <img class="offer" src="../../assets/landing/Offer.png" alt="">
                 <img class="arrow" src="../../assets/landing/Arrow.png" alt="">
@@ -121,10 +119,10 @@
             </div>
         </div>
         <div class="row limited_time">
-            <div class="col-6">
+            <div class="col-lg-6 col-md-12">
                 <span class="timer-title">Limited-time offer!</span>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-12">
                 <div class="timer-block">
                     <div id="days">06</div>
                     <div>Days</div>
@@ -188,17 +186,17 @@
                 </p>
             </div>
         </div>
-        <div class="row long_text mt-5">
-            <div class="col-4 looping-gif">
-                <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
+        <div class="row long_text mt-1">
+            <div class="col-xl-6 col-lg-12 looping-gif">
+                <div style="">
                     <iframe src="https://giphy.com/embed/5towk7UXRZh4p1LqqI" width="100%" height="100%"
-                            style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                 </div>
             </div>
         </div>
         <div class="row long_text mt-5">
             <div class="col-12 section-heading">
-                Where to use you<br>animated logo
+                Where to use your<br>animated logo
             </div>
         </div>
         <div class="row long_text mt-5">
@@ -237,18 +235,18 @@
             </div>
         </div>
         <div class="row footer pt-3">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
                 <p>
                     © Copyright 2018 Vidsuade - All Rights Reserved.
                 </p>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
                 <div class="footer-links">
-                    <router-link class="mr-sm-2 ml-sm-2" to="/about-us">About Us</router-link>
+                    <router-link class="mr-sm-2 ml-sm-2 f-link" to="/about-us">About Us</router-link>
                     |
-                    <router-link class="mr-sm-2 ml-sm-2" to="/privacy-policy">Privacy Policy</router-link>
+                    <router-link class="mr-sm-2 ml-sm-2 f-link" to="/privacy-policy">Privacy Policy</router-link>
                     |
-                    <router-link class="ml-sm-2" to="/contact-us">Contact Us</router-link>
+                    <router-link class="ml-sm-2 f-link" to="/contact-us">Contact Us</router-link>
                 </div>
             </div>
         </div>
@@ -267,14 +265,14 @@
             return {}
         },
         mounted() {
-          $("#iframewebpage").click(function(){
-            $(this).replaceWith("<iframe class='col-12 d-block d-md-none' src="+$(this).data('src')+"></iframe>");
-            $("iframe").attr({
-              height: "500",
-              allowfullscreen: "true",
-              frameborder:"0"
+            $("#iframewebpage").click(function () {
+                $(this).replaceWith("<iframe class='col-12 d-block d-md-none' src=" + $(this).data('src') + "></iframe>");
+                $("iframe").attr({
+                    height: "500",
+                    allowfullscreen: "true",
+                    frameborder: "0"
+                });
             });
-          });
 
 
             let s = document.createElement("script");
@@ -294,85 +292,83 @@
             // };
 
 
-          // Create a Stripe client.
-          var stripe = Stripe('pk_test_EODlIgrDsj9wOZ3UfKK4RgKP');
+            // Create a Stripe client.
+            var stripe = Stripe('pk_test_EODlIgrDsj9wOZ3UfKK4RgKP');
 
 // Create an instance of Elements.
-          var elements = stripe.elements();
+            var elements = stripe.elements();
 
 // Custom styling can be passed to options when creating an Element.
 // (Note that this demo uses a wider set of styles than the guide below.)
-          var style = {
-            base: {
-              color: '#32325d',
-              lineHeight: '18px',
-              fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-              fontSmoothing: 'antialiased',
-              fontSize: '16px',
-              '::placeholder': {
-                color: '#aab7c4'
-              }
-            },
-            invalid: {
-              color: '#fa755a',
-              iconColor: '#fa755a'
-            }
-          };
+            var style = {
+                base: {
+                    color: '#32325d',
+                    lineHeight: '18px',
+                    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+                    fontSmoothing: 'antialiased',
+                    fontSize: '16px',
+                    '::placeholder': {
+                        color: '#aab7c4'
+                    }
+                },
+                invalid: {
+                    color: '#fa755a',
+                    iconColor: '#fa755a'
+                }
+            };
 
 // Create an instance of the card Element.
-          var card = elements.create('card', {style: style});
+            var card = elements.create('card', {style: style});
 
 // Add an instance of the card Element into the `card-element` <div>.
-          card.mount('#card-element');
+            card.mount('#card-element');
 
 // Handle real-time validation errors from the card Element.
-          card.addEventListener('change', function(event) {
-            var displayError = document.getElementById('card-errors');
-            if (event.error) {
-              displayError.textContent = event.error.message;
-            } else {
-              displayError.textContent = '';
-            }
-          });
+            card.addEventListener('change', function (event) {
+                var displayError = document.getElementById('card-errors');
+                if (event.error) {
+                    displayError.textContent = event.error.message;
+                } else {
+                    displayError.textContent = '';
+                }
+            });
 
 // Handle form submission.
-          var form = document.getElementById('payment-form');
-          form.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            stripe.createToken(card).then(function(result) {
-              if (result.error) {
-                // Inform the customer that there was an error.
-                var errorElement = document.getElementById('card-errors');
-                errorElement.textContent = result.error.message;
-              } else {
-                // Send the token to your server.
-                stripeTokenHandler(result.token);
-              }
-            });
-          });
-
-          function stripeTokenHandler(token) {
-            // Insert the token ID into the form so it gets submitted to the server
             var form = document.getElementById('payment-form');
-            var hiddenInput = document.createElement('input');
-            hiddenInput.setAttribute('type', 'hidden');
-            hiddenInput.setAttribute('name', 'stripeToken');
-            hiddenInput.setAttribute('value', token.id);
-            form.appendChild(hiddenInput);
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
 
-            //Delete this and pull from form email
-            var hiddenInput = document.createElement('input');
-            hiddenInput.setAttribute('type', 'hidden');
-            hiddenInput.setAttribute('name', 'stripeEmail');
-            hiddenInput.setAttribute('value', 'automated@gmail.com');
-            form.appendChild(hiddenInput);
+                stripe.createToken(card).then(function (result) {
+                    if (result.error) {
+                        // Inform the customer that there was an error.
+                        var errorElement = document.getElementById('card-errors');
+                        errorElement.textContent = result.error.message;
+                    } else {
+                        // Send the token to your server.
+                        stripeTokenHandler(result.token);
+                    }
+                });
+            });
 
-            // Submit the form
-            form.submit();
-          }
+            function stripeTokenHandler(token) {
+                // Insert the token ID into the form so it gets submitted to the server
+                var form = document.getElementById('mc-form');
 
 
+                // Submit the form
+                axios.post('/charge', {
+                    stripeToken: token.id,
+                    stripeEmail: 'test@test.com'
+                }).then(function (res) {
+                        if (res.status === 200)
+                        {
+                            window.loccation = 'https://mailchi.mp/vidsuade/logo_thankyou';
+                        }
+                }).catch(function (err) {
+                        console.log(err);
+                });
+
+            }
 
 
             if (url.includes('landing')) {
@@ -380,8 +376,36 @@
                 $('.footer_bg').css({'display': 'none'});
             }
 
-            let date = new Date();
-            date.setDate(date.getDate() + 7);
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for(var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            let date = '';
+            let cookie = getCookie("landed");
+
+            if(cookie === "")
+            {
+                date = new Date();
+                date.setDate(date.getDate() + 7);
+                document.cookie = "landed=" + date;
+            }
+            else
+            {
+                date = new Date(cookie);
+            }
+            console.log(date);
+
             date = date.getTime();
 
             setInterval(function () {
@@ -410,11 +434,12 @@
 </script>
 
 <style scoped>
-  #iframewebpage {
-    background-color: #D98430;
-    color: white;
-    padding: 0.35rem 1.2rem;
-  }
+    #iframewebpage {
+        background-color: #D98430;
+        color: white;
+        padding: 0.35rem 1.2rem;
+    }
+
     .hidden {
         display: none;
     }
@@ -453,6 +478,9 @@
 
     .header-content {
         color: #FFFFFF;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        max-width: 500px;
     }
 
     .header-content h1 {
@@ -460,7 +488,7 @@
         font-family: 'Avenir', Helvetica, sans-serif;
     }
 
-    .offer_section, .special_offer, .limited_time, .long_text, .testimonial, .footer {
+    .offer_section, .special_offer_1, .limited_time, .long_text, .testimonial, .footer {
         padding-left: 15%;
         padding-right: 15%;
     }
@@ -604,6 +632,7 @@
 
     .submit {
         background-color: #e98000;
+        display: block;
         color: #FFFFFF;
         font-size: 18px;
         margin: auto;
@@ -624,7 +653,10 @@
     }
 
     .fn, .ln {
-        max-width: 48.7%;
+        max-width: 45% !important;
+    }
+    .fn {
+        margin-right: 35px;
     }
 
     .arrow {
@@ -664,26 +696,28 @@
     .video {
         position: absolute;
         top: 29%;
+        width: 600px;
+        height: 321px;
     }
 
     @media screen and (max-width: 1540px) {
         #form {
             right: 16%;
-            top: 29%;
+            top: 26%;
         }
 
         .video {
             position: absolute;
             top: 35%;
             width: 500px;
-            height: 282px;
+            height: 265px;
         }
     }
 
     @media screen and (max-width: 1320px) {
         #form {
             right: 10%;
-            top: 35%;
+            top: 33%;
         }
 
         .video {
@@ -695,10 +729,24 @@
         #form {
             position: initial;
             float: left;
+            margin-top: 50px;
+        }
+        .header-content {
+            margin-bottom: 10px;
+        }
+        .procon-text {
+            max-width: 80%;
+            font-size: 14px !important;
+        }
+        .procon-text span {
+            font-size: 18px !important;
         }
 
         .video {
             position: initial;
+            display: block;
+            margin: auto;
+            height: 302px;
         }
 
         .offer_section {
@@ -708,5 +756,122 @@
         .arrow {
             display: none;
         }
+
+        .special_offer_1 {
+            float: right;
+        }
+
+        .what_you_get {
+            margin-top: 50px;
+            padding-left: 50px;
+        }
+
+        .looping-gif iframe {
+            display: block;
+            margin: auto;
+        }
     }
+
+    @media screen and (max-width: 1160px) {
+        .offer_section, .special_offer_1, .limited_time, .long_text, .testimonial, .footer {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+
+    @media screen and (max-width: 1040px) {
+
+        .offer_section {
+            margin-top: 50px;
+        }
+
+        .special_offer {
+            float: right;
+        }
+
+        .what_you_get {
+            margin-top: 50px;
+            padding-left: 50px;
+        }
+
+        .offer {
+            display: block;
+            margin: auto;
+            float: none;
+        }
+
+        .checkmark {
+            width: 30px;
+        }
+    }
+
+    @media screen and (max-width: 985px) {
+        .fn, .ln {
+            max-width: 100% !important;
+        }
+        .fn {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .filename {
+            font-size: 17.5px;
+        }
+    }
+
+    @media screen and (max-width: 985px) {
+        #form {
+            float: none;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .footer p, .f-link
+        {
+            font-size: 12px;
+            text-align: center;
+        }
+        .timer-title {
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .offer_section, .special_offer_1, .limited_time, .long_text, .testimonial, .footer {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .fn, .ln {
+            max-width: 100% !important;
+        }
+        .fn {
+            margin-bottom: 10px;
+        }
+        .filename {
+            font-size: 17.5px;
+        }
+        .footer p, .footer-links
+        {
+            display: block;
+            float: none;
+            margin: auto;
+            text-align: center;
+        }
+        .footer-links {
+            margin-top: 5px;
+        }
+        .timer-title {
+            font-size: 28px;
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+        .timer-block #days,  .timer-block #hours, .timer-block #minutes, .timer-block #seconds {
+            font-size: 22px;
+        }
+        .timer-block #days + div,  .timer-block #hours + div, .timer-block #minutes + div, .timer-block #seconds + div {
+            font-size: 15px;
+        }
+    }
+
 </style>
