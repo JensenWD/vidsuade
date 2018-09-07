@@ -32,13 +32,13 @@
               </div>
 
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
             </div>
           </div>
@@ -82,13 +82,13 @@
               </div>
 
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
             </div>
           </div>
@@ -134,13 +134,13 @@
               </div>
 
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
             </div>
           </div>
@@ -185,13 +185,13 @@
               </div>
 
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
               <div class="col-12 col-md-4 mt-2">
-                <img src="https://placehold.it/300x200" alt="" class="img-fluid">
+                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
               </div>
             </div>
           </div>

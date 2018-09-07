@@ -244,5 +244,8 @@
       margin-left: -100px
       button
         width: 200px
+        background-color: white
+        border: none
+        color: #009EE9
         font-size: 1rem
 </style>
