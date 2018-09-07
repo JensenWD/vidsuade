@@ -1,19 +1,27 @@
 <template>
   <div>
-    <div class="row hero_bg text-center pb-5 pt-5 font-white">
+    <div class="row hero_bg text-center pb-4 pt-5 font-white">
       <div class="col-12 mb-3 mt-5">
         <h1 class="">Videos that convert</h1>
         <h4 class="helvetica font-weight-light">Videos made to increase sales for business.</h4>
       </div>
       <div class="col-12">
-        <button class="btn d-block m-auto d-md-none" type="button" id="iframewebpage" data-src="https://www.youtube.com/embed/s7Zaw7e6pY4">View example</button>
+        <button class="btn d-block m-auto d-md-none" type="button" id="iframewebpage" data-src="https://www.youtube.com/embed/s7Zaw7e6pY4">Watch video</button>
         <iframe class="d-none d-md-inline" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
+      </div>
+
+      <div class="col-12">
+        <div class="d-block d-md-none floating-btn m-0 pt-3">
+          <router-link to="/contact">
+            <button class="btn text-uppercase font-white">get my free quote</button>
+          </router-link>
+        </div>
       </div>
     </div>
 
     <div class="row font-blue">
 
-      <div class="position-absolute floating-btn">
+      <div class="position-absolute d-none d-md-block floating-btn">
         <router-link to="/contact">
           <button class="btn text-uppercase font-white">get my free quote</button>
         </router-link>
@@ -157,9 +165,9 @@
     </div>
 
     <div class="row footer_section_bg justify-content-center align-items-center pt-5 pb-5 text-center flex-column">
-      <h2 class="font-white font-weight-bold">Want to get started?</h2>
+      <h2 class="font-white">Want to get started?</h2>
       <router-link to="/contact">
-        <button class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-blue helvetica font-weight-regular"
+        <button class="btn text-uppercase p-2 pr-4 pl-4 mt-3 bg-white font-blue helvetica font-weight-regular"
                 style="font-size: 20px">get my free quote</button>
       </router-link>
     </div>

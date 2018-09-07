@@ -38,16 +38,16 @@
             <span class="font-white text-uppercase">Find us on social media</span>
           </div>
           <div class="col-12 col-sm-10 offset-sm-1 col-lg-6 offset-lg-3 text-center mt-2">
-            <a href="" class="social-icon">
+            <a href="https://www.facebook.com/Vidsuade-466688843846965" target="_blank" class="social-icon">
               <img src="../assets/home/Footer_FB_Icon.png" alt="" class="img-fluid">
             </a>
-            <a href="" class="social-icon">
+            <a href="https://www.instagram.com/vidsuade_/" target="_blank" class="social-icon">
               <img src="../assets/home/Footer_IG_Icon.png" alt="" class="img-fluid">
             </a>
-            <a href="" class="social-icon">
+            <a href="https://www.youtube.com/channel/UC7lLW5MeWlQxgKWfdbv-kYQ" target="_blank" class="social-icon">
               <img src="../assets/home/Footer_YT_Icon.png" alt="" class="img-fluid">
             </a>
-            <a href="" class="social-icon">
+            <a href="https://www.linkedin.com/company/33247289/" target="_blank" class="social-icon">
               <img src="../assets/home/Footer_Linkedin_Icon.png" alt="" class="img-fluid">
             </a>
           </div>

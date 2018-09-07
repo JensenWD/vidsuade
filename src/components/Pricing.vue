@@ -387,7 +387,7 @@
     background: #009EE9
     color: white
     text-align: center
-    padding: 0
+    padding: 0 0.9rem
     margin-right: 0.9rem
     span
       font-size: 2.3rem

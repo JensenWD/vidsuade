@@ -19,9 +19,9 @@
       </div>
     </div>
 
-    <div class="row pb-5 pt-5 font-blue mb-3">
+    <div class="row pb-5 pt-5 font-blue">
       <div class="col-12 text-center">
-        <h3 style="font-size: 3rem">Our process</h3>
+        <h3 class="m-0" style="font-size: 3rem">Our process</h3>
       </div>
     </div>
 
@@ -78,9 +78,9 @@
     </div>
 
     <div class="row footer_section_bg justify-content-center align-items-center pt-5 pb-5 text-center flex-column">
-      <h2 class="font-white font-weight-bold">Want to get started?</h2>
+      <h2 class="font-white">Want to get started?</h2>
       <router-link to="/contact">
-        <button class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-blue helvetica font-weight-regular"
+        <button class="btn text-uppercase bg-white p-2 pr-4 pl-4 mt-3 font-blue helvetica font-weight-regular"
                 style="font-size: 20px">get my free quote</button>
       </router-link>
     </div>

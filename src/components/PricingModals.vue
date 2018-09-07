@@ -3,10 +3,10 @@
     <!-- Social media Modal -->
     <div class="modal " id="socialMediaModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
-        <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
-          <span class="font-blue border-0" aria-hidden="true">&times;</span>
-        </button>
         <div class="modal-content pr-3 pr-md-5 pl-3 pl-md-5 pt-1 pb-3">
+          <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+            <span class="font-blue border-0" aria-hidden="true">&times;</span>
+          </button>
           <div class="modal-body text-center">
             <div class="row">
               <div class="col-12">
@@ -52,10 +52,10 @@
     <!-- Sales process Modal -->
     <div class="modal " id="salesProcessModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
-        <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
-          <span class="font-blue border-0" aria-hidden="true">&times;</span>
-        </button>
         <div class="modal-content pr-3 pr-md-5 pl-3 pl-md-5 pt-1 pb-3">
+          <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+            <span class="font-blue border-0" aria-hidden="true">&times;</span>
+          </button>
           <div class="modal-body text-center">
             <div class="row">
               <div class="col-12">
@@ -103,10 +103,10 @@
     <!-- Explainer Modal -->
     <div class="modal " id="explainerModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
-        <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
-          <span class="font-blue border-0" aria-hidden="true">&times;</span>
-        </button>
         <div class="modal-content pr-3 pr-md-5 pl-3 pl-md-5 pt-1 pb-3">
+          <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+            <span class="font-blue border-0" aria-hidden="true">&times;</span>
+          </button>
           <div class="modal-body text-center">
             <div class="row">
               <div class="col-12">
@@ -154,10 +154,10 @@
     <!-- Testimonial Modal -->
     <div class="modal " id="testimonialModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
-        <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
-          <span class="font-blue border-0" aria-hidden="true">&times;</span>
-        </button>
         <div class="modal-content pr-3 pr-md-5 pl-3 pl-md-5 pt-1 pb-3">
+          <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+            <span class="font-blue border-0" aria-hidden="true">&times;</span>
+          </button>
           <div class="modal-body text-center">
             <div class="row">
               <div class="col-12">
@@ -241,4 +241,15 @@
     z-index: 9999
     span
       font-size: 3rem
+
+  .close:hover
+    cursor: pointer
+  @media(max-width: 991px)
+    .modal-dialog
+      height: auto
+    .modal-content
+      height: 100%
+    .close
+      right: 5px
+      top: 0
 </style>

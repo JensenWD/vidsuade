@@ -55,33 +55,40 @@
 </script>
 
 <style lang="sass" scoped>
-    .bg-color
-        background: #004f75 !important
-    
-    .navbar
-        position: absolute
-        left: 0
-        top: 0
-        width: 100%
-        transition: 0.15s
-        background: transparent
-    .nav-item, .nav-link
-        color: white !important
-        text-align: center
-        text-transform: uppercase
-        font-size: 16px
-    .logo
-        max-width: 150px
-        width: 100%
+  .bg-color
+    background: #004f75 !important
 
-    @media(max-width: 991px)
-        .navbar
-            border-top: 1px solid #a8a8a8
-            border-bottom: 1px solid #a8a8a8
-            background: white
-        .nav-item, .nav-link
-            color: grey !important
-        .bg-color
-          .nav-item, .nav-link
-            color: white !important
+  .navbar-toggler
+    border: none !important
+
+  .navbar
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    transition: 0.15s
+    background: transparent
+    .nav-item, .nav-link
+      color: white !important
+      text-align: center
+      text-transform: uppercase
+      font-size: 16px
+    .logo
+      max-width: 150px
+      width: 100%
+
+  @media(max-width: 991px)
+    .navbar
+      /*border-top: 1px solid #a8a8a8*/
+      border-bottom: 1px solid #a8a8a8
+      background: #004f75 !important
+    .nav-item, .nav-link
+      color: white !important
+    .navbar-toggler-icon
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important
+    .nav-item, .nav-link
+      color: grey !important
+    .bg-color
+      .nav-item, .nav-link
+        color: white !important
 </style>
