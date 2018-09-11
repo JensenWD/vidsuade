@@ -65,7 +65,7 @@
 
 <style lang="sass" scoped>
   .footer_bg
-    background-color: #797979
+    background-color: #004F75
   span
     font-size: 16px
   .social-icon:not(:first-child)
