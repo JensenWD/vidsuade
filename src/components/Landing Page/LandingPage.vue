@@ -286,6 +286,8 @@
             return {}
         },
         mounted() {
+            let self = this;
+
             $("#iframewebpage").click(function () {
                 $(this).replaceWith("<iframe class='col-12 d-block d-md-none' src=" + $(this).data('src') + "></iframe>");
                 $("iframe").attr({
@@ -382,6 +384,8 @@
                     stripeEmail: $('#email').val(),
                 }).then(function (res) {
                     if (res.status === 200) {
+                        //send email
+                        self.sendEmail($('#email').val(), );
                         $('#hub-form').submit();
                     }
                 }).catch(function (err) {
@@ -478,6 +482,12 @@
         methods: {
             browse() {
                 $('#browse-files').click();
+            },
+            sendEmail(email, file) {
+                axios.post('/send-email', {
+                   email: email,
+                   file: file
+                });
             }
         }
     }
