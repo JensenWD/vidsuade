@@ -1,9 +1,5 @@
 <template>
     <div class="landing">
-        <div class="nav navbar">
-            <img src="../../assets/home/Logo_NavBar.png" class="img-fluid logo" alt="logo">
-            <span></span>
-        </div>
         <div class="row hero_bg pb-5 pt-5">
             <div class="col-lg-6 col-md-12 header-content">
                 <h1 class="title">Animate your logo for only 49.95!</h1>
@@ -35,7 +31,7 @@
                                style="width: 100%;">
                     </div>
                     <div class="row ml-1 mr-1 mb-2 mt-2">
-                        <input class="col-12" type="email" placeholder="Confirm Email" id="cemail" style="width: 100%;">
+                        <input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">
                     </div>
                     <div class="row ml-1 mr-1 mb-2 mt-2">
                         <input class="col-12" type="text" placeholder="Phone Number" id="phone" name="phone" style="width: 100%;">
@@ -106,43 +102,43 @@
             </div>
         </div>
 
-        <div class="row special_offer_1 mt-5">
-            <div class="col-xl-6 col-lg-12">
-                <span class="section-heading mb-4" style="display: block;">Special Offer</span>
-                <img class="offer" src="../../assets/landing/Offer.png" alt="">
-                <img class="arrow" src="../../assets/landing/Arrow.png" alt="">
-                <p class="mt-5 mb-5">
-                    Getting your logo animated is normally valued over
-                    <strong>$200</strong>, but with this limited-time offer you can have
-                    your logo animated for only <strong>$49.95!</strong> That’s 75% off the
-                    estimated value! But act fast because <strong>this offer will
-                    expire in less than 7 days.</strong>
-                </p>
-            </div>
-        </div>
-        <div class="row limited_time">
-            <div class="col-lg-6 col-md-12">
-                <div class="timer-title">Limited-time offer!</div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="timer-block">
-                    <div id="days">06</div>
-                    <div>Days</div>
-                </div>
-                <div class="timer-block">
-                    <div id="hours">06</div>
-                    <div>Hours</div>
-                </div>
-                <div class="timer-block">
-                    <div id="minutes">06</div>
-                    <div>Minutes</div>
-                </div>
-                <div class="timer-block">
-                    <div id="seconds">06</div>
-                    <div>Seconds</div>
-                </div>
-            </div>
-        </div>
+        <!--<div class="row special_offer_1 mt-5">-->
+            <!--<div class="col-xl-6 col-lg-12">-->
+                <!--<span class="section-heading mb-4" style="display: block;">Special Offer</span>-->
+                <!--<img class="offer" src="../../assets/landing/Offer.png" alt="">-->
+                <!--<img class="arrow" src="../../assets/landing/Arrow.png" alt="">-->
+                <!--<p class="mt-5 mb-5">-->
+                    <!--Getting your logo animated is normally valued over-->
+                    <!--<strong>$200</strong>, but with this limited-time offer you can have-->
+                    <!--your logo animated for only <strong>$49.95!</strong> That’s 75% off the-->
+                    <!--estimated value! But act fast because <strong>this offer will-->
+                    <!--expire in less than 7 days.</strong>-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row limited_time">-->
+            <!--<div class="col-lg-6 col-md-12">-->
+                <!--<div class="timer-title">Limited-time offer!</div>-->
+            <!--</div>-->
+            <!--<div class="col-lg-6 col-md-12">-->
+                <!--<div class="timer-block">-->
+                    <!--<div id="days">06</div>-->
+                    <!--<div>Days</div>-->
+                <!--</div>-->
+                <!--<div class="timer-block">-->
+                    <!--<div id="hours">06</div>-->
+                    <!--<div>Hours</div>-->
+                <!--</div>-->
+                <!--<div class="timer-block">-->
+                    <!--<div id="minutes">06</div>-->
+                    <!--<div>Minutes</div>-->
+                <!--</div>-->
+                <!--<div class="timer-block">-->
+                    <!--<div id="seconds">06</div>-->
+                    <!--<div>Seconds</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
         <div class="row long_text mt-5">
             <div class="col-12 section-heading">
                 Why companies need<br>animated logos
@@ -253,24 +249,6 @@
                 <a href="#form" class="cta">Animate my logo</a>
             </div>
         </div>
-        <div class="row footer pt-3">
-            <div class="col-md-6 col-sm-12">
-                <p>
-                    © Copyright 2018 Vidsuade - All Rights Reserved.
-                </p>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="footer-links">
-                    <router-link class="mr-sm-2 ml-sm-2 f-link" to="/about-us">About Us</router-link>
-                    |
-                    <router-link class="mr-sm-2 ml-sm-2 f-link" to="/privacy-policy">Privacy Policy</router-link>
-                    |
-                    <router-link class="mr-sm-2 ml-sm-2 f-link" to="/terms">Legal</router-link>
-                    |
-                    <router-link class="ml-sm-2 f-link" to="/contact-us">Contact Us</router-link>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 
@@ -281,7 +259,7 @@
     import axios from 'axios';
 
     export default {
-        name: "LandingPage",
+        name: "LandingPage2",
         data() {
             return {
                 fileString: ''
@@ -305,17 +283,6 @@
             s.src = "https://cdn.ywxi.net/js/1.js";
             s.async = true;
             $("body").append(s);
-
-
-            //hide nav && footer from landing page
-            let url = window.location.toString();
-            // let style = {
-            //     base: {
-            //         border: '',
-            //         color: 'white'
-            //     }
-            // };
-
 
             // Create a Stripe client.
             var stripe = Stripe('pk_test_EODlIgrDsj9wOZ3UfKK4RgKP');
@@ -357,13 +324,6 @@
                     displayError.textContent = '';
                 }
             });
-
-
-
-            if (url.includes('discount')) {
-                $('nav').css({'display': 'none'});
-                $('.footer_bg').css({'display': 'none'});
-            }
 
             function getCookie(cname) {
                 var name = cname + "=";
@@ -471,6 +431,7 @@
                     $('#card-errors').addClass('hidden');
                     $('.submit').attr('disabled', true).addClass('submitted');
                     $('.submit').text('Sending...');
+
                     // Submit the form
                     axios.post('/charge-sale', {
                         stripeToken: token.id,
@@ -498,8 +459,8 @@
             },
             sendEmail(email, file) {
                 axios.post('/send-email', {
-                   email: email,
-                   file: file
+                    email: email,
+                    file: file
                 }).then(function (res) {
                     console.log(res);
                 });
@@ -690,7 +651,7 @@
     }
 
     .footer {
-        background-color: #004F75;
+        background-color: #727071;
         color: #FFFFFF;
     }
 
