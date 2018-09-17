@@ -131,7 +131,7 @@
 
 <style lang="sass" scoped>
     .hero_bg
-        background-image: url("../assets/contact/Contact_US_BG@2x.png")
+        background-image: url("../assets/contact/Contact_US_BG.png")
         background-size: cover
     .submit
         background: #E98000

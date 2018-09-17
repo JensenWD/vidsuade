@@ -134,7 +134,7 @@
     span
       font-size: 1.55rem
   .hero_bg
-    background-image: url("../assets/why-video/Why_Video_BG_Photo@2x.png")
+    background-image: url("../assets/why-video/Why_Video_BG_Photo.png")
     background-size: cover
   .blue-bg
     background: #009EE9
