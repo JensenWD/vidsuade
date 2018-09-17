@@ -14,7 +14,7 @@
 
             <div class="col-12">
                 <button class="btn d-block d-md-none m-auto" type="button" id="iframewebpage"
-                        data-src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0">View example
+                        data-src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0">Watch Video
                 </button>
             </div>
 
@@ -24,7 +24,7 @@
 
             <div class="col-md-6 col-xs-12" id="form">
                 <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
-                <p><strong>Where should we send yur animation?*</strong></p>
+                <p><strong>Where should we send your animation?*</strong></p>
                 <div class="row ml-1 mr-1 mb-2 mt-2">
                     <input class="col-lg-6 col-xs-12 fn" type="text" name="fname" placeholder="First Name">
                     <input class="col-lg-6 col-xs-12 ln" type="text" name="lname" placeholder="Last Name">
@@ -62,7 +62,7 @@
                         <div id="card-errors" role="alert"></div>
                     </div>
 
-                    <button class="submit pt-1 pb-1 text-center mt-4">Animate my logo</button>
+                    <button class="submit pt-1 pb-1 text-center mt-4">Submit Payment</button>
                 </form>
                 <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>
             </div>
@@ -120,7 +120,7 @@
         </div>
         <div class="row limited_time">
             <div class="col-lg-6 col-md-12">
-                <span class="timer-title">Limited-time offer!</span>
+                <div class="timer-title">Limited-time offer!</div>
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="timer-block">
@@ -163,26 +163,33 @@
                     apart from the competition and having an animated logo will help not only help you stand out,
                     but also add a level of professionalism that will establish trust.
                     <br><br>
-                    <strong>Here are the 3 advantages of having an animated logo:</strong>
-                    <br><br>
-                    1. <strong>Higher brand awareness -</strong> Video increases brand awareness and recognition. Having
-                    an
-                    animated logo creates a memorable image in the minds of your customers by making your
-                    brand come to life through color, sound, and motion. Animated logos increases the chances
-                    of memorizing your brand compared to a short glance at the static image.
-                    <br><br>
-                    2. <strong>Stand apart from the competition -</strong> Animated logos are a secret weapon for brands
-                    wanting to come across as fresh, forward thinking, and original. Considering the overload of
-                    content and information users are presented with everyday, keeping the short attention span
-                    of your target audience is tough. However, having an animated logo will help you stand apart
-                    from the competition.
-                    <br><br>
-                    3. <strong>Added level professionalism -</strong> Animated logos are trending and even the largest
-                    companies
-                    such as Google and Amazon have invested in animated logos. Experts understand the
-                    importance of staying on top of trends and when brands show that they can keep up with the
-                    innovations, it adds a higher level of professionalism. Users pick up when companies invest in
-                    their branding and continually build on strengthening their relationship with their customers.
+                <div class="looping-gif">
+                    <div style="">
+                        <iframe src="https://giphy.com/embed/9ryMxorWGBVAdmOrF3" width="100%" height="100%"
+                                frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    </div>
+                </div>
+                <br>
+                <strong>Here are the 3 advantages of having an animated logo:</strong>
+                <br><br>
+                1. <strong>Higher brand awareness -</strong> Video increases brand awareness and recognition. Having
+                an
+                animated logo creates a memorable image in the minds of your customers by making your
+                brand come to life through color, sound, and motion. Animated logos increases the chances
+                of memorizing your brand compared to a short glance at the static image.
+                <br><br>
+                2. <strong>Stand apart from the competition -</strong> Animated logos are a secret weapon for brands
+                wanting to come across as fresh, forward thinking, and original. Considering the overload of
+                content and information users are presented with everyday, keeping the short attention span
+                of your target audience is tough. However, having an animated logo will help you stand apart
+                from the competition.
+                <br><br>
+                3. <strong>Added level professionalism -</strong> Animated logos are trending and even the largest
+                companies
+                such as Google and Amazon have invested in animated logos. Experts understand the
+                importance of staying on top of trends and when brands show that they can keep up with the
+                innovations, it adds a higher level of professionalism. Users pick up when companies invest in
+                their branding and continually build on strengthening their relationship with their customers.
                 </p>
             </div>
         </div>
@@ -373,12 +380,11 @@
                     stripeEmail: 'test@test.com'
                 }).then(function (res) {
                     //window.location = 'https://mailchi.mp/vidsuade/logo_thankyou';
-                        if (res.status === 200)
-                        {
-                            window.location = 'https://mailchi.mp/vidsuade/logo_thankyou';
-                        }
+                    if (res.status === 200) {
+                        window.location = 'https://mailchi.mp/vidsuade/logo_thankyou';
+                    }
                 }).catch(function (err) {
-                        console.log(err);
+                    console.log(err);
                 });
 
             }
@@ -392,7 +398,7 @@
             function getCookie(cname) {
                 var name = cname + "=";
                 var ca = document.cookie.split(';');
-                for(var i = 0; i < ca.length; i++) {
+                for (var i = 0; i < ca.length; i++) {
                     var c = ca[i];
                     while (c.charAt(0) == ' ') {
                         c = c.substring(1);
@@ -407,14 +413,12 @@
             let date = '';
             let cookie = getCookie("landed");
 
-            if(cookie === "")
-            {
+            if (cookie === "") {
                 date = new Date();
                 date.setDate(date.getDate() + 7);
                 document.cookie = "landed=" + date;
             }
-            else
-            {
+            else {
                 date = new Date(cookie);
             }
             console.log(date);
@@ -426,7 +430,6 @@
 
                 let distance = date - now;
 
-                // Time calculations for days, hours, minutes and seconds
                 $('#days').text(Math.floor(distance / (1000 * 60 * 60 * 24)));
                 $('#hours').text(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
                 $('#minutes').text(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
@@ -434,8 +437,7 @@
 
             });
 
-            $('.drag-box').on("dragover",function(e){
-                //e = e || event;
+            $('.drag-box').on("dragover", function (e) {
                 e.preventDefault();
                 e.stopPropagation();
                 e.dataTransfer = e.originalEvent.dataTransfer;
@@ -449,9 +451,8 @@
                 e.dataTransfer = e.originalEvent.dataTransfer;
 
                 if (e.dataTransfer.items) {
-                    // Use DataTransferItemList interface to access the file(s)
                     for (var i = 0; i < e.dataTransfer.items.length; i++) {
-                        // If dropped items aren't files, reject them
+
                         if (e.dataTransfer.items[i].kind === 'file') {
                             var file = e.dataTransfer.items[i].getAsFile();
                             console.log('... file[' + i + '].name = ' + file.name);
@@ -460,16 +461,14 @@
                         }
                     }
                 } else {
-                    // Use DataTransfer interface to access the file(s)
+
                     for (var i = 0; i < e.dataTransfer.files.length; i++) {
                         console.log('... file[' + i + '].name = ' + e.dataTransfer.files[i].name);
                     }
                 }
                 if (e.dataTransfer.items) {
-                    // Use DataTransferItemList interface to remove the drag data
                     e.dataTransfer.items.clear();
                 } else {
-                    // Use DataTransfer interface to remove the drag data
                     e.dataTransfer.clearData();
                 }
                 $(this).text('File Added Successfilly!')
@@ -484,6 +483,10 @@
 </script>
 
 <style scoped>
+    input {
+        color: #7B7A7B !important;
+    }
+
     #iframewebpage {
         background-color: #D98430;
         color: white;
@@ -582,18 +585,22 @@
         margin-bottom: 20px;
         line-height: 1;
     }
+
     .guarantee-title {
         font-weight: 700;
         font-size: 30px;
         color: #7B7A7B;
     }
+
     .guarantee-content {
         color: #7B7A7B;
     }
+
     .timer-title {
         color: #FFFFFF;
         font-size: 42px;
         text-align: center;
+        margin-top: 20px;
     }
 
     .long_text {
@@ -610,12 +617,14 @@
         max-width: 400px;
         text-align: center;
     }
+
     .cta:hover, .submit:hover {
         background-color: #E98555 !important;
-        -webkit-box-shadow: 2px 16px 36px -10px rgba(136,136,136,1);
-        -moz-box-shadow: 2px 16px 36px -10px rgba(136,136,136,1);
-        box-shadow: 2px 16px 36px -10px rgba(136,136,136,1);
+        -webkit-box-shadow: 2px 16px 36px -10px rgba(136, 136, 136, 1);
+        -moz-box-shadow: 2px 16px 36px -10px rgba(136, 136, 136, 1);
+        box-shadow: 2px 16px 36px -10px rgba(136, 136, 136, 1);
     }
+
     .cta:hover {
         text-decoration: none;
     }
@@ -717,6 +726,7 @@
     .fn, .ln {
         max-width: 45% !important;
     }
+
     .fn {
         margin-right: 35px;
     }
@@ -793,13 +803,16 @@
             float: left;
             margin-top: 50px;
         }
+
         .header-content {
             margin-bottom: 10px;
         }
+
         .procon-text {
             max-width: 80%;
             font-size: 14px !important;
         }
+
         .procon-text span {
             font-size: 18px !important;
         }
@@ -871,10 +884,12 @@
         .fn, .ln {
             max-width: 100% !important;
         }
+
         .fn {
             margin-right: 0;
             margin-bottom: 10px;
         }
+
         .filename {
             font-size: 17.5px;
         }
@@ -886,11 +901,12 @@
             margin: auto;
             margin-top: 50px;
         }
-        .footer p, .f-link
-        {
+
+        .footer p, .f-link {
             font-size: 12px;
             text-align: center;
         }
+
         .timer-title {
             text-align: center;
             display: block;
@@ -903,38 +919,46 @@
             padding-left: 5%;
             padding-right: 5%;
         }
+
         .fn, .ln {
             max-width: 100% !important;
         }
+
         .fn {
             margin-bottom: 10px;
         }
+
         .filename {
             font-size: 17.5px;
         }
+
         .footer {
             padding-bottom: 10px;
         }
-        .footer p, .footer-links
-        {
+
+        .footer p, .footer-links {
             display: block;
             float: none;
             margin: auto;
             text-align: center;
         }
+
         .footer-links {
             margin-top: 5px;
         }
+
         .timer-title {
             font-size: 28px;
             text-align: center;
             display: block;
             margin: auto;
         }
-        .timer-block #days,  .timer-block #hours, .timer-block #minutes, .timer-block #seconds {
+
+        .timer-block #days, .timer-block #hours, .timer-block #minutes, .timer-block #seconds {
             font-size: 22px;
         }
-        .timer-block #days + div,  .timer-block #hours + div, .timer-block #minutes + div, .timer-block #seconds + div {
+
+        .timer-block #days + div, .timer-block #hours + div, .timer-block #minutes + div, .timer-block #seconds + div {
             font-size: 15px;
         }
     }
