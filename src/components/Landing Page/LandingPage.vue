@@ -23,22 +23,24 @@
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
             <div class="col-md-6 col-xs-12" id="form">
-                <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
-                <p><strong>Where should we send your animation?*</strong></p>
-                <div class="row ml-1 mr-1 mb-2 mt-2">
-                    <input class="col-lg-6 col-xs-12 fn" type="text" name="fname" placeholder="First Name">
-                    <input class="col-lg-6 col-xs-12 ln" type="text" name="lname" placeholder="Last Name">
-                </div>
-                <div class="row ml-1 mr-1 mb-2 mt-2">
-                    <input class="col-12" type="email" placeholder="Email" id="stripeEmail" name="stripeEmail"
-                           style="width: 100%;">
-                </div>
-                <div class="row ml-1 mr-1 mb-2 mt-2">
-                    <input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">
-                </div>
-                <div class="row ml-1 mr-1 mb-2 mt-2">
-                    <input class="col-12" type="text" placeholder="Phone Number" style="width: 100%;">
-                </div>
+                <form id="hub-form" action="https://forms.hubspot.com/uploads/form/v2/4845111/99f503ab-866f-46c6-8469-dc19f0abf543" method="POST">
+                    <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
+                    <p><strong>Where should we send your animation?*</strong></p>
+                    <div class="row ml-1 mr-1 mb-2 mt-2">
+                        <input class="col-lg-6 col-xs-12 fn" type="text" name="firstname" placeholder="First Name">
+                        <input class="col-lg-6 col-xs-12 ln" type="text" name="lastname" placeholder="Last Name">
+                    </div>
+                    <div class="row ml-1 mr-1 mb-2 mt-2">
+                        <input class="col-12" type="email" placeholder="Email" id="email" name="email"
+                               style="width: 100%;">
+                    </div>
+                    <div class="row ml-1 mr-1 mb-2 mt-2">
+                        <input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">
+                    </div>
+                    <div class="row ml-1 mr-1 mb-2 mt-2">
+                        <input class="col-12" type="text" placeholder="Phone Number" id="phone" name="phone" style="width: 100%;">
+                    </div>
+                </form>
                 <p><strong style="font-size: 14px;">Upload your logo* </strong>
                     <span style="font-size: 10px;">(Vector file preferred - 25mb max file size)
              </span>
@@ -377,11 +379,10 @@
                 // Submit the form
                 axios.post('/charge', {
                     stripeToken: token.id,
-                    stripeEmail: 'test@test.com'
+                    stripeEmail: $('#email').val(),
                 }).then(function (res) {
-                    //window.location = 'https://mailchi.mp/vidsuade/logo_thankyou';
                     if (res.status === 200) {
-                        window.location = 'https://mailchi.mp/vidsuade/logo_thankyou';
+                        $('#hub-form').submit();
                     }
                 }).catch(function (err) {
                     console.log(err);
