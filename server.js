@@ -30,7 +30,7 @@ app.post('/charge-sale', function (req, res) {
 });
 
 app.post('/charge', function (req, res) {
-    let amount = 20000;
+    let amount = 19999;
     res.setHeader('Content-Type', 'application/json');
 
     stripe.customers.create({

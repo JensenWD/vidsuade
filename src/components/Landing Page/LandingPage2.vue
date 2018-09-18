@@ -31,7 +31,7 @@
                                style="width: 100%;">
                     </div>
                     <div class="row ml-1 mr-1 mb-2 mt-2">
-                        <input class="col-12" type="email" placeholder="Confirm Email" style="width: 100%;">
+                        <input class="col-12" type="email" placeholder="Confirm Email" id="cemail" style="width: 100%;">
                     </div>
                     <div class="row ml-1 mr-1 mb-2 mt-2">
                         <input class="col-12" type="text" placeholder="Phone Number" id="phone" name="phone" style="width: 100%;">
@@ -433,7 +433,7 @@
                     $('.submit').text('Sending...');
 
                     // Submit the form
-                    axios.post('/charge-sale', {
+                    axios.post('/charge', {
                         stripeToken: token.id,
                         stripeEmail: $('#email').val(),
                     }).then(function (res) {
