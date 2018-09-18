@@ -31,15 +31,10 @@
                 <span>Examples:</span>
               </div>
 
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
+              <div class="col-12 col-md-6 mt-2">
+                <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_74smcwh67y videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/74smcwh67y/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>              </div>
+              <div class="col-12 col-md-6 mt-2">
+                <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_370gwr6stb videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/370gwr6stb/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>              </div>
             </div>
           </div>
           <div class="modal-footer text-center border-0 justify-content-center">
@@ -81,15 +76,10 @@
                 <span>Examples:</span>
               </div>
 
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
+              <div class="col-12 col-md-6 mt-2">
+                <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_nwqp1wqkxy videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/nwqp1wqkxy/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>              </div>
+              <div class="col-12 col-md-6 mt-2">
+                <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_jd40dnlia5 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/jd40dnlia5/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>              </div>
             </div>
           </div>
           <div class="modal-footer text-center border-0 justify-content-center">
@@ -133,14 +123,10 @@
                 <span>Examples:</span>
               </div>
 
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
+              <div class="col-12 col-md-6 mt-2">
+                <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_mf2kheopm3 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/mf2kheopm3/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>              </div>
+              <div class="col-12 col-md-6 mt-2">
+                <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/1gsd7phy3v/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
               </div>
             </div>
           </div>
@@ -184,15 +170,8 @@
                 <span>Examples:</span>
               </div>
 
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
-              <div class="col-12 col-md-4 mt-2">
-                <iframe class="d-none d-md-inline" style="width: 210px !important; height: 130px !important;" width="400" height="200" src="https://www.youtube.com/embed/s7Zaw7e6pY4" frameborder="0"></iframe>
-              </div>
+              <div class="col-12 mt-2">
+                <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ms882hohb7 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/ms882hohb7/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>              </div>
             </div>
           </div>
           <div class="modal-footer text-center border-0 justify-content-center">
@@ -212,6 +191,34 @@
       $('.quote').click(function () {
         $('.modal').modal('hide');
       })
+
+      let socialMedia1 = document.createElement('script');
+      socialMedia1.setAttribute('src', 'https://fast.wistia.com/embed/medias/74smcwh67y.jsonp');
+      document.head.appendChild(socialMedia1);
+
+      let socialMedia2 = document.createElement('script');
+      socialMedia2.setAttribute('src', 'https://fast.wistia.com/embed/medias/370gwr6stb.jsonp');
+      document.head.appendChild(socialMedia2);
+
+      let salesProcess1 = document.createElement('script');
+      salesProcess1.setAttribute('src', 'https://fast.wistia.com/embed/medias/nwqp1wqkxy.jsonp');
+      document.head.appendChild(salesProcess1);
+
+      let salesProcess2 = document.createElement('script');
+      salesProcess2.setAttribute('src', 'https://fast.wistia.com/embed/medias/jd40dnlia5.jsonp');
+      document.head.appendChild(salesProcess2);
+
+      let testimonial1 = document.createElement('script');
+      testimonial1.setAttribute('src', 'https://fast.wistia.com/embed/medias/ms882hohb7.jsonp');
+      document.head.appendChild(testimonial1);
+
+      let explainer1 = document.createElement('script');
+      explainer1.setAttribute('src', 'https://fast.wistia.com/embed/medias/mf2kheopm3.jsonp');
+      document.head.appendChild(explainer1);
+
+      let explainer2 = document.createElement('script');
+      explainer2.setAttribute('src', 'https://fast.wistia.com/embed/medias/1gsd7phy3v.jsonp');
+      document.head.appendChild(explainer2);
     }
   }
 </script>

@@ -94,10 +94,12 @@
     background-image: url("./assets/home/Footer_CTA@2x.png")
     background-size: cover
 
-  iframe
+  iframe, .wistia_responsive_padding
     width: 100%
     max-width: 615px
     height: 340px
+    padding: 0rem !important
+    margin: 1.5rem auto
 
   @media(max-width: 767px)
     .fs-28
@@ -105,12 +107,12 @@
       line-height: 21px
 
   @media (max-width: 655px)
-    iframe
+    iframe, .wistia_responsive_padding
       height: 250px
       width: 450px
 
   @media (max-width: 545px)
-    iframe
+    iframe, .wistia_responsive_padding
       height: 160px
       width: 300px
 </style>
