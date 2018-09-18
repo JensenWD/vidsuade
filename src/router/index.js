@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HomePage from '@/components/HomePage'
 import WhyVideo from '@/components/WhyVideo'
 import AboutUs from '@/components/AboutUs'
+import LandingPage2 from '@/components/Landing Page/LandingPage2'
 import LandingPage from '@/components/Landing Page/LandingPage'
 import Pricing from '@/components/Pricing'
 import Contact from '@/components/Contact'
@@ -29,9 +30,14 @@ export default new Router({
             component: AboutUs
         },
         {
-            path: '/landing',
+            path: '/discount-logo-24680210',
             name: 'LandingPage',
             component: LandingPage
+        },
+        {
+            path: '/animatedlogo',
+            name: 'LandingPage2',
+            component: LandingPage2
         },
         {
             path: '/pricing',
