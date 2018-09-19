@@ -284,7 +284,8 @@
         name: "LandingPage",
         data() {
             return {
-                fileString: ''
+                fileString: '',
+                fileObj: ''
             }
         },
         mounted() {
@@ -425,10 +426,13 @@
 
                         if (e.dataTransfer.items[i].kind === 'file') {
                             var file = e.dataTransfer.items[i].getAsFile();
-                            console.log('... file[' + i + '].name = ' + file.name);
+
                             $('.filename').text(file.name);
+                            self.fileObj = file;
+                            console.log(file);
                             self.getFileUri(file);
                             $('#file').files = file;
+                            console.log($('#file').files);
                         }
                     }
                 } else {
@@ -472,13 +476,15 @@
                     $('.submit').attr('disabled', true).addClass('submitted');
                     $('.submit').text('Sending...');
                     // Submit the form
-                    axios.post('/charge/sale', {
+                    axios.post('/charge', {
                         stripeToken: token.id,
                         stripeEmail: $('#email').val(),
+                        amount: '4999'
                     }).then(function (res) {
+                        console.log(res.status);
                         if (res.status === 200) {
                             //send email
-                            self.sendEmail('sergio.roman45@gmail.com', self.fileString);
+                            self.sendEmail('sergio.roman45@gmail.com', self.fileString, self.fileObj);
                             $('#hub-form').submit();
                         }
                     }).catch(function (err) {
@@ -496,12 +502,13 @@
             browse() {
                 $('#browse-files').click();
             },
-            sendEmail(email, file) {
+            sendEmail(email, file, fileObj) {
                 axios.post('/send-email', {
                    email: email,
-                   file: file
+                   file: file,
+                   fileObj: fileObj
                 }).then(function (res) {
-                    console.log(res);
+                    console.log('email' + res.status);
                 });
             },
             getFileUri(file) {
