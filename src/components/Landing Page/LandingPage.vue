@@ -482,7 +482,7 @@
                             $('#hub-form').submit();
                         }
                     }).catch(function (err) {
-                        console.log(err);
+                        console.log(err.response);
                     });
                 }
                 else {

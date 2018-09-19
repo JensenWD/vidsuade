@@ -25,8 +25,7 @@ app.post('/charge-sale', function (req, res) {
             description: "Animate logo",
             currency: "usd",
             customer: customer.id
-        }))
-        .then(charge => res.redirect("/#/landing"));
+        }));
 });
 
 app.post('/charge', function (req, res) {
@@ -42,8 +41,7 @@ app.post('/charge', function (req, res) {
             description: "Animate Logo - Sale",
             currency: "usd",
             customer: customer.id
-        }))
-        .then(charge => res.redirect("/#/landing"));
+        }));
 });
 
 
