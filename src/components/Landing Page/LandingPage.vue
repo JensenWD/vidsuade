@@ -472,7 +472,7 @@
                     $('.submit').attr('disabled', true).addClass('submitted');
                     $('.submit').text('Sending...');
                     // Submit the form
-                    axios.post('/charge-sale', {
+                    axios.post('/sale', {
                         stripeToken: token.id,
                         stripeEmail: $('#email').val(),
                     }).then(function (res) {
@@ -482,7 +482,7 @@
                             $('#hub-form').submit();
                         }
                     }).catch(function (err) {
-                        console.log(err);
+                        console.log(err.response);
                     });
                 }
                 else {
