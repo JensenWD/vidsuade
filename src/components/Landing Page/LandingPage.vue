@@ -472,7 +472,7 @@
                     $('.submit').attr('disabled', true).addClass('submitted');
                     $('.submit').text('Sending...');
                     // Submit the form
-                    axios.post('/sale', {
+                    axios.post('/charge/sale', {
                         stripeToken: token.id,
                         stripeEmail: $('#email').val(),
                     }).then(function (res) {
