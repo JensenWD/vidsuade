@@ -12,7 +12,6 @@ app.use(require("body-parser").urlencoded({extended: false}));
 
 var port = process.env.PORT || 5000;
 
-
 app.post('/charge', function (req, res) {
     let amount = 19999;
     res.setHeader('Content-Type', 'application/json');
@@ -29,7 +28,7 @@ app.post('/charge', function (req, res) {
         }));
 });
 
-app.post('/charge/sale', function (req, res) {
+app.post('/sale', function (req, res) {
     let amount = 4999;
     res.setHeader('Content-Type', 'application/json');
 
