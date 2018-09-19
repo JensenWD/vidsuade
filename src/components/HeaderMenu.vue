@@ -19,8 +19,15 @@
                     <li class="nav-item">
                         <router-link class="nav-link mr-lg-4" to="/about-us">About us</router-link>
                     </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link mr-lg-4" to="/pricing">Pricing</router-link>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <router-link class="nav-link mr-lg-4" to="/services">Video Services</router-link>
+                            <router-link class="nav-link mr-lg-4" to="/animatedlogo">Logo animation</router-link>
+                            <router-link class="nav-link mr-lg-4" to="/pricing">Pricing</router-link>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link mr-lg-1" to="/contact">Contact us</router-link>
@@ -76,6 +83,11 @@
     .logo
       max-width: 150px
       width: 100%
+    .dropdown-menu
+      .nav-link
+        color: #004f75 !important
+        padding: .5rem .25rem
+        margin: 0 auto !important
 
   @media(max-width: 991px)
     .navbar

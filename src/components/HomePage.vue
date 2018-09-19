@@ -28,28 +28,28 @@
       </div>
 
       <div class="col-6 col-lg-3 col_section text-center">
-        <a href="#/" data-toggle="modal" data-target="#socialMediaModal" class="font-blue learn-btn">
-          <img src="../assets/home/Home_SocialMedia_Photo.png" class="img-fluid" alt="">
+        <router-link to="services#socialMedia" class="font-blue learn-btn">
+          <img src="../assets/home/Home_SocialMedia_Photo.png" class="img-fluid" alt="" style="width: 100%">
           <span>Social media videos</span>
-        </a>
+        </router-link>
       </div>
       <div class="col-6 col-lg-3 col_section text-center">
-        <a href="#/" data-toggle="modal" data-target="#salesProcessModal" class="font-blue learn-btn">
-          <img src="../assets/home/Home_Sales_Process_Photo.png" class="img-fluid" alt="">
+        <router-link to="services#salesProcess" class="font-blue learn-btn">
+          <img src="../assets/home/Home_Sales_Process_Photo.png" class="img-fluid" alt="" style="width: 100%">
           <span>Sales process videos</span>
-        </a>
+        </router-link>
       </div>
       <div class="col-6 col-lg-3 col_section text-center">
-        <a href="#/" data-toggle="modal" data-target="#explainerModal" class="font-blue learn-btn">
-          <img src="../assets/home/HomeExplainer_Photo.png" class="img-fluid" alt="">
+        <router-link to="services#explainer" class="font-blue learn-btn">
+          <img src="../assets/home/HomeExplainer_Photo.png" class="img-fluid" alt="" style="width: 100%">
           <span>Explainer videos</span>
-        </a>
+        </router-link>
       </div>
       <div class="col-6 col-lg-3 col_section text-center">
-        <a href="#/" data-toggle="modal" data-target="#testimonialModal" class="font-blue learn-btn">
-          <img src="../assets/home/Home_Customer_Test_Photo.png" class="img-fluid" alt="">
+        <router-link to="services#testimonial" class="font-blue learn-btn">
+          <img src="../assets/home/Home_Customer_Test_Photo.png" class="img-fluid" alt="" style="width: 100%">
           <span>Customer testimonials</span>
-        </a>
+        </router-link>
       </div>
     </div>
 

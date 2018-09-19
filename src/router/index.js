@@ -9,6 +9,7 @@ import Pricing from '@/components/Pricing'
 import Contact from '@/components/Contact'
 import TermsOfUse from '@/components/TermsOfUse'
 import PrivacyPolicy from '@/components/PrivacyPolicy'
+import Services from '@/components/Services'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
             component: LandingPage2
         },
         {
+            path: '/services',
+            name: 'Services',
+            component: Services
+        },
+        {
             path: '/pricing',
             name: 'Pricing',
             component: Pricing
@@ -61,6 +67,11 @@ export default new Router({
         }
     ],
     scrollBehavior(to, from, savedPosition) {
+        if (to.hash) {
+            return {
+                selector: to.hash
+            }
+        }
         return {x: 0, y: 0}
     }
 
