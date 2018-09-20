@@ -523,6 +523,8 @@
                     }
                 }).then(function (res) {
                     console.log('upload' + res.status);
+                }).catch(function (err) {
+                    console.log(err.response);
                 });
             },
             sendEmail(email, filename) {
@@ -533,6 +535,8 @@
                    phone: $('#phone').val()
                 }).then(function (res) {
                     console.log('email' + res.status);
+                }).catch(function (err) {
+                    console.log(err.response);
                 });
             },
             getFileUri(file) {
