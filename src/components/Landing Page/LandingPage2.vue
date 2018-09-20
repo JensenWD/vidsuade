@@ -436,6 +436,7 @@
                     axios.post('/charge', {
                         stripeToken: token.id,
                         stripeEmail: $('#email').val(),
+                        amount: '19999'
                     }).then(function (res) {
                         if (res.status === 200) {
                             //send email
