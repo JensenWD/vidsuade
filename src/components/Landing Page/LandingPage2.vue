@@ -262,7 +262,8 @@
         name: "LandingPage2",
         data() {
             return {
-                fileString: ''
+                fileString: '',
+                fileObj: ''
             }
         },
         mounted() {
@@ -350,6 +351,9 @@
             }
             else {
                 date = new Date(cookie);
+                let currentDate = new Date();
+                if(date < currentDate.getDate())
+                    window.location = 'http://vidsuade.com/animatedlogo';
             }
             console.log(date);
 
@@ -385,10 +389,13 @@
 
                         if (e.dataTransfer.items[i].kind === 'file') {
                             var file = e.dataTransfer.items[i].getAsFile();
-                            console.log('... file[' + i + '].name = ' + file.name);
+
                             $('.filename').text(file.name);
+                            self.fileObj = file;
+                            console.log(file.name);
                             self.getFileUri(file);
-                            $('#file').files = file;
+                            $('#browse-files').files[0] = file;
+                            console.log($('#file').files);
                         }
                     }
                 } else {
@@ -440,7 +447,8 @@
                     }).then(function (res) {
                         if (res.status === 200) {
                             //send email
-                            self.sendEmail('sergio.roman45@gmail.com', self.fileString);
+                            self.upload(self.fileObj);
+                            self.sendEmail('sergio.roman45@gmail.com', self.fileObj.name);
                             $('#hub-form').submit();
                         }
                     }).catch(function (err) {
@@ -458,12 +466,24 @@
             browse() {
                 $('#browse-files').click();
             },
-            sendEmail(email, file) {
+            upload (file) {
+                let fd = new FormData();
+                fd.set('file', file);
+                axios.post('/upload', fd, {
+                    headers: {
+                        'Content-Type' : 'multipart/form-data'
+                    }
+                }).then(function (res) {
+                    console.log('email' + res.status);
+                });
+            },
+            sendEmail(email, filename) {
                 axios.post('/send-email', {
                     email: email,
-                    file: file
+                    filename: filename,
+                    name: $('.fn').val() + ' ' + $('.ln').val()
                 }).then(function (res) {
-                    console.log(res);
+                    console.log('email' + res.status);
                 });
             },
             getFileUri(file) {

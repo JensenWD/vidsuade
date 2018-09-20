@@ -18,9 +18,17 @@
                 </button>
             </div>
 
-            <iframe class="col-8 d-none d-md-block video" width="560" height="415"
-                    src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"
-                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!--<iframe class="col-8 d-none d-md-block video" width="560" height="415"-->
+                    <!--src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"-->
+                    <!--frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+
+            <div class="wistia_responsive_padding col-8 d-md-block video" style="padding:56.25% 0 0 0;position:relative;">
+                <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                    <div class="wistia_embed wistia_async_jqxk160a5g videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;
+                    </div>
+                </div>
+            </div>
+
 
             <div class="col-md-6 col-xs-12" id="form">
                 <form id="hub-form" action="https://forms.hubspot.com/uploads/form/v2/4845111/99f503ab-866f-46c6-8469-dc19f0abf543" method="POST">
@@ -307,15 +315,21 @@
             s.async = true;
             $("body").append(s);
 
+            let w = document.createElement("script");
+            w.type = "text/javascript";
+            w.src = "https://fast.wistia.com/embed/medias/jqxk160a5g.jsonp";
+            w.async = true;
+            $("head").append(w);
+
+            let fw = document.createElement("script");
+            fw.type = "text/javascript";
+            fw.src = "https://fast.wistia.com/assets/external/E-v1.js";
+            fw.async = true;
+            $("head").append(fw);
+
 
             //hide nav && footer from landing page
             let url = window.location.toString();
-            // let style = {
-            //     base: {
-            //         border: '',
-            //         color: 'white'
-            //     }
-            // };
 
 
             // Create a Stripe client.
@@ -434,7 +448,7 @@
                             self.fileObj = file;
                             console.log(file.name);
                             self.getFileUri(file);
-                            $('#file').files = file;
+                            $('#browse-files').files[0] = file;
                             console.log($('#file').files);
                         }
                     }
@@ -846,7 +860,7 @@
     }
 
     .video {
-        position: absolute;
+        position: absolute !important;
         top: 29%;
         width: 600px;
         height: 321px;
