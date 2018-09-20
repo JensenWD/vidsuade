@@ -67,9 +67,9 @@ app.post('/send-email', function (req, res) {
 
     let message = {
         from: req.body.email,
-        to: 'sergio.roman45@gmail.com',
+        to: 'info@vidsuade.com',
         subject: 'Animated Logo Purchase',
-        text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email,
+        text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email + '\n' + 'Phone: ' + req.body.phone + '\n\n',
         hmtl: '<p>Testing email</p>',
         attachments: [
             {

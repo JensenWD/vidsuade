@@ -22,8 +22,8 @@
                     <!--src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"-->
                     <!--frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 
-            <div class="wistia_responsive_padding col-8 d-md-block video" style="padding:56.25% 0 0 0;position:relative;">
-                <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+            <div class="wistia_responsive_padding d-none col-8 d-md-block video">
+                <div class="wistia_responsive_wrapper" style="height:100%;left:0;top:0;width:100%;">
                     <div class="wistia_embed wistia_async_jqxk160a5g videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;
                     </div>
                 </div>
@@ -71,10 +71,10 @@
                         <!-- Used to display form errors. -->
                         <div style="margin: auto;" class="hidden mt-3 alert alert-danger" id="card-errors" role="alert"></div>
                     </div>
-
-                    <button class="submit pt-1 pb-1 text-center mt-4">Submit Payment</button>
+                    <div class="mt-3 text-center"><span style="font-size: 24px;"><strong>Total: $49.99</strong></span></div>
+                    <button class="submit pt-1 pb-1 text-center mt-3">Submit Payment</button>
                 </form>
-                <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link>
+                <span class="d-block mt-3 pb-3 text-center" style="color: #888788;font-size: 12px;">By clicking above, you agree to our <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link></span>
             </div>
 
             <div class="col-md-6 col-xs-12 what_you_get">
@@ -175,8 +175,9 @@
                     <br><br>
                 <div class="looping-gif">
                     <div style="">
-                        <iframe src="https://giphy.com/embed/9ryMxorWGBVAdmOrF3" width="100%" height="100%"
-                                frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <!--<iframe src="https://giphy.com/embed/9ryMxorWGBVAdmOrF3" width="100%" height="100%"-->
+                                <!--frameBorder="0" class="giphy-embed" allowFullScreen></iframe>-->
+                        <iframe src="https://giphy.com/embed/9ryMxorWGBVAdmOrF3" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                     </div>
                 </div>
                 <br>
@@ -300,7 +301,7 @@
             let self = this;
 
             $("#iframewebpage").click(function () {
-                $(this).replaceWith("<iframe class='col-12 d-block d-md-none' src=" + $(this).data('src') + "></iframe>");
+                $(this).replaceWith("<div class='wistia_responsive_padding col-12 d-md-block video' style='padding:56.25% 0 0 0;position:relative;'> <div class='wistia_responsive_wrapper' style='height:100%;left:0;position:absolute;top:0;width:100%;'> <div class='wistia_embed wistia_async_jqxk160a5g videoFoam=true' style='height:100%;position:relative;width:100%'>&nbsp; </div> </div> </div>");
                 $("iframe").attr({
                     height: "500",
                     allowfullscreen: "true",
@@ -314,19 +315,6 @@
             s.src = "https://cdn.ywxi.net/js/1.js";
             s.async = true;
             $("body").append(s);
-
-            let w = document.createElement("script");
-            w.type = "text/javascript";
-            w.src = "https://fast.wistia.com/embed/medias/jqxk160a5g.jsonp";
-            w.async = true;
-            $("head").append(w);
-
-            let fw = document.createElement("script");
-            fw.type = "text/javascript";
-            fw.src = "https://fast.wistia.com/assets/external/E-v1.js";
-            fw.async = true;
-            $("head").append(fw);
-
 
             //hide nav && footer from landing page
             let url = window.location.toString();
@@ -425,6 +413,11 @@
 
             });
 
+            $('#browse-files').on('change', function () {
+               self.fileObj = this.files[0];
+               $('.filename').text(self.fileObj.name);
+            });
+
             $('.drag-box').on("dragover", function (e) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -502,7 +495,7 @@
                         if (res.status === 200) {
                             //send email
                             self.upload(self.fileObj);
-                            self.sendEmail('sergio.roman45@gmail.com', self.fileObj.name);
+                            self.sendEmail($('#email').val(), self.fileObj.name);
                             $('#hub-form').submit();
                         }
                     }).catch(function (err) {
@@ -535,7 +528,8 @@
                 axios.post('/send-email', {
                    email: email,
                    filename: filename,
-                   name: $('.fn').val() + ' ' + $('.ln').val()
+                   name: $('.fn').val() + ' ' + $('.ln').val(),
+                   phone: $('#phone').val()
                 }).then(function (res) {
                     console.log('email' + res.status);
                 });
@@ -568,10 +562,20 @@
         color: #7B7A7B !important;
     }
 
+    .title {
+        line-height: initial !important;
+    }
+
     #iframewebpage {
         background-color: #D98430;
         color: white;
         padding: 0.35rem 1.2rem;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 407px;
+        height: 245px;
     }
 
     .hidden {
@@ -675,6 +679,7 @@
         text-align: center;
         margin-left: 15px;
         margin-top: 20px;
+        padding: 5px;
         margin-bottom: 20px;
         line-height: 1;
     }
@@ -808,7 +813,6 @@
         color: #888788;
         font-size: 12px;
         text-decoration: underline;
-        display: block;
         margin: auto;
     }
 
@@ -861,7 +865,7 @@
 
     .video {
         position: absolute !important;
-        top: 29%;
+        top: 32%;
         width: 600px;
         height: 321px;
     }
@@ -912,7 +916,7 @@
         }
 
         .video {
-            position: initial;
+            position: initial !important;
             display: block;
             margin: auto;
             height: 302px;
