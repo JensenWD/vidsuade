@@ -497,7 +497,7 @@
                             //send email
                             self.upload(self.fileObj);
                             self.sendEmail($('#email').val(), self.fileObj.name);
-                            $('#hub-form').submit();
+                            //$('#hub-form').submit();
                         }
                     }).catch(function (err) {
                         console.log(err.response);
