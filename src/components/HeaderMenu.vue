@@ -62,6 +62,11 @@
 </script>
 
 <style lang="sass" scoped>
+  ul.nav
+    li.dropdown:hover
+      > .dropdown-menu
+        display: block
+
   .bg-color
     background: #004f75 !important
 
@@ -103,4 +108,8 @@
     .bg-color
       .nav-item, .nav-link
         color: white !important
+    ul.nav
+      li.dropdown:hover
+        > .dropdown-menu
+          display: block
 </style>

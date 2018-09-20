@@ -26,7 +26,7 @@
 
     <div class="row pb-5 pt-5 grey-bg">
       <div class="col-12 text-center">
-        <h3 class="m-0 helvetica font-weight-regular" style="font-size: 3rem">Types of videos</h3>
+        <h3 class="m-0" style="font-size: 3rem">Types of videos</h3>
       </div>
     </div>
 
@@ -47,7 +47,7 @@
 
         <div class="col-12">
           <div class="row justify-content-center mt-4 mb-4">
-            <span class="fs-28">Examples:</span>
+            <p class="font-weight-bold">Examples:</p>
           </div>
           <div class="row">
             <div class="col-12 col-md-6">
@@ -80,7 +80,7 @@
 
           <div class="col-12">
             <div class="row justify-content-center mt-4 mb-4">
-              <span class="fs-28">Examples:</span>
+              <p class="font-weight-bold">Examples:</p>
             </div>
             <div class="row">
               <div class="col-12 col-md-6">
@@ -100,7 +100,7 @@
         <div id="explainer" class="jumpTo"></div>
         <div class="row">
           <div class="col-12 col-lg-8 offset-lg-2">
-            <h4 class="font-blue helvetica text-center mb-4">Explainer</h4>
+            <h4 class="font-blue helvetica text-center mb-4">Explainer videos</h4>
             <p>If you don’t know where to start when thinking about making a video, explainer
               videos is where we recommend you start. Explainer videos are the most important
               video your business can have and it’s also one of the videos that can have the most
@@ -112,7 +112,7 @@
 
           <div class="col-12">
             <div class="row justify-content-center mt-4 mb-4">
-              <span class="fs-28">Examples:</span>
+              <p class="font-weight-bold">Examples:</p>
             </div>
             <div class="row">
               <div class="col-12 col-md-6">
@@ -144,7 +144,7 @@
 
           <div class="col-12">
             <div class="row justify-content-center mt-4 mb-4">
-              <span class="fs-28">Examples:</span>
+              <p class="font-weight-bold">Example:</p>
             </div>
             <div class="row">
               <div class="col-12">

@@ -11,7 +11,7 @@
 
     <div class="row pb-5 pt-5 font-white blue-bg">
       <div class="col-12 text-center">
-        <h3 class="m-0" style="font-size: 3rem">7 reasons why video is effective</h3>
+        <h3 class="m-0" style="font-size: 3rem">7 reasons why video works</h3>
       </div>
     </div>
 

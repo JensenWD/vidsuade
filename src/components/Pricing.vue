@@ -20,9 +20,7 @@
                   <span class="price font-grey">$500-$1k</span>
                 </div>
                 <router-link to="/contact"><button class="btn font-white">Get my quote</button></router-link>
-                <p class="font-grey">Showcase your brand in a creative way. This is the best to create engagement on
-                  social media
-                  posts.</p>
+                <p class="font-grey">Showcase your brand in a creative way. This is the best way to create engagement on social media.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
                 <ul class="font-grey text-left m-0 pl-2">
                   <li>(3) 10-30 second videos</li>
@@ -177,26 +175,26 @@
             </div>
           </div>
 
-          <!--<div class="card">-->
-            <!--<div class="card-header" role="tab" id="section3">-->
-              <!--<h5 class="mb-0">-->
-                <!--<a data-toggle="collapse" data-parent="#faq" href="#section3Content" aria-expanded="true"-->
-                   <!--aria-controls="section3Content">-->
-                  <!--<div class="blue-btn"><span>+</span></div>-->
-                  <!--Can I just create my own videos?-->
-                <!--</a>-->
-              <!--</h5>-->
-            <!--</div>-->
-            <!--<div id="section3Content" class="collapse in" role="tabpanel" aria-labelledby="section3">-->
-              <!--<div class="card-block">-->
-                <!--<p> Of course! We actually encourage you to try and create your own videos. We still recommend hiring-->
-                  <!--video marketers like us who are experienced at producing ROI-driven videos. We are seasoned at-->
-                  <!--persuading audiences through video, a term we like to call "Vidsuading".</p>-->
+          <div class="card">
+            <div class="card-header" role="tab" id="section3">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" data-parent="#faq" href="#section3Content" aria-expanded="true"
+                   aria-controls="section3Content">
+                  <div class="blue-btn"><span>+</span></div>
+                  Can I just create my own videos?
+                </a>
+              </h5>
+            </div>
+            <div id="section3Content" class="collapse in" role="tabpanel" aria-labelledby="section3">
+              <div class="card-block">
+                <p> Of course! We actually encourage you to try and create your own videos. We still recommend hiring
+                  video marketers like us who are experienced at producing ROI-driven videos. We are seasoned at
+                  persuading audiences through video, a term we like to call "Vidsuading".</p>
               <!--<p>But we get it. Not all businesses have the budget to have us create all of their videos, so that's why we created a free guide on how businesses can create their own videos on a shoe-string budget called "How to create professional quality videos with less than $250 even if you don't have any equipement or space". We highly recommend checking it out. You can download our guide for FREE by-->
                 <!--<a class="font-orange text-underline" href="">clicking here.</a></p>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
+              </div>
+            </div>
+          </div>
 
           <div class="card">
             <div class="card-header" role="tab" id="section4">

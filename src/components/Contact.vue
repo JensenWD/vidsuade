@@ -11,23 +11,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mb-5 mt-4">
-                        <form action="https://vidsuade.us19.list-manage.com/subscribe/post?u=7d806f4aca6ff21bfdac2d34e&amp;id=e14deaa743"
-                              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                              class="bg-white p-5 font-grey" target="_blank">
+                        <form action="https://forms.hubspot.com/uploads/form/v2/4845111/73f81894-f196-4812-a1b7-c57845dd123f"
+                              method="post" class="bg-white p-5 font-grey">
 
                             <div class="row">
                                 <div class="col-6 p-1">
                                     <div class="form-group">
-                                        <input type="text" value="" required name="FNAME" class="form-control"
-                                               placeholder="First name"
-                                               id="mce-FNAME">
+                                        <input type="text" value="" required name="firstname" class="form-control"
+                                               placeholder="First name">
                                     </div>
                                 </div>
                                 <div class="col-6 p-1">
                                     <div class="form-group">
-                                        <input type="text" value="" required name="LNAME" class="form-control"
-                                               placeholder="Last name"
-                                               id="mce-LNAME">
+                                        <input type="text" value="" required name="lastname" class="form-control"
+                                               placeholder="Last name">
                                     </div>
                                 </div>
                             </div>
@@ -35,21 +32,44 @@
                             <div class="row">
                                 <div class="col-6 p-1">
                                     <div class="form-group">
-                                        <input type="text" value="" name="MMERGE5" class="form-control"
-                                               placeholder="Company"
-                                               id="mce-MMERGE5">
+                                        <input type="text" value="" name="company" class="form-control"
+                                               placeholder="Company">
                                     </div>
                                 </div>
-                                <div class="col-6 p-1">
+                              <div class="col-6 p-1">
+                                <div class="form-group">
+                                  <input type="text" name="phone" placeholder="Phone number" class="form-control"
+                                         value="">
+                                </div>
+                              </div>
+                                <!--<div class="col-6 p-1">-->
+                                    <!--<div class="form-group">-->
+                                        <!--<select name="MMERGE7" class="form-control" id="mce-MMERGE7">-->
+                                            <!--<option selected disabled value="">Interested in:</option>-->
+                                            <!--<option value="Social media">Social media</option>-->
+                                            <!--<option value="Sales process">Sales process</option>-->
+                                            <!--<option value="Testimonial">Testimonial</option>-->
+                                            <!--<option value="Explainer">Explainer</option>-->
+                                            <!--<option value="Other">Other</option>-->
+                                        <!--</select>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            </div>
+
+                            <!--<div class="row">-->
+                                <!--<div class="col-12 p-1">-->
+                                    <!--<div class="form-group">-->
+                                        <!--<input type="text" name="PHONE" placeholder="Phone number" class="form-control"-->
+                                               <!--value="" id="mce-PHONE">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <div class="row">
+                                <div class="col-12 p-1">
                                     <div class="form-group">
-                                        <select name="MMERGE7" class="form-control" id="mce-MMERGE7">
-                                            <option selected disabled value="">Interested in:</option>
-                                            <option value="Social media">Social media</option>
-                                            <option value="Sales process">Sales process</option>
-                                            <option value="Testimonial">Testimonial</option>
-                                            <option value="Explainer">Explainer</option>
-                                            <option value="Other">Other</option>
-                                        </select>
+                                        <input type="email" value="" required name="email" class="required form-control"
+                                               placeholder="Email">
                                     </div>
                                 </div>
                             </div>
@@ -57,27 +77,7 @@
                             <div class="row">
                                 <div class="col-12 p-1">
                                     <div class="form-group">
-                                        <input type="text" name="PHONE" placeholder="Phone number" class="form-control"
-                                               value="" id="mce-PHONE">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12 p-1">
-                                    <div class="form-group">
-                                        <input type="email" value="" required name="EMAIL" class="required form-control"
-                                               placeholder="Email"
-                                               id="mce-EMAIL">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12 p-1">
-                                    <div class="form-group">
-                        <textarea type="text" rows="5" value="" name="MMERGE6" required class="form-control" placeholder="Message"
-                                  id="mce-MMERGE6"></textarea>
+                                  <textarea type="text" rows="5" value="" name="message" required class="form-control" placeholder="Message"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -93,17 +93,9 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div id="mce-responses" class="clear">
-                                        <div class="response" id="mce-error-response" style="display:none"></div>
-                                        <div class="response" id="mce-success-response" style="display:none"></div>
-                                    </div>
                                 </div>
                             </div>
 
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                <input type="text" name="b_7d806f4aca6ff21bfdac2d34e_e14deaa743" tabindex="-1" value="">
-                            </div>
                             <div class="col-12">
                                 <button type="submit"
                                         class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-white helvetica submit font-weight-regular">Send</button>

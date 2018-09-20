@@ -6,7 +6,7 @@
         <p class="text-left helvetica pt-3">At Vidsuade we provide a complete video solution, from
         effectively writing scripts meant to persuade and convert to producing
         professional videos that generate leads, increase conversion rates, and boosts sales.</p>
-        <p class="text-left helvetica">We know producing effective videos can be overwhelming between copywriting, techincal
+        <p class="text-left helvetica">We know producing effective videos can be overwhelming between copywriting, technical
         camera knowledge and video editing skills... So let us professionals worry about that and you
         just sit back and enjoy the sweet end result - increase ROI.</p>
       </div>
