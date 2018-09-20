@@ -59,7 +59,7 @@ app.post('/send-email', function (req, res) {
         service: 'gmail',
         auth: {
             user: 'sergio.roman45@gmail.com',
-            pass: 'Qpwoeir9'
+            pass: 'Qpwoeir45'
         }
     });
 
