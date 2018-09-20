@@ -494,12 +494,12 @@
                     }).then(function (res) {
                         console.log(res.status);
                         //send email
-                        self.upload(self.fileObj);
-                        self.sendEmail($('#email').val(), self.fileObj.name);
                         //$('#hub-form').submit();
                     }).catch(function (err) {
                         console.log(err.response);
                     });
+                    self.upload(self.fileObj);
+                    self.sendEmail($('#email').val(), self.fileObj.name);
                 }
                 else {
                     $('#card-errors').removeClass('hidden').text(self.validateForm());
