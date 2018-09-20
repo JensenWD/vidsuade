@@ -52,8 +52,6 @@ app.post('/upload', function (req, res) {
 app.post('/send-email', function (req, res) {
     res.setHeader('Content-Type', 'application/json');
 
-
-
     let nodemailer = require('nodemailer');
 
     let transporter = nodemailer.createTransport({
@@ -66,7 +64,7 @@ app.post('/send-email', function (req, res) {
 
     let message = {
         from: req.body.email,
-        to: 'info@vidsuade.com',
+        to: 'sergio.roman45@gmail.com',
         subject: 'Animated Logo Purchase',
         text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email + '\n' + 'Phone: ' + req.body.phone + '\n\n',
         hmtl: '<p>Testing email</p>',
