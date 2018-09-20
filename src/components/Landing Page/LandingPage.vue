@@ -391,6 +391,9 @@
             }
             else {
                 date = new Date(cookie);
+                let currentDate = new Date();
+                if(date < currentDate.getDate())
+                    window.location = 'http://vidsuade.com/animatedlogo';
             }
             console.log(date);
 
@@ -429,7 +432,7 @@
 
                             $('.filename').text(file.name);
                             self.fileObj = file;
-                            console.log(file);
+                            console.log(file.name);
                             self.getFileUri(file);
                             $('#file').files = file;
                             console.log($('#file').files);
@@ -484,7 +487,8 @@
                         console.log(res.status);
                         if (res.status === 200) {
                             //send email
-                            self.sendEmail('sergio.roman45@gmail.com', self.fileString, self.fileObj);
+                            self.upload(self.fileObj);
+                            self.sendEmail('sergio.roman45@gmail.com', self.fileObj.name);
                             $('#hub-form').submit();
                         }
                     }).catch(function (err) {
@@ -502,11 +506,22 @@
             browse() {
                 $('#browse-files').click();
             },
-            sendEmail(email, file, fileObj) {
+            upload (file) {
+                let fd = new FormData();
+                fd.set('file', file);
+                axios.post('/upload', fd, {
+                    headers: {
+                        'Content-Type' : 'multipart/form-data'
+                    }
+                }).then(function (res) {
+                    console.log('email' + res.status);
+                });
+            },
+            sendEmail(email, filename) {
                 axios.post('/send-email', {
                    email: email,
-                   file: file,
-                   fileObj: fileObj
+                   filename: filename,
+                   name: $('.fn').val() + ' ' + $('.ln').val()
                 }).then(function (res) {
                     console.log('email' + res.status);
                 });

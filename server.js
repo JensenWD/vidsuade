@@ -2,7 +2,19 @@ var express = require('express');
 var path = require('path');
 var serveStatic = require('serve-static');
 var bodyParser = require('body-parser');
+var multer = require('multer');
 const stripe = require("stripe")("sk_test_x6IdvtCY7o6gtBc3Txie41YE");
+
+var storage = multer.diskStorage({
+    destination: function (req, file, callback) {
+        callback(null, 'src/uploads');
+    },
+    filename: function (req, file, callback) {
+        callback(null, file.originalname);
+    }
+});
+
+var upload = multer({storage: storage}).single('file');
 
 app = express();
 app.use(bodyParser.urlencoded({extended: true}));
@@ -29,9 +41,19 @@ app.post('/charge', function (req, res) {
     res.send('200');
 });
 
+app.post('/upload', function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    upload(req, res, function (err) {
+        if (err)
+            console.log(err);
+    });
+});
+
 
 app.post('/send-email', function (req, res) {
     res.setHeader('Content-Type', 'application/json');
+
+
 
     let nodemailer = require('nodemailer');
 
@@ -44,14 +66,15 @@ app.post('/send-email', function (req, res) {
     });
 
     let message = {
-        from: 'sergio.roman45@gmail.com',
+        from: req.body.email,
         to: 'sergio.roman45@gmail.com',
-        subject: 'Test',
+        subject: 'Animated Logo Purchase',
+        text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email,
         hmtl: '<p>Testing email</p>',
         attachments: [
             {
-                filename: 'image.png',
-                path: req.body.file
+                filename: req.body.filename,
+                path: 'src/uploads/' + req.body.filename
             }
         ]
     };
@@ -64,5 +87,7 @@ app.post('/send-email', function (req, res) {
     });
 
 });
+
+
 
 app.listen(port);
