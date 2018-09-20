@@ -493,12 +493,10 @@
                         amount: '4999'
                     }).then(function (res) {
                         console.log(res.status);
-                        if (res.status === 200) {
-                            //send email
-                            self.upload(self.fileObj);
-                            self.sendEmail($('#email').val(), self.fileObj.name);
-                            //$('#hub-form').submit();
-                        }
+                        //send email
+                        self.upload(self.fileObj);
+                        self.sendEmail($('#email').val(), self.fileObj.name);
+                        //$('#hub-form').submit();
                     }).catch(function (err) {
                         console.log(err.response);
                     });

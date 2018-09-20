@@ -47,6 +47,7 @@ app.post('/upload', function (req, res) {
             res.send(err);
     });
     res.send('OK');
+    res.end();
 });
 
 
@@ -89,6 +90,8 @@ app.post('/send-email', function (req, res) {
             res.send('OK');
         }
     });
+
+    res.end();
 
 
 });
