@@ -522,7 +522,7 @@
                         'Content-Type' : 'multipart/form-data'
                     }
                 }).then(function (res) {
-                    console.log('email' + res.status);
+                    console.log('upload' + res.status);
                 });
             },
             sendEmail(email, filename) {

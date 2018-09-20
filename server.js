@@ -79,7 +79,10 @@ app.post('/send-email', function (req, res) {
 
     transporter.sendMail(message, function (err, info) {
         if (err)
+        {
             console.log(err);
+            res.send(err);
+        }
         else
         {
             console.log(info);
