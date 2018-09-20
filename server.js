@@ -44,7 +44,7 @@ app.post('/upload', function (req, res) {
     res.setHeader('Content-Type', 'application/json');
     upload(req, res, function (err) {
         if (err)
-            console.log(err);
+            res.send(err);
     });
     res.send('OK');
 });
