@@ -46,6 +46,7 @@ app.post('/upload', function (req, res) {
         if (err)
             console.log(err);
     });
+    res.send('OK');
 });
 
 
