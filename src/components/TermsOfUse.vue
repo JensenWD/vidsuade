@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container mt-5">
+    <div class="container pt-5">
       <div class="row mt-5">
         <div class="col-12 text-center pt-5 mb-4">
           <h1>Terms of use</h1>

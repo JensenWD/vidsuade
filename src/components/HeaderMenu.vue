@@ -40,16 +40,22 @@
 
 <script>
     export default {
-        name: "HeaderMenu",
-        mounted() {
-            $(document).scroll(function () {
-                let nav = $(".navbar");
-                if ($(window).scrollTop() === 0) {
-                    if ((window.location.href.indexOf("privacy-policy") > -1) || (window.location.href.indexOf("terms") > -1)) {
-                        //nav.removeClass('bg-transparent');
-                        nav.addClass('bg-color');
-                    } else {
-                        nav.removeClass('bg-color');
+      name: "HeaderMenu",
+      mounted() {
+        // $('.nav-link').click(function () {
+        //   if ($('.navbar-toggler[aria-expanded]').attr('aria-expanded')) {
+        //       $('.navbar-toggler').click();
+        //   }
+        // });
+
+        $(document).scroll(function () {
+          let nav = $(".navbar");
+          if ($(window).scrollTop() === 0) {
+            if ((window.location.href.indexOf("privacy-policy") > -1) || (window.location.href.indexOf("terms") > -1)) {
+              //nav.removeClass('bg-transparent');
+              nav.addClass('bg-color');
+            } else {
+              nav.removeClass('bg-color');
                         //nav.addClass('bg-transparent');
                     }
                 } else {
