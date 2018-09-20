@@ -81,8 +81,12 @@ app.post('/send-email', function (req, res) {
         if (err)
             console.log(err);
         else
+        {
             console.log(info);
+            res.send('OK');
+        }
     });
+
 
 });
 
