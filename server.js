@@ -54,42 +54,43 @@ app.post('/upload', function (req, res) {
 app.post('/send-email', function (req, res) {
     res.setHeader('Content-Type', 'application/json');
 
-    let nodemailer = require('nodemailer');
-
-    let transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: 'sergio.roman45@gmail.com',
-            pass: 'Qpwoeir45'
-        }
-    });
-
-    let message = {
-        from: req.body.email,
-        to: 'sergio.roman45@gmail.com',
-        subject: 'Animated Logo Purchase',
-        text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email + '\n' + 'Phone: ' + req.body.phone + '\n\n',
-        hmtl: '<p>Testing email</p>',
-        attachments: [
-            {
-                filename: req.body.filename,
-                path: 'src/uploads/' + req.body.filename
-            }
-        ]
-    };
-
-    transporter.sendMail(message, function (err, info) {
-        if (err)
-        {
-            console.log(err);
-            res.send(err);
-        }
-        else
-        {
-            console.log(info);
-            res.send('OK');
-        }
-    });
+    // let nodemailer = require('nodemailer');
+    //
+    // let transporter = nodemailer.createTransport({
+    //     service: 'gmail',
+    //     auth: {
+    //         user: 'sergio.roman45@gmail.com',
+    //         pass: 'Qpwoeir45'
+    //     }
+    // });
+    //
+    // let message = {
+    //     from: req.body.email,
+    //     to: 'sergio.roman45@gmail.com',
+    //     subject: 'Animated Logo Purchase',
+    //     text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email + '\n' + 'Phone: ' + req.body.phone + '\n\n',
+    //     hmtl: '<p>Testing email</p>',
+    //     attachments: [
+    //         {
+    //             filename: req.body.filename,
+    //             path: 'src/uploads/' + req.body.filename
+    //         }
+    //     ]
+    // };
+    //
+    // transporter.sendMail(message, function (err, info) {
+    //     if (err)
+    //     {
+    //         console.log(err);
+    //         res.send(err);
+    //     }
+    //     else
+    //     {
+    //         console.log(info);
+    //         res.send('OK');
+    //     }
+    // });
+    res.send('ok');
 
     res.end();
 

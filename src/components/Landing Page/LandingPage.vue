@@ -487,7 +487,7 @@
                     $('.submit').text('Sending...');
                     // Submit the form
                     self.sendEmail($('#email').val(), self.fileObj.name);
-                    
+
                     axios.post('/charge', {
                         stripeToken: token.id,
                         stripeEmail: $('#email').val(),
