@@ -499,7 +499,7 @@
                     // }).catch(function (err) {
                     //     console.log(err.response);
                     // });
-                    self.upload(self.fileObj);
+                    // self.upload(self.fileObj);
 
                 }
                 else {
