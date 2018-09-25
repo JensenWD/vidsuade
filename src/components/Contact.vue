@@ -11,8 +11,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mb-5 mt-4">
-                        <form action="https://forms.hubspot.com/uploads/form/v2/4845111/73f81894-f196-4812-a1b7-c57845dd123f"
+                        <form @submit="formResponse"
+                              id="contact" action="https://forms.hubspot.com/uploads/form/v2/4845111/73f81894-f196-4812-a1b7-c57845dd123f"
                               method="post" class="bg-white p-5 font-grey">
+
+                            <div id="thanksResponse" class="text-center d-none w-100">
+                                <p>Thanks for filling out our form!</p>
+                                <p>We will get back to you as soon as we can.</p>
+                            </div>
 
                             <div class="row">
                                 <div class="col-6 p-1">
@@ -56,15 +62,6 @@
                                 <!--</div>-->
                             </div>
 
-                            <!--<div class="row">-->
-                                <!--<div class="col-12 p-1">-->
-                                    <!--<div class="form-group">-->
-                                        <!--<input type="text" name="PHONE" placeholder="Phone number" class="form-control"-->
-                                               <!--value="" id="mce-PHONE">-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
                             <div class="row">
                                 <div class="col-12 p-1">
                                     <div class="form-group">
@@ -96,9 +93,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-12">
-                                <button type="submit"
-                                        class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-white helvetica submit font-weight-regular">Send</button>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button type="submit"
+                                            class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-white helvetica submit font-weight-regular">Send</button>
+                                </div>
                             </div>
 
                             <div class="row">
@@ -117,7 +116,16 @@
 
 <script>
     export default {
-        name: "Contact"
+        name: "Contact",
+        methods: {
+            formResponse() {
+                $('#contact .row').each(function () {
+                    $(this).addClass('d-none');
+                });
+
+                $('#thanksResponse').removeClass('d-none');
+            }
+        }
     }
 </script>
 
@@ -125,6 +133,7 @@
     .hero_bg
         background-image: url("../assets/contact/Contact_US_BG.png")
         background-size: cover
+        min-height: 100vh
     .submit
         background: #E98000
         border-radius: 5px
