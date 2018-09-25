@@ -488,17 +488,17 @@
                     // Submit the form
                     self.sendEmail($('#email').val(), self.fileObj.name);
 
-                    axios.post('/charge', {
-                        stripeToken: token.id,
-                        stripeEmail: $('#email').val(),
-                        amount: '4999'
-                    }).then(function (res) {
-                        console.log(res.status);
-                        //send email
-                        //$('#hub-form').submit();
-                    }).catch(function (err) {
-                        console.log(err.response);
-                    });
+                    // axios.post('/charge', {
+                    //     stripeToken: token.id,
+                    //     stripeEmail: $('#email').val(),
+                    //     amount: '4999'
+                    // }).then(function (res) {
+                    //     console.log(res.status);
+                    //     //send email
+                    //     //$('#hub-form').submit();
+                    // }).catch(function (err) {
+                    //     console.log(err.response);
+                    // });
                     self.upload(self.fileObj);
 
                 }
