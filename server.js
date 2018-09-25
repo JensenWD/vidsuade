@@ -24,7 +24,52 @@ app.use(require("body-parser").urlencoded({extended: false}));
 
 var port = process.env.PORT || 5000;
 
-app.post('/charge', function (req, res) {
+app.post('/send-email', function (req, res, next) {
+    //res.setHeader('Content-Type', 'application/json');
+
+    // let nodemailer = require('nodemailer');
+    //
+    // let transporter = nodemailer.createTransport({
+    //     service: 'gmail',
+    //     auth: {
+    //         user: 'sergio.roman45@gmail.com',
+    //         pass: 'Qpwoeir45'
+    //     }
+    // });
+    //
+    // let message = {
+    //     from: req.body.email,
+    //     to: 'sergio.roman45@gmail.com',
+    //     subject: 'Animated Logo Purchase',
+    //     text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email + '\n' + 'Phone: ' + req.body.phone + '\n\n',
+    //     hmtl: '<p>Testing email</p>',
+    //     attachments: [
+    //         {
+    //             filename: req.body.filename,
+    //             path: 'src/uploads/' + req.body.filename
+    //         }
+    //     ]
+    // };
+    //
+    // transporter.sendMail(message, function (err, info) {
+    //     if (err)
+    //     {
+    //         console.log(err);
+    //         res.send(err);
+    //     }
+    //     else
+    //     {
+    //         console.log(info);
+    //         res.send('OK');
+    //     }
+    // });
+    res.send('ok');
+
+    //res.end();
+    next()
+});
+
+app.post('/charge', function (req, res, next) {
     res.setHeader('Content-Type', 'application/json');
     let amount = req.body.amount;
     stripe.customers.create({
@@ -38,64 +83,19 @@ app.post('/charge', function (req, res) {
             customer: customer.id
         }));
     res.send('200');
+    next()
 });
 
-app.post('/upload', function (req, res) {
+app.post('/upload', function (req, res, next) {
     res.setHeader('Content-Type', 'application/json');
     upload(req, res, function (err) {
         if (err)
             res.send(err);
     });
     res.send('OK');
-    res.end();
+    //res.end();
+    next()
 });
-
-
-app.post('/send-email', function (req, res) {
-    res.setHeader('Content-Type', 'application/json');
-
-    let nodemailer = require('nodemailer');
-
-    let transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: 'sergio.roman45@gmail.com',
-            pass: 'Qpwoeir45'
-        }
-    });
-
-    let message = {
-        from: req.body.email,
-        to: 'sergio.roman45@gmail.com',
-        subject: 'Animated Logo Purchase',
-        text: 'Name: ' + req.body.name + '\n' + 'Email: ' + req.body.email + '\n' + 'Phone: ' + req.body.phone + '\n\n',
-        hmtl: '<p>Testing email</p>',
-        attachments: [
-            {
-                filename: req.body.filename,
-                path: 'src/uploads/' + req.body.filename
-            }
-        ]
-    };
-
-    transporter.sendMail(message, function (err, info) {
-        if (err)
-        {
-            console.log(err);
-            res.send(err);
-        }
-        else
-        {
-            console.log(info);
-            res.send('OK');
-        }
-    });
-
-    res.end();
-
-
-});
-
 
 
 app.listen(port);
