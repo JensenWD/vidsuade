@@ -24,35 +24,6 @@ app.use(require("body-parser").urlencoded({extended: false}));
 
 var port = process.env.PORT || 5000;
 
-app.post('/charge', function (req, res, next) {
-    res.setHeader('Content-Type', 'application/json');
-    let amount = req.body.amount;
-    stripe.customers.create({
-        email: req.body.stripeEmail,
-        source: req.body.stripeToken
-    }).then(customer =>
-        stripe.charges.create({
-            amount,
-            description: "Animate Logo",
-            currency: "usd",
-            customer: customer.id
-        }));
-    res.send('200');
-    next()
-});
-
-app.post('/upload', function (req, res, next) {
-    res.setHeader('Content-Type', 'application/json');
-    upload(req, res, function (err) {
-        if (err)
-            res.send(err);
-    });
-    res.send('OK');
-    res.end();
-    next()
-});
-
-
 app.post('/send-email', function (req, res, next) {
     res.setHeader('Content-Type', 'application/json');
 
@@ -96,9 +67,35 @@ app.post('/send-email', function (req, res, next) {
 
     res.end();
     next()
-
 });
 
+app.post('/charge', function (req, res, next) {
+    res.setHeader('Content-Type', 'application/json');
+    let amount = req.body.amount;
+    stripe.customers.create({
+        email: req.body.stripeEmail,
+        source: req.body.stripeToken
+    }).then(customer =>
+        stripe.charges.create({
+            amount,
+            description: "Animate Logo",
+            currency: "usd",
+            customer: customer.id
+        }));
+    res.send('200');
+    next()
+});
+
+app.post('/upload', function (req, res, next) {
+    res.setHeader('Content-Type', 'application/json');
+    upload(req, res, function (err) {
+        if (err)
+            res.send(err);
+    });
+    res.send('OK');
+    res.end();
+    next()
+});
 
 
 app.listen(port);
