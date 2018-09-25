@@ -65,7 +65,7 @@ app.post('/send-email', function (req, res, next) {
     // });
     res.send('ok');
 
-    res.end();
+    //res.end();
     next()
 });
 
@@ -93,7 +93,7 @@ app.post('/upload', function (req, res, next) {
             res.send(err);
     });
     res.send('OK');
-    res.end();
+    //res.end();
     next()
 });
 
