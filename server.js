@@ -24,7 +24,7 @@ app.use(require("body-parser").urlencoded({extended: false}));
 
 var port = process.env.PORT || 5000;
 
-app.post('/charge', function (req, res) {
+app.post('/charge', function (req, res, next) {
     res.setHeader('Content-Type', 'application/json');
     let amount = req.body.amount;
     stripe.customers.create({
@@ -38,9 +38,10 @@ app.post('/charge', function (req, res) {
             customer: customer.id
         }));
     res.send('200');
+    next()
 });
 
-app.post('/upload', function (req, res) {
+app.post('/upload', function (req, res, next) {
     res.setHeader('Content-Type', 'application/json');
     upload(req, res, function (err) {
         if (err)
@@ -48,10 +49,11 @@ app.post('/upload', function (req, res) {
     });
     res.send('OK');
     res.end();
+    next()
 });
 
 
-app.post('/send-email', function (req, res) {
+app.post('/send-email', function (req, res, next) {
     res.setHeader('Content-Type', 'application/json');
 
     // let nodemailer = require('nodemailer');
@@ -93,7 +95,7 @@ app.post('/send-email', function (req, res) {
     res.send('ok');
 
     res.end();
-
+    next()
 
 });
 
