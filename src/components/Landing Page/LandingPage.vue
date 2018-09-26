@@ -19,19 +19,22 @@
             </div>
 
             <!--<iframe class="col-8 d-none d-md-block video" width="560" height="415"-->
-                    <!--src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"-->
-                    <!--frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+            <!--src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0"-->
+            <!--frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 
             <div class="wistia_responsive_padding d-none col-8 d-md-block video">
                 <div class="wistia_responsive_wrapper" style="height:100%;left:0;top:0;width:100%;">
-                    <div class="wistia_embed wistia_async_jqxk160a5g videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;
+                    <div class="wistia_embed wistia_async_jqxk160a5g videoFoam=true"
+                         style="height:100%;position:relative;width:100%">&nbsp;
                     </div>
                 </div>
             </div>
 
 
             <div class="col-md-6 col-xs-12" id="form">
-                <form id="hub-form" action="https://forms.hubspot.com/uploads/form/v2/4845111/99f503ab-866f-46c6-8469-dc19f0abf543" method="POST">
+                <form id="hub-form"
+                      action="https://forms.hubspot.com/uploads/form/v2/4845111/99f503ab-866f-46c6-8469-dc19f0abf543"
+                      method="POST">
                     <p class="mt-3" style="font-size: 22px">Get your logo animated!</p>
                     <p><strong>Where should we send your animation?*</strong></p>
                     <div class="row ml-1 mr-1 mb-2 mt-2">
@@ -46,7 +49,8 @@
                         <input class="col-12" type="email" placeholder="Confirm Email" id="cemail" style="width: 100%;">
                     </div>
                     <div class="row ml-1 mr-1 mb-2 mt-2">
-                        <input class="col-12" type="text" placeholder="Phone Number" id="phone" name="phone" style="width: 100%;">
+                        <input class="col-12" type="text" placeholder="Phone Number" id="phone" name="phone"
+                               style="width: 100%;">
                     </div>
                 </form>
                 <p><strong style="font-size: 14px;">Upload your logo* </strong>
@@ -69,12 +73,15 @@
                         </div>
 
                         <!-- Used to display form errors. -->
-                        <div style="margin: auto;" class="hidden mt-3 alert alert-danger" id="card-errors" role="alert"></div>
+                        <div style="margin: auto;" class="hidden mt-3 alert alert-danger" id="card-errors"
+                             role="alert"></div>
                     </div>
-                    <div class="mt-3 text-center"><span style="font-size: 24px;"><strong>Total: $49.99</strong></span></div>
+                    <div class="mt-3 text-center"><span style="font-size: 24px;"><strong>Total: $49.99</strong></span>
+                    </div>
                     <button class="submit pt-1 pb-1 text-center mt-3">Submit Payment</button>
                 </form>
-                <span class="d-block mt-3 pb-3 text-center" style="color: #888788;font-size: 12px;">By clicking above, you agree to our <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link></span>
+                <span class="d-block mt-3 pb-3 text-center" style="color: #888788;font-size: 12px;">By clicking above, you agree to our <router-link
+                        class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link></span>
             </div>
 
             <div class="col-md-6 col-xs-12 what_you_get">
@@ -158,7 +165,7 @@
         </div>
         <div class="row long_text mt-5">
             <div class="col-12">
-                <p>
+
                     Your logo is one of your most important brand assets as it is one of your most used assets
                     in marketing and usually one of the first interactions your new customers have with your
                     company. Do you know the old saying “the first impression is the last impression”? That
@@ -174,11 +181,7 @@
                     but also add a level of professionalism that will establish trust.
                     <br><br>
                 <div class="looping-gif">
-                    <div style="">
-                        <!--<iframe src="https://giphy.com/embed/9ryMxorWGBVAdmOrF3" width="100%" height="100%"-->
-                                <!--frameBorder="0" class="giphy-embed" allowFullScreen></iframe>-->
-                        <iframe src="https://giphy.com/embed/9ryMxorWGBVAdmOrF3" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                    </div>
+                    <img src="https://media.giphy.com/media/9ryMxorWGBVAdmOrF3/giphy.gif">
                 </div>
                 <br>
                 <strong>Here are the 3 advantages of having an animated logo:</strong>
@@ -201,15 +204,12 @@
                 importance of staying on top of trends and when brands show that they can keep up with the
                 innovations, it adds a higher level of professionalism. Users pick up when companies invest in
                 their branding and continually build on strengthening their relationship with their customers.
-                </p>
+
             </div>
         </div>
-        <div class="row long_text mt-1">
+        <div class="row long_text mt-4">
             <div class="col-xl-6 col-lg-12 looping-gif">
-                <div style="">
-                    <iframe src="https://giphy.com/embed/5towk7UXRZh4p1LqqI" width="100%" height="100%"
-                            style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                </div>
+                <img src="https://media.giphy.com/media/5towk7UXRZh4p1LqqI/giphy.gif" alt="">
             </div>
         </div>
         <div class="row long_text mt-5">
@@ -284,7 +284,7 @@
 </template>
 
 <script>
-    let stripe = Stripe(`pk_test_EODlIgrDsj9wOZ3UfKK4RgKP`),
+    let stripe = Stripe(`pk_live_7HadDMWhvzW6moMjkYdjbHdA`),
         elements = stripe.elements(),
         card = undefined;
     import axios from 'axios';
@@ -321,7 +321,7 @@
 
 
             // Create a Stripe client.
-            var stripe = Stripe('pk_test_EODlIgrDsj9wOZ3UfKK4RgKP');
+            var stripe = Stripe('pk_live_7HadDMWhvzW6moMjkYdjbHdA');
 
 // Create an instance of Elements.
             var elements = stripe.elements();
@@ -362,7 +362,6 @@
             });
 
 
-
             if (url.includes('discount')) {
                 $('nav').css({'display': 'none'});
                 $('.footer_bg').css({'display': 'none'});
@@ -394,7 +393,7 @@
             else {
                 date = new Date(cookie);
                 let currentDate = new Date();
-                if(date < currentDate.getDate())
+                if (date < currentDate.getDate())
                     window.location = 'http://vidsuade.com/animatedlogo';
             }
             console.log(date);
@@ -414,8 +413,8 @@
             });
 
             $('#browse-files').on('change', function () {
-               self.fileObj = this.files[0];
-               $('.filename').text(self.fileObj.name);
+                self.fileObj = this.files[0];
+                $('.filename').text(self.fileObj.name);
             });
 
             $('.drag-box').on("dragover", function (e) {
@@ -480,8 +479,7 @@
                 // Insert the token ID into the form so it gets submitted to the server
                 var form = document.getElementById('mc-form');
 
-                if (self.validateForm() === 'valid')
-                {
+                if (self.validateForm() === 'valid') {
                     $('#card-errors').addClass('hidden');
                     $('.submit').attr('disabled', true).addClass('submitted');
                     $('.submit').text('Sending...');
@@ -515,12 +513,12 @@
             browse() {
                 $('#browse-files').click();
             },
-            upload (file) {
+            upload(file) {
                 let fd = new FormData();
                 fd.set('file', file);
                 axios.post('/upload', fd, {
                     headers: {
-                        'Content-Type' : 'multipart/form-data'
+                        'Content-Type': 'multipart/form-data'
                     }
                 }).then(function (res) {
                     console.log('upload' + res.status);
@@ -530,10 +528,10 @@
             },
             sendEmail(email, filename) {
                 axios.post('/send-email', {
-                   email: email,
-                   filename: filename,
-                   name: $('.fn').val() + ' ' + $('.ln').val(),
-                   phone: $('#phone').val()
+                    email: email,
+                    filename: filename,
+                    name: $('.fn').val() + ' ' + $('.ln').val(),
+                    phone: $('#phone').val()
                 }).then(function (res) {
                     console.log('email' + res.status);
                 }).catch(function (err) {
@@ -548,8 +546,7 @@
                 }
             },
             validateForm() {
-                if ($('#firstname').val() === '' || $('#lastname').val() === '' || $('#email').val() === '' || $('#phone').val() === '')
-                {
+                if ($('#firstname').val() === '' || $('#lastname').val() === '' || $('#email').val() === '' || $('#phone').val() === '') {
                     return 'All Fields Required!';
                 }
                 else if ($('#email').val() !== $('#cemail').val()) {
@@ -871,9 +868,28 @@
 
     .video {
         position: absolute !important;
-        top: 32%;
+        top: 30%;
         width: 600px;
         height: 321px;
+    }
+
+    .looping-gif img {
+        max-width: 500px;
+    }
+
+    @media screen and (max-width: 2600px) {
+        #form {
+            right: 28%;
+        }
+    }
+
+
+
+    @media screen and (max-width: 1920px) {
+        #form {
+            right: 20%;
+            top: 23%;
+        }
     }
 
     @media screen and (max-width: 1540px) {
@@ -945,7 +961,7 @@
             padding-left: 50px;
         }
 
-        .looping-gif iframe {
+        .looping-gif img {
             display: block;
             margin: auto;
         }
@@ -1022,6 +1038,12 @@
         .offer_section, .special_offer_1, .limited_time, .long_text, .testimonial, .footer, .guarantee {
             padding-left: 5%;
             padding-right: 5%;
+        }
+
+        .looping-gif img {
+            display: block;
+            margin: auto;
+            width: 300px;
         }
 
         .fn, .ln {

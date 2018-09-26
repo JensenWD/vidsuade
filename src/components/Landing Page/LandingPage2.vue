@@ -1,9 +1,18 @@
 <template>
     <div class="landing">
         <div class="row hero_bg pb-5 pt-5">
-            <div class="col-lg-6 col-md-12 header-content">
-                <h1 class="title">Animate your logo for only 49.95!</h1>
+            <div class="col-12 header-content">
+                <h1 class="title">Get your logo animated</h1>
                 <p class="sub-title">spice up your promotional videos by using an animated version on your logo</p>
+            </div>
+            <div class="wistia_responsive_padding d-none col-12 d-md-block video">
+                <div class="wistia_responsive_wrapper" style="height:100%;left:0;top:0;width:100%;">
+                    <div class="wistia_embed wistia_async_umpfww7vro videoFoam=true" style="height:100%;position:relative;width:100%">
+                        <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                            <img src="https://fast.wistia.com/embed/medias/umpfww7vro/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row offer_section">
@@ -12,16 +21,6 @@
                 <button class="btn d-block d-md-none m-auto" type="button" id="iframewebpage"
                         data-src="https://www.youtube.com/embed/FjA0j_zmfRw?rel=0&amp;showinfo=0">Watch Video
                 </button>
-            </div>
-
-            <div class="wistia_responsive_padding d-none col-8 d-md-block video">
-                <div class="wistia_responsive_wrapper" style="height:100%;left:0;top:0;width:100%;">
-                    <div class="wistia_embed wistia_async_umpfww7vro videoFoam=true" style="height:100%;position:relative;width:100%">
-                        <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                            <img src="https://fast.wistia.com/embed/medias/umpfww7vro/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" />
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <div class="col-md-6 col-xs-12" id="form">
@@ -107,44 +106,6 @@
                 </div>
             </div>
         </div>
-
-        <!--<div class="row special_offer_1 mt-5">-->
-            <!--<div class="col-xl-6 col-lg-12">-->
-                <!--<span class="section-heading mb-4" style="display: block;">Special Offer</span>-->
-                <!--<img class="offer" src="../../assets/landing/Offer.png" alt="">-->
-                <!--<img class="arrow" src="../../assets/landing/Arrow.png" alt="">-->
-                <!--<p class="mt-5 mb-5">-->
-                    <!--Getting your logo animated is normally valued over-->
-                    <!--<strong>$200</strong>, but with this limited-time offer you can have-->
-                    <!--your logo animated for only <strong>$49.95!</strong> That’s 75% off the-->
-                    <!--estimated value! But act fast because <strong>this offer will-->
-                    <!--expire in less than 7 days.</strong>-->
-                <!--</p>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="row limited_time">-->
-            <!--<div class="col-lg-6 col-md-12">-->
-                <!--<div class="timer-title">Limited-time offer!</div>-->
-            <!--</div>-->
-            <!--<div class="col-lg-6 col-md-12">-->
-                <!--<div class="timer-block">-->
-                    <!--<div id="days">06</div>-->
-                    <!--<div>Days</div>-->
-                <!--</div>-->
-                <!--<div class="timer-block">-->
-                    <!--<div id="hours">06</div>-->
-                    <!--<div>Hours</div>-->
-                <!--</div>-->
-                <!--<div class="timer-block">-->
-                    <!--<div id="minutes">06</div>-->
-                    <!--<div>Minutes</div>-->
-                <!--</div>-->
-                <!--<div class="timer-block">-->
-                    <!--<div id="seconds">06</div>-->
-                    <!--<div>Seconds</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
         <div class="row long_text mt-5">
             <div class="col-12 section-heading">
                 Why companies need<br>animated logos
@@ -152,7 +113,6 @@
         </div>
         <div class="row long_text mt-5">
             <div class="col-12">
-                <p>
                     Your logo is one of your most important brand assets as it is one of your most used assets
                     in marketing and usually one of the first interactions your new customers have with your
                     company. Do you know the old saying “the first impression is the last impression”? That
@@ -168,10 +128,7 @@
                     but also add a level of professionalism that will establish trust.
                     <br><br>
                 <div class="looping-gif">
-                    <div style="">
-                        <iframe src="https://giphy.com/embed/9ryMxorWGBVAdmOrF3" width="100%" height="100%"
-                                frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                    </div>
+                    <img src="https://media.giphy.com/media/9ryMxorWGBVAdmOrF3/giphy.gif">
                 </div>
                 <br>
                 <strong>Here are the 3 advantages of having an animated logo:</strong>
@@ -194,15 +151,11 @@
                 importance of staying on top of trends and when brands show that they can keep up with the
                 innovations, it adds a higher level of professionalism. Users pick up when companies invest in
                 their branding and continually build on strengthening their relationship with their customers.
-                </p>
             </div>
         </div>
-        <div class="row long_text mt-1">
+        <div class="row long_text mt-4">
             <div class="col-xl-6 col-lg-12 looping-gif">
-                <div style="">
-                    <iframe src="https://giphy.com/embed/5towk7UXRZh4p1LqqI" width="100%" height="100%"
-                            style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                </div>
+                <img src="https://media.giphy.com/media/5towk7UXRZh4p1LqqI/giphy.gif" alt="">
             </div>
         </div>
         <div class="row long_text mt-5">
@@ -259,7 +212,7 @@
 </template>
 
 <script>
-    let stripe = Stripe(`pk_test_EODlIgrDsj9wOZ3UfKK4RgKP`),
+    let stripe = Stripe(`pk_live_7HadDMWhvzW6moMjkYdjbHdA`),
         elements = stripe.elements(),
         card = undefined;
     import axios from 'axios';
@@ -292,7 +245,7 @@
             $("body").append(s);
 
             // Create a Stripe client.
-            var stripe = Stripe('pk_test_EODlIgrDsj9wOZ3UfKK4RgKP');
+            var stripe = Stripe('pk_live_7HadDMWhvzW6moMjkYdjbHdA');
 
 // Create an instance of Elements.
             var elements = stripe.elements();
@@ -591,7 +544,6 @@
         color: #FFFFFF;
         margin-top: 50px;
         margin-bottom: 60px;
-        max-width: 500px;
     }
 
     .header-content h1 {
@@ -605,7 +557,7 @@
     }
 
     .offer_section {
-        margin-top: 255px
+        margin-top: 50px
     }
 
     .checkmark {
@@ -668,6 +620,11 @@
 
     .title {
         line-height: initial;
+        text-align: center;
+    }
+
+    .sub-title {
+        text-align: center;
     }
 
     .cta {
@@ -716,7 +673,7 @@
         max-width: 400px;
         position: absolute;
         right: 20%;
-        top: 23%;
+        top: 27%;
         z-index: 5;
     }
 
@@ -801,6 +758,10 @@
         top: -10%;
     }
 
+    looping-gif img {
+        max-width: 500px;
+    }
+
     .StripeElement {
         background-color: white;
         height: 40px;
@@ -829,10 +790,22 @@
     }
 
     .video {
-        position: absolute;
-        top: 32%;
-        width: 600px;
-        height: 321px;
+        margin: unset !important;
+        float: left;
+    }
+
+    @media screen and (max-width: 2600px) {
+        #form {
+            right: 28%;
+        }
+    }
+
+
+    @media screen and (max-width: 1920px) {
+        #form {
+            right: 20%;
+            top: 27%;
+        }
     }
 
     @media screen and (max-width: 1540px) {
@@ -840,23 +813,26 @@
             right: 16%;
             top: 26%;
         }
+    }
 
-        .video {
-            position: absolute;
-            top: 35%;
-            width: 500px;
-            height: 265px;
+    @media screen and (max-width: 1540px) {
+        #form {
+            right: 10%;
+            top: 26%;
         }
     }
 
-    @media screen and (max-width: 1320px) {
+    @media screen and (max-width: 1370px) {
         #form {
-            right: 10%;
+            right: 5%;
             top: 33%;
         }
+    }
 
-        .video {
-            top: 40%;
+    @media screen and (max-width: 1280px) {
+        #form {
+            right: 1%;
+            top: 33%;
         }
     }
 
@@ -867,8 +843,14 @@
             margin-top: 50px;
         }
 
+        .video {
+            margin: auto !important;
+            float: none;
+        }
+
         .header-content {
             margin-bottom: 10px;
+            text-align: center;
         }
 
         .procon-text {
@@ -878,13 +860,6 @@
 
         .procon-text span {
             font-size: 18px !important;
-        }
-
-        .video {
-            position: initial;
-            display: block;
-            margin: auto;
-            height: 302px;
         }
 
         .offer_section {
@@ -904,9 +879,10 @@
             padding-left: 50px;
         }
 
-        .looping-gif iframe {
+        .looping-gif img {
             display: block;
             margin: auto;
+            max-width: 500px;
         }
     }
 
@@ -981,6 +957,12 @@
         .offer_section, .special_offer_1, .limited_time, .long_text, .testimonial, .footer, .guarantee {
             padding-left: 5%;
             padding-right: 5%;
+        }
+
+        .looping-gif img {
+            display: block;
+            margin: auto;
+            width: 300px;
         }
 
         .fn, .ln {
