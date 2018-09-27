@@ -38,13 +38,13 @@
                             <div class="row">
                                 <div class="col-6 p-1">
                                     <div class="form-group">
-                                        <input type="text" value="" name="company" class="form-control"
+                                        <input type="text" value="" required name="company" class="form-control"
                                                placeholder="Company">
                                     </div>
                                 </div>
                               <div class="col-6 p-1">
                                 <div class="form-group">
-                                  <input type="text" name="phone" placeholder="Phone number" class="form-control"
+                                  <input type="text" name="phone" required placeholder="Phone number" class="form-control"
                                          value="">
                                 </div>
                               </div>
