@@ -107,8 +107,11 @@
             </div>
         </div>
         <div class="row long_text mt-5">
-            <div class="col-12 section-heading">
+            <div class="col-6 section-heading">
                 Why companies need<br>animated logos
+            </div>
+            <div class="col-6">
+                <img class="arrow-fp" src="../../assets/landing/Arrow_FullPrice.png" alt="">
             </div>
         </div>
         <div class="row long_text mt-5">
@@ -491,6 +494,14 @@
         height: 245px;
     }
 
+    .arrow-fp {
+        width: 275px;
+        display: block;
+        position: absolute;
+        left: -150px;
+        top: -150px;
+        margin-bottom: -100px;
+    }
 
     .hidden {
         display: none;
@@ -808,6 +819,12 @@
         }
     }
 
+    @media screen and (max-width: 1680px) {
+        .arrow-fp {
+            width: 200px;
+        }
+    }
+
     @media screen and (max-width: 1540px) {
         #form {
             right: 16%;
@@ -819,6 +836,12 @@
         #form {
             right: 10%;
             top: 26%;
+        }
+    }
+
+    @media screen and (max-width: 1440px) {
+        .arrow-fp {
+            left: -80px;
         }
     }
 
@@ -834,6 +857,10 @@
             right: 1%;
             top: 33%;
         }
+
+        .arrow-fp {
+            left: -50px;
+        }
     }
 
     @media screen and (max-width: 1220px) {
@@ -841,6 +868,10 @@
             position: initial;
             float: left;
             margin-top: 50px;
+        }
+
+        .arrow-fp {
+            display: none;
         }
 
         .video {
