@@ -269,13 +269,13 @@
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="footer-links">
-                    <router-link class="mr-sm-2 ml-sm-2 f-link" to="/about-us">About Us</router-link>
+                    <a class="mr-sm-2 ml-sm-2 f-link" href="/#/about-us" target="_blank">About Us</a>
                     |
-                    <router-link class="mr-sm-2 ml-sm-2 f-link" to="/privacy-policy">Privacy Policy</router-link>
+                    <a class="mr-sm-2 ml-sm-2 f-link" href="/#/privacy-policy" target="_blank">Privacy Policy</a>
                     |
-                    <router-link class="mr-sm-2 ml-sm-2 f-link" to="/terms">Legal</router-link>
+                    <a class="mr-sm-2 ml-sm-2 f-link" href="/#/terms" target="_blank">Legal</a>
                     |
-                    <router-link class="ml-sm-2 f-link" to="/contact">Contact Us</router-link>
+                    <a class="ml-sm-2 f-link" href="/#/contact" target="_blank">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -902,7 +902,7 @@
 
         .video {
             position: absolute;
-            top: 35%;
+            top: 37%;
             width: 500px;
             height: 265px;
         }
