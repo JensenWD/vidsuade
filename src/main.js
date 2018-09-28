@@ -6,8 +6,6 @@ import router from './router'
 
 try {
     window.$ = window.jQuery = require('jquery');
-
-    require('bootstrap');
 } catch (e) {}
 
 Vue.config.productionTip = false;
