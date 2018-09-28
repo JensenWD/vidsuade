@@ -854,7 +854,7 @@
 
     @media screen and (max-width: 1280px) {
         #form {
-            right: 1%;
+            right: 4%;
             top: 33%;
         }
 
