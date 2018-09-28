@@ -3,7 +3,6 @@ var path = require('path');
 var serveStatic = require('serve-static');
 var bodyParser = require('body-parser');
 var multer = require('multer');
-var history = require('connect-history-api-fallback');
 const stripe = require("stripe")("sk_test_x6IdvtCY7o6gtBc3Txie41YE");
 
 var storage = multer.diskStorage({
@@ -22,7 +21,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(serveStatic(__dirname + "/dist"));
 app.use(require("body-parser").urlencoded({extended: false}));
-app.use(history());
 
 var port = process.env.PORT || 5000;
 
