@@ -6,7 +6,7 @@
                 <p class="sub-title">spice up your promotional videos by using an animated version on your logo</p>
             </div>
             <div class="wistia_responsive_padding d-none col-12 d-md-block video">
-                <div class="wistia_responsive_wrapper" style="height:100%;left:0;top:0;width:100%;">
+                <div class="wistia_responsive_wrapper" style="height:90%;left:0;top:0;width:90%;">
                     <div class="wistia_embed wistia_async_umpfww7vro videoFoam=true" style="height:100%;position:relative;width:100%">
                         <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
                             <img src="https://fast.wistia.com/embed/medias/umpfww7vro/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" />
@@ -67,7 +67,7 @@
                     <div class="mt-3 text-center"><span style="font-size: 24px;"><strong>Total: $199.99</strong></span></div>
                     <button class="submit pt-1 pb-1 text-center mt-4">Submit Payment</button>
                 </form>
-                <span class="d-block mt-3 pb-3 text-center" style="color: #888788;font-size: 12px;">By clicking above, you agree to our <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link></span>
+                <span class="d-block mt-3 pb-3 text-center" style="color: #888788;font-size: 11px;">By clicking above, you agree to our <router-link class="privacy text-center mt-1 mb-2" to="/terms">Terms of Service</router-link> and <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link></span>
             </div>
 
             <div class="col-md-6 col-xs-12 what_you_get">
@@ -877,6 +877,9 @@
         .video {
             margin: auto !important;
             float: none;
+            -webkit-box-shadow: 0px 20px 5px -1px rgba(51,51,51,0.31);
+            -moz-box-shadow: 0px 20px 5px -1px rgba(51,51,51,0.31);
+            box-shadow: 0px 20px 5px -1px rgba(51,51,51,0.31);
         }
 
         .header-content {
@@ -947,6 +950,12 @@
 
         .checkmark {
             width: 30px;
+        }
+
+        .video {
+            -webkit-box-shadow: 0px 10px 5px -1px rgba(51,51,51,0.31);
+            -moz-box-shadow: 0px 10px 5px -1px rgba(51,51,51,0.31);
+            box-shadow: 0px 10px 5px -1px rgba(51,51,51,0.31);
         }
     }
 

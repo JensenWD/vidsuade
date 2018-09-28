@@ -76,12 +76,11 @@
                         <div style="margin: auto;" class="hidden mt-3 alert alert-danger" id="card-errors"
                              role="alert"></div>
                     </div>
-                    <div class="mt-3 text-center"><span style="font-size: 24px;"><strong>Total: $49.99</strong></span>
+                    <div class="mt-3 text-center"><span style="font-size: 24px;"><strong>Total: $49.95</strong></span>
                     </div>
                     <button class="submit pt-1 pb-1 text-center mt-3">Submit Payment</button>
                 </form>
-                <span class="d-block mt-3 pb-3 text-center" style="color: #888788;font-size: 12px;">By clicking above, you agree to our <router-link
-                        class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link></span>
+                <span class="d-block mt-3 pb-3 text-center" style="color: #888788;font-size: 11px;">By clicking above, you agree to our <router-link class="privacy text-center mt-1 mb-2" to="/terms">Terms of Service</router-link> and <router-link class="privacy text-center mt-1 mb-2" to="/privacy-policy">Privacy Policy</router-link></span>
             </div>
 
             <div class="col-md-6 col-xs-12 what_you_get">
@@ -276,7 +275,7 @@
                     |
                     <router-link class="mr-sm-2 ml-sm-2 f-link" to="/terms">Legal</router-link>
                     |
-                    <router-link class="ml-sm-2 f-link" to="/contact-us">Contact Us</router-link>
+                    <router-link class="ml-sm-2 f-link" to="/contact">Contact Us</router-link>
                 </div>
             </div>
         </div>
@@ -489,7 +488,7 @@
                     axios.post('/charge', {
                         stripeToken: token.id,
                         stripeEmail: $('#email').val(),
-                        amount: '4999'
+                        amount: '4995'
                     }).then(function (res) {
                         console.log(res.status);
                         //send email
@@ -871,6 +870,9 @@
         top: 30%;
         width: 600px;
         height: 321px;
+        -webkit-box-shadow: 0px 20px 5px -1px rgba(51,51,51,0.31);
+        -moz-box-shadow: 0px 20px 5px -1px rgba(51,51,51,0.31);
+        box-shadow: 0px 20px 5px -1px rgba(51,51,51,0.31);
     }
 
     .looping-gif img {
@@ -972,6 +974,10 @@
             padding-left: 10%;
             padding-right: 10%;
         }
+
+        .footer p, .footer a {
+            font-size: 16px;
+        }
     }
 
     @media screen and (max-width: 1040px) {
@@ -995,8 +1001,19 @@
             float: none;
         }
 
+        .footer p, .f-link, .footer-links a {
+            font-size: 14px;
+            text-align: center;
+        }
+
         .checkmark {
             width: 30px;
+        }
+
+        .video {
+            -webkit-box-shadow: 0px 10px 5px -1px rgba(51,51,51,0.31);
+            -moz-box-shadow: 0px 10px 5px -1px rgba(51,51,51,0.31);
+            box-shadow: 0px 10px 5px -1px rgba(51,51,51,0.31);
         }
     }
 
@@ -1022,7 +1039,21 @@
             margin-top: 50px;
         }
 
-        .footer p, .f-link {
+        .footer-links
+        {
+            max-width: 100%;
+            margin: auto;
+            float: none;
+            padding-bottom: 5px;
+            /*max-width: fit-content;*/
+        }
+
+        .f-link {
+            margin-left: 2px !important;
+            margin-right: 2px !important;
+        }
+
+        .footer p, .f-link, .footer-links a {
             font-size: 12px;
             text-align: center;
         }
