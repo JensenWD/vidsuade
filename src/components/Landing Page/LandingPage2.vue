@@ -334,8 +334,16 @@
             });
 
             $('#browse-files').on('change', function () {
-                self.fileObj = this.files[0];
-                $('.filename').text(self.fileObj.name);
+                if (this.files[0].size > 26214400)
+                {
+                    $('#card-errors').removeClass('hidden').text('File Size must be 25md or less!');
+                }
+                else
+                {
+                    $('#card-errors').addClass('hidden');
+                    self.fileObj = this.files[0];
+                    $('.filename').text(self.fileObj.name);
+                }
             });
 
             $('.drag-box').on("dragover", function (e) {
@@ -356,13 +364,16 @@
 
                         if (e.dataTransfer.items[i].kind === 'file') {
                             var file = e.dataTransfer.items[i].getAsFile();
-
-                            $('.filename').text(file.name);
-                            self.fileObj = file;
-                            console.log(file.name);
-                            self.getFileUri(file);
-                            $('#browse-files').files[0] = file;
-                            console.log($('#file').files);
+                            if (file.size > 26214400)
+                            {
+                                $('#card-errors').removeClass('hidden').text('File Size must be 25md or less!');
+                            }
+                            else {
+                                $('#card-errors').addClass('hidden');
+                                $('.filename').text(file.name);
+                                self.fileObj = file;
+                                self.getFileUri(file);
+                            }
                         }
                     }
                 } else {
@@ -462,7 +473,11 @@
                 }
             },
             validateForm() {
-                if ($('#firstname').val() === '' || $('#lastname').val() === '' || $('#email').val() === '' || $('#phone').val() === '')
+                if (this.fileObj === '')
+                {
+                    return 'an image file is required!';
+                }
+                else if ($('#firstname').val() === '' || $('#lastname').val() === '' || $('#email').val() === '' || $('#phone').val() === '')
                 {
                     return 'All Fields Required!';
                 }

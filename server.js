@@ -3,7 +3,7 @@ var path = require('path');
 var serveStatic = require('serve-static');
 var bodyParser = require('body-parser');
 var multer = require('multer');
-const stripe = require("stripe")("sk_test_x6IdvtCY7o6gtBc3Txie41YE");
+const stripe = require("stripe")("sk_live_lgc6sjml5Mu613pwmqBV5Mmj");
 
 var storage = multer.diskStorage({
     destination: function (req, file, callback) {
