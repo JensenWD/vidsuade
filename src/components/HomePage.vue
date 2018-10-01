@@ -3,7 +3,7 @@
     <div class="row hero_bg text-center pb-4 pt-5 font-white">
       <div class="col-12 mb-3 mt-5">
         <h1 class="">Videos that convert</h1>
-        <h4 class="helvetica font-weight-light">Videos made to increase sales for business.</h4>
+        <h4 class="helvetica font-weight-light">Videos made to increase sales for businesses.</h4>
       </div>
       <div class="col-12">
         <!--<button class="btn d-block m-auto d-md-none" type="button" id="iframewebpage" data-src="https://www.youtube.com/embed/s7Zaw7e6pY4">Watch video</button>-->
