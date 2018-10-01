@@ -147,7 +147,7 @@
       }
     },
     created() {
-      if(this.getUrlParams('thanks'))
+      if(this.getUrlParams('thanks') == 1)
         this.formResponse();
     }
   }
