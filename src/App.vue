@@ -111,8 +111,13 @@
       height: 250px
       width: 450px
 
-  @media (max-width: 545px)
+  @media (max-width: 575px)
     iframe, .wistia_responsive_padding
       height: 160px
       width: 300px
+
+  @media (max-width: 425px)
+    iframe, .wistia_responsive_padding
+      height: 130px
+      width: 260px
 </style>

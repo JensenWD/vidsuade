@@ -11,26 +11,26 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav nav mr-lg-4">
                     <li class="nav-item active">
-                        <router-link class="nav-link mr-lg-4" to="/">Home</router-link>
+                        <router-link class="nav-link closeOnClick mr-lg-4" to="/">Home</router-link>
                     </li>
                     <li class="nav-item active">
-                        <router-link class="nav-link mr-lg-4" to="/why-video">Why video?</router-link>
+                        <router-link class="nav-link closeOnClick mr-lg-4" to="/why-video">Why video?</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link mr-lg-4" to="/about-us">About us</router-link>
+                        <router-link class="nav-link closeOnClick mr-lg-4" to="/about-us">About us</router-link>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a @click="$('#subMenu').dropdown('toggle')" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Services
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <router-link class="nav-link mr-lg-4" to="/services">Video Services</router-link>
-                            <router-link class="nav-link mr-lg-4" to="/animatedlogo">Logo animation</router-link>
-                            <router-link class="nav-link mr-lg-4" to="/pricing">Pricing</router-link>
+                        <div id="subMenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <router-link class="nav-link closeOnClick mr-lg-4" to="/services">Video Services</router-link>
+                            <router-link class="nav-link closeOnClick mr-lg-4" to="/animatedlogo">Logo animation</router-link>
+                            <router-link class="nav-link closeOnClick mr-lg-4" to="/pricing">Pricing</router-link>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link mr-lg-1" to="/contact">Contact us</router-link>
+                        <router-link class="nav-link closeOnClick mr-lg-1" to="/contact">Contact us</router-link>
                     </li>
                 </ul>
             </div>
@@ -39,40 +39,49 @@
 </template>
 
 <script>
-    export default {
-      name: "HeaderMenu",
-      mounted() {
-        // $('.nav-link').click(function () {
-        //   if ($('.navbar-toggler[aria-expanded]').attr('aria-expanded')) {
-        //       $('.navbar-toggler').click();
-        //   }
-        // });
+  export default {
+    name: "HeaderMenu",
+    methods: {
+      checkWidth() {
+        var $window = $(window);
+        var windowsize = $window.width();
+        console.log(windowsize);
 
-        $(document).scroll(function () {
-          let nav = $(".navbar");
-          if ($(window).scrollTop() === 0) {
-            if ((window.location.href.indexOf("privacy-policy") > -1) || (window.location.href.indexOf("terms") > -1)) {
-              //nav.removeClass('bg-transparent');
-              nav.addClass('bg-color');
-            } else {
-              nav.removeClass('bg-color');
-                        //nav.addClass('bg-transparent');
-                    }
-                } else {
-                    //nav.removeClass('bg-transparent');
-                    nav.addClass('bg-color');
-                }
-            });
+        if (windowsize < 992) {
+          $('.closeOnClick').click(function () {
+            if ($('.navbar-toggler[aria-expanded]').attr('aria-expanded')) {
+              $('.navbar-toggler').click();
+            }
+          });
         }
+      }
+    },
+    mounted() {
+      let self = this;
+      $(document).scroll(function () {
+        let nav = $(".navbar");
+        if ($(window).scrollTop() === 0) {
+          if ((window.location.href.indexOf("privacy-policy") > -1) || (window.location.href.indexOf("terms") > -1)) {
+            //nav.removeClass('bg-transparent');
+            nav.addClass('bg-color');
+          } else {
+            nav.removeClass('bg-color');
+            //nav.addClass('bg-transparent');
+          }
+        } else {
+          //nav.removeClass('bg-transparent');
+          nav.addClass('bg-color');
+        }
+      });
+
+      $(document).ready(function () {
+        self.checkWidth();
+      });
     }
+  }
 </script>
 
 <style lang="sass" scoped>
-  ul.nav
-    li.dropdown:hover
-      > .dropdown-menu
-        display: block
-
   .bg-color
     background: #004f75 !important
 
@@ -114,8 +123,8 @@
     .bg-color
       .nav-item, .nav-link
         color: white !important
-    ul.nav
-      li.dropdown:hover
-        > .dropdown-menu
-          display: block
+    /*ul.nav*/
+      /*li.dropdown:hover*/
+        /*> .dropdown-menu*/
+          /*display: block*/
 </style>
