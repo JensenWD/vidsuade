@@ -1,5 +1,14 @@
 <template>
   <div>
+    <div class="row" style="margin-top: -1px">
+      <div class="col-12">
+        <div class="nav navbar">
+          <img src="../../assets/home/Logo_NavBar.png" class="img-fluid logo" alt="logo">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
     <div class="row hero_bg text-center pt-5 font-white">
       <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mt-5">
         <h1>Want to get more mobile app downloads?</h1>
@@ -19,7 +28,8 @@
     </div>
 
     <div class="row text-center position-relative pb-5 pt-5">
-      <img class="img-fluid overlap1" src="../../assets/landing_page3/App_Landing_Struggle_Overlap_03_Shadow.png" alt="">
+      <img class="img-fluid overlap1" src="../../assets/landing_page3/App_Landing_Struggle_Overlap_03_Shadow.png"
+           alt="">
       <div class="container pb-5 pt-5">
         <h2 class="mt-2 mb-5 font-weight-light font-orange">The struggle is real.</h2>
         <div class="row">
@@ -69,12 +79,18 @@
           <div class="col-12">
             <h2 class="mt-2 mb-5 font-weight-light font-orange">Benefits of app videos:</h2>
             <ul class="items-checklist p-0 col-10 offset-1 col-xl-6 offset-xl-3 text-left">
-              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Get more app installs</span></li>
-              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Increase your conversions</span></li>
-              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Clearly show how your app works</span></li>
-              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Creates excitement and demand</span></li>
-              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Have a professional looking ad</span></li>
-              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Highly shareable</span></li>
+              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Get more app installs</span>
+              </li>
+              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Increase your conversions</span>
+              </li>
+              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Clearly show how your app works</span>
+              </li>
+              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Creates excitement and demand</span>
+              </li>
+              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Have a professional looking ad</span>
+              </li>
+              <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Highly shareable</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -82,7 +98,18 @@
         <div class="row mt-3 mb-3 price-section">
           <div class="col-12 col-md-10 offset-md-1 top-break pb-5 pt-5 text-center">
             <h2 class="mt-2 mb-5 font-weight-light font-orange">Types of app videos</h2>
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/1gsd7phy3v/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+              <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                <div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true"
+                     style="height:100%;position:relative;width:100%">
+                  <div class="wistia_swatch"
+                       style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                    <img src="https://fast.wistia.com/embed/medias/1gsd7phy3v/swatch"
+                         style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt=""
+                         onload="this.parentNode.style.opacity=1;"/></div>
+                </div>
+              </div>
+            </div>
             <div class="sub_header"><span>APP PROMOS</span></div>
             <p class="pt-2 pb-4">With app promos people will know exactly what the app does and what it
               looks like so people can make a decision about whether they want to
@@ -97,7 +124,18 @@
 
         <div class="row mt-3 mb-3 price-section">
           <div class="col-12 col-md-10 offset-md-1 top-break pb-5 pt-5 text-center">
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/1gsd7phy3v/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+              <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                <div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true"
+                     style="height:100%;position:relative;width:100%">
+                  <div class="wistia_swatch"
+                       style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                    <img src="https://fast.wistia.com/embed/medias/1gsd7phy3v/swatch"
+                         style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt=""
+                         onload="this.parentNode.style.opacity=1;"/></div>
+                </div>
+              </div>
+            </div>
             <div class="sub_header"><span>ANIMATED EXPLAINER VIDEOS</span></div>
             <p class="pt-2">Animated videos are great for attracting attention and increasing
               awareness of your brand. They’re one of the most shareable forms of
@@ -116,7 +154,18 @@
 
         <div class="row mt-3 mb-3 price-section">
           <div class="col-12 col-md-10 offset-md-1 top-break pb-5 pt-5 text-center">
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/1gsd7phy3v/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+              <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                <div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true"
+                     style="height:100%;position:relative;width:100%">
+                  <div class="wistia_swatch"
+                       style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                    <img src="https://fast.wistia.com/embed/medias/1gsd7phy3v/swatch"
+                         style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt=""
+                         onload="this.parentNode.style.opacity=1;"/></div>
+                </div>
+              </div>
+            </div>
             <div class="sub_header"><span>APP PREVIEWS</span></div>
             <p class="pt-2 pb-4">A video preview of your app is the absolute best way to demostrate to
               users what your app does and will help you to manage customer
@@ -130,13 +179,195 @@
           </div>
         </div>
 
-        <div class="row text-center position-relative light-grey-bg pb-5 pt-5">
-          <div class="container pb-5 pt-5">
-            <h2 class="mt-2 mb-2 font-weight-light font-white">Need a video for your app?</h2>
-            <button class="btn white-btn">Contact us</button>
-          </div>
-        </div>
+      </div>
+    </div>
 
+    <div class="row text-center position-relative light-grey-bg pb-5 pt-5">
+
+      <div class="col-12">
+        <h2 class="mt-4 mb-4 font-weight-light font-orange">Nice words from our clients</h2>
+      </div>
+
+      <div class="col-12 col-xl-10 offset-xl-1" style="z-index: 2">
+        <div class="row">
+
+          <div class="col-3 text-left">
+            <div class="row review">
+              <div class="col-12 mb-4 text-center">
+                <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
+              </div>
+
+              <div class="col-12">
+                <p>“Vidsuade’s talent extends far beyond creating unique designs and animations. Their consultative
+                  approach to truly understand our brand has instilled trust in my agency to keep coming back for more!
+                  I highly recommend Vidsuade.”</p>
+
+                <div>
+                  <span class="quoted">- Garrett Seiger</span>
+                </div>
+                <div>
+                  <span class="quoted">President of Pirate Labs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 text-left">
+            <div class="row review">
+              <div class="col-12 mb-4 text-center">
+                <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
+              </div>
+
+              <div class="col-12">
+                <p>“Vidsuade’s talent extends far beyond creating unique designs and animations. Their consultative
+                  approach to truly understand our brand has instilled trust in my agency to keep coming back for more!
+                  I highly recommend Vidsuade.”</p>
+
+                <div>
+                  <span class="quoted">- Garrett Seiger</span>
+                </div>
+                <div>
+                  <span class="quoted">President of Pirate Labs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 text-left">
+            <div class="row review">
+              <div class="col-12 mb-4 text-center">
+                <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
+              </div>
+
+              <div class="col-12">
+                <p>“Vidsuade’s talent extends far beyond creating unique designs and animations. Their consultative
+                  approach to truly understand our brand has instilled trust in my agency to keep coming back for more!
+                  I highly recommend Vidsuade.”</p>
+
+                <div>
+                  <span class="quoted">- Garrett Seiger</span>
+                </div>
+                <div>
+                  <span class="quoted">President of Pirate Labs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 text-left">
+            <div class="row review">
+              <div class="col-12 mb-4 text-center">
+                <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
+              </div>
+
+              <div class="col-12">
+                <p>“Vidsuade’s talent extends far beyond creating unique designs and animations. Their consultative
+                  approach to truly understand our brand has instilled trust in my agency to keep coming back for more!
+                  I highly recommend Vidsuade.”</p>
+
+                <div>
+                  <span class="quoted">- Garrett Seiger</span>
+                </div>
+                <div>
+                  <span class="quoted">President of Pirate Labs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img class="img-fluid overlap3" src="../../assets/landing_page3/App_Landing_Reviews_Overlap_03_Shadow.png" alt="">
+    </div>
+
+    <div class="row text-center position-relative light-blue-bg pb-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-8 offset-xl-2 font-white">
+            <h2 class="mt-4 mb-4 font-weight-light">Contact us</h2>
+            <p>Need a video to showcase your app? Or do you have something you’d
+              like to ask us? Fill our the form below and we’ll get back</p>
+          </div>
+
+          <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mb-5 mt-4" style="z-index: 2">
+            <form @submit="formResponse"
+                  id="contact"
+                  action="https://forms.hubspot.com/uploads/form/v2/4845111/73f81894-f196-4812-a1b7-c57845dd123f"
+                  method="post" class="bg-white p-5 font-grey">
+
+              <div id="thanksResponse" class="text-center d-none w-100">
+                <p>Thanks for filling out our form!</p>
+                <p>We will get back to you as soon as we can.</p>
+              </div>
+
+              <div class="row">
+                <div class="col-6 p-1">
+                  <div class="form-group">
+                    <input type="text" value="" required name="firstname" class="form-control"
+                           placeholder="First name">
+                  </div>
+                </div>
+                <div class="col-6 p-1">
+                  <div class="form-group">
+                    <input type="text" value="" required name="lastname" class="form-control"
+                           placeholder="Last name">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 p-1">
+                  <div class="form-group">
+                    <input type="email" value="" required name="email" class="required form-control"
+                           placeholder="Email">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 p-1">
+                  <div class="form-group">
+                    <textarea type="text" rows="5" value="" name="message" required class="form-control"
+                              placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="form-check">
+                      <label class="form-check-label float-left">
+                        <input type="checkbox" class="form-check-input" required value="checkedValue"
+                               checked>
+                        I agree to the
+                        <router-link to="/terms" class="font-grey text-underline">terms and conditions</router-link>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <button type="submit"
+                          class="btn text-uppercase p-2 pr-4 pl-4 mt-3 font-white helvetica submit font-weight-regular">
+                    Send
+                  </button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <router-link class="font-grey text-underline" to="/privacy-policy" style="font-size: 14px"><i>Privacy
+                    Policy</i></router-link>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <img class="img-fluid img3" src="../../assets/landing_page3/App_Landing_Footer_Graphic.png" alt="">
+        </div>
       </div>
     </div>
 
@@ -147,6 +378,14 @@
   export default {
     name: "LandingPage3",
     mounted() {
+
+        let url = window.location.toString();
+
+        if (url.includes('mobileapps')) {
+            $('.sticky-top').css({'display': 'none'});
+            //$('.footer_bg').css({'display': 'none'});
+        }
+
       let whyVideo = document.createElement('script');
       whyVideo.setAttribute('src', 'https://fast.wistia.com/embed/medias/1gsd7phy3v.jsonp');
       document.head.appendChild(whyVideo);
@@ -157,6 +396,60 @@
 <style lang="sass" scoped>
   p
     font-size: 21px
+
+  .logo
+    max-width: 150px
+    width: 100%
+
+  .nav
+    background: transparent
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+
+  .overlap3
+    position: absolute
+    bottom: -9px
+    left: -9px
+    z-index: 0
+
+  .submit
+    background: #E98000
+    border-radius: 5px
+    padding: 0.5rem
+    width: 100%
+    max-width: 200px
+    margin: 1rem auto
+    border: none
+
+  .form-group
+    margin-bottom: 2px
+
+  .img3
+    position: absolute
+    bottom: -1px
+    left: 5%
+    width: 90%
+    z-index: 0
+
+  form
+    z-index: 2
+
+  .review
+    background: white
+    box-shadow: 0 0 7px lightgrey
+    padding: 2.45rem 2rem
+    margin: 1.5rem 0.2rem
+    border-radius: 18px
+    p, span
+      font-size: 18px
+      line-height: 21px
+    .quoted
+      color: #49809B
+
+  .light-grey-bg
+    background: #F7F7F7
 
   .price-section
     p
@@ -203,7 +496,7 @@
         font-weight: 700
 
   .light-blue-bg
-    background: #00a9e6
+    background: #00a9e5
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
 
   .blue-bg
