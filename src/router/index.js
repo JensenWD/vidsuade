@@ -10,6 +10,7 @@ import Contact from '@/components/Contact'
 import TermsOfUse from '@/components/TermsOfUse'
 import PrivacyPolicy from '@/components/PrivacyPolicy'
 import Services from '@/components/Services'
+import LandingPage3 from '@/components/Landing Page/LandingPage3'
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
             path: '/privacy-policy',
             name: 'PrivacyPolicy',
             component: PrivacyPolicy
+        },
+        {
+          path: '/mobileapps',
+          name: 'LandingPage3',
+          component: LandingPage3
         }
     ],
     scrollBehavior(to, from, savedPosition) {
