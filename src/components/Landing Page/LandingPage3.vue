@@ -16,7 +16,7 @@
       </div>
 
       <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mt-3">
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-center p-4" style="flex-flow: row nowrap">
           <input class="form-control header_input" type="text" placeholder="Enter your email">
           <button class="btn white-btn-outline">GET A QUOTE</button>
         </div>
@@ -27,8 +27,8 @@
       </div>
     </div>
 
-    <div class="row text-center position-relative pb-5 pt-5">
-      <img class="img-fluid overlap1" src="../../assets/landing_page3/App_Landing_Struggle_Overlap_03_Shadow.png"
+    <div class="row text-center position-relative pb-5 pt-2 pt-md-5">
+      <img class="img-fluid overlap1" src="../../assets/landing_page3/App_Landing_Struggle_Overlap_04_Shadow.png"
            alt="">
       <div class="container pb-5 pt-5">
         <h2 class="mt-2 mb-5 font-weight-light font-orange">The struggle is real.</h2>
@@ -47,7 +47,7 @@
       <img class="img-fluid img1" src="../../assets/landing_page3/App_Landing_Struggle_Illustration.png" alt="">
     </div>
 
-    <div class="row text-center position-relative blue-bg pb-5 pt-5">
+    <div class="row text-center position-relative blue-bg pb-5 pt-2 pt-md-5">
       <img class="img-fluid img2" src="../../assets/landing_page3/App_Landing_Downloads_Illustration.png" alt="">
       <div class="container pb-5 pt-5">
         <h2 class="mt-2 mb-5 font-weight-light font-white">The secret to more downloads</h2>
@@ -65,10 +65,12 @@
       </div>
     </div>
 
-    <div class="row text-center position-relative light-blue-bg pb-5 pt-5">
+    <div class="row text-center position-relative light-blue-bg pb-1 pb-md-5 pt-1 pt-md-5">
       <div class="container pb-5 pt-5">
-        <h2 class="mt-2 mb-2 font-weight-light font-white">Need a video for your app?</h2>
-        <button class="btn white-btn">Contact us</button>
+        <div class="row p-4 justify-content-center">
+          <h2 class="mt-2 mb-2 font-weight-light font-white">Need a video for your app?</h2>
+          <button class="btn white-btn font-blue ml-0 ml-lg-4">CONTACT US</button>
+        </div>
       </div>
     </div>
 
@@ -117,7 +119,7 @@
               managing user expectations.</p>
             <div class="pricing pt-3">
               <span class="font-blue">Starting at only $499</span>
-              <button class="btn orange-btn font-white ml-4">GET MY FREE QUOTE</button>
+              <button class="btn orange-btn font-white ml-0 ml-md-4">GET MY FREE QUOTE</button>
             </div>
           </div>
         </div>
@@ -147,13 +149,13 @@
               and clearly explains what it does in a fun way.</p>
             <div class="pricing pt-3">
               <span class="font-blue">Starting at only $1499</span>
-              <button class="btn orange-btn font-white ml-4">GET MY FREE QUOTE</button>
+              <button class="btn orange-btn font-white ml-0 ml-md-4">GET MY FREE QUOTE</button>
             </div>
           </div>
         </div>
 
         <div class="row mt-3 mb-3 price-section">
-          <div class="col-12 col-md-10 offset-md-1 top-break pb-5 pt-5 text-center">
+          <div class="col-12 col-md-10 offset-md-1 top-break pb-1 pb-md-5 pt-5 text-center">
             <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
                 <div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true"
@@ -174,7 +176,7 @@
               your app.</p>
             <div class="pricing pt-3">
               <span class="font-blue">Starting at only $249</span>
-              <button class="btn orange-btn font-white ml-4">GET MY FREE QUOTE</button>
+              <button class="btn orange-btn font-white ml-0 ml-md-4">GET MY FREE QUOTE</button>
             </div>
           </div>
         </div>
@@ -191,7 +193,7 @@
       <div class="col-12 col-xl-10 offset-xl-1" style="z-index: 2">
         <div class="row">
 
-          <div class="col-3 text-left">
+          <div class="col-12 col-md-6 col-lg-3 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -212,7 +214,7 @@
             </div>
           </div>
 
-          <div class="col-3 text-left">
+          <div class="col-12 col-md-6 col-lg-3 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -233,7 +235,7 @@
             </div>
           </div>
 
-          <div class="col-3 text-left">
+          <div class="col-12 col-md-6 col-lg-3 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -254,7 +256,7 @@
             </div>
           </div>
 
-          <div class="col-3 text-left">
+          <div class="col-12 col-md-6 col-lg-3 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -292,7 +294,7 @@
           <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mb-5 mt-4" style="z-index: 2">
             <form @submit="formResponse"
                   id="contact"
-                  action="https://forms.hubspot.com/uploads/form/v2/4845111/73f81894-f196-4812-a1b7-c57845dd123f"
+                  action="https://forms.hubspot.com/uploads/form/v2/4845111/424dc64e-571e-4b8c-adc1-0f410de13429"
                   method="post" class="bg-white p-5 font-grey">
 
               <div id="thanksResponse" class="text-center d-none w-100">
@@ -377,6 +379,17 @@
 <script>
   export default {
     name: "LandingPage3",
+    methods: {
+      formResponse() {
+        $(document).ready(function () {
+          $('#contact .row').each(function () {
+            $(this).addClass('d-none');
+          });
+
+          $('#thanksResponse').removeClass('d-none');
+        })
+      }
+    },
     mounted() {
 
         let url = window.location.toString();
@@ -410,14 +423,15 @@
 
   .overlap3
     position: absolute
-    bottom: -9px
+    bottom: -7px
     left: -9px
     z-index: 0
+    width: 29%
 
   .submit
     background: #E98000
     border-radius: 5px
-    padding: 0.5rem
+    padding: 0.5rem0
     width: 100%
     max-width: 200px
     margin: 1rem auto
@@ -455,7 +469,7 @@
     p
       text-align: left
 
-  .orange-btn
+  .orange-btn, .white-btn
     background: #E98000
     border-radius: 8px
     box-shadow: 0 0 7px #9c9c9c
@@ -463,6 +477,9 @@
     border: none
     font-size: 24px
     font-weight: 700
+
+  .white-btn
+    background: #ffffff
 
   .pricing
     display: flex
@@ -512,7 +529,7 @@
 
   .img2
     position: absolute
-    z-index: 1
+    z-index: 0
     bottom: -6px
     left: 45px
     width: 11%
@@ -522,14 +539,14 @@
     z-index: 1
     width: 29%
     left: -7px
-    bottom: -9px
+    bottom: -6px
 
   .overlap2
     position: absolute
     z-index: 1
     width: 29%
     right: -7px
-    top: -9px
+    top: -6px
     transform: rotate(180deg)
 
   .hero_bg
@@ -539,6 +556,7 @@
 
   .header_input
     max-width: 340px
+    width: 100%
     border-radius: 25px
     height: 40px
 
@@ -547,6 +565,42 @@
     color: white
     border: 3px solid white
     border-radius: 25px
-    width: 170px
+    width: 100%
+    max-width: 170px
     margin-left: 20px
+
+  @media(max-width: 767px)
+    .pricing
+      flex-flow: column nowrap
+      button
+        margin-top: 1rem
+
+    .sub_header
+      span
+        font-size: 2rem
+
+    .items-checklist
+      li
+        span
+          font-size: 20px
+        img
+          max-width: 60px
+
+    .container
+      z-index: 1
+
+    .img1
+      width: 23%
+      z-index: 0
+
+    .img2
+      width: 15%
+    h2
+      font-size: 2.5rem
+
+    .overlap1, .overlap2, .overlap3
+      width: 39%
+    p
+      font-size: 16px
+
 </style>
