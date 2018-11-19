@@ -2,9 +2,12 @@
   <div>
     <div class="row" style="margin-top: -1px">
       <div class="col-12">
-        <div class="nav navbar">
+        <div class="nav navbar pl-md-5 pr-md-5 pt-md-3">
           <img src="../../assets/home/Logo_NavBar.png" class="img-fluid logo" alt="logo">
-          <span></span>
+          <div class="contact-bar">
+            <span class="font-white">Need a video to showcase your app?</span>
+            <button @click="scrollIntoView" class="btn contact-btn font-orange ml-2">Contact Us</button>
+          </div>
         </div>
       </div>
     </div>
@@ -17,8 +20,7 @@
 
       <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mt-3">
         <div class="row align-items-center justify-content-center p-4" style="flex-flow: row nowrap">
-          <input class="form-control header_input" type="text" placeholder="Enter your email">
-          <button class="btn white-btn-outline">GET A QUOTE</button>
+          <button @click="scrollIntoView"  class="btn white-btn-outline">GET A QUOTE</button>
         </div>
       </div>
 
@@ -28,7 +30,7 @@
     </div>
 
     <div class="row text-center position-relative pb-5 pt-2 pt-md-5">
-      <img class="img-fluid overlap1" src="../../assets/landing_page3/App_Landing_Struggle_Overlap_04_Shadow.png"
+      <img class="img-fluid overlap1" src="../../assets/landing_page3/App_Landing_Struggle_Overlap_06_Shadow.png"
            alt="">
       <div class="container pb-5 pt-5">
         <h2 class="mt-2 mb-5 font-weight-light font-orange">The struggle is real.</h2>
@@ -65,17 +67,17 @@
       </div>
     </div>
 
-    <div class="row text-center position-relative light-blue-bg pb-1 pb-md-5 pt-1 pt-md-5">
+    <div class="row text-center position-relative light-blue-bg pb-1 pb-md-3 pt-1 pt-md-3">
       <div class="container pb-5 pt-5">
-        <div class="row p-4 justify-content-center">
+        <div class="row p-4 justify-content-center align-items-center">
           <h2 class="mt-2 mb-2 font-weight-light font-white">Need a video for your app?</h2>
-          <button class="btn white-btn font-blue ml-0 ml-lg-4">CONTACT US</button>
+          <button @click="scrollIntoView" class="btn white-btn font-blue ml-0 ml-lg-4">CONTACT US</button>
         </div>
       </div>
     </div>
 
     <div class="row text-center position-relative pb-5 pt-5">
-      <img class="img-fluid overlap2" src="../../assets/landing_page3/App_Landing_Reviews_Overlap_03_Shadow.png" alt="">
+      <img class="img-fluid overlap2" src="../../assets/landing_page3/App_Landing_Reviews_Overlap_06_Shadow.png" alt="">
       <div class="container pb-5 pt-5">
         <div class="row">
           <div class="col-12">
@@ -100,18 +102,8 @@
         <div class="row mt-3 mb-3 price-section">
           <div class="col-12 col-md-10 offset-md-1 top-break pb-5 pt-5 text-center">
             <h2 class="mt-2 mb-5 font-weight-light font-orange">Types of app videos</h2>
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-              <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                <div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true"
-                     style="height:100%;position:relative;width:100%">
-                  <div class="wistia_swatch"
-                       style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                    <img src="https://fast.wistia.com/embed/medias/1gsd7phy3v/swatch"
-                         style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt=""
-                         onload="this.parentNode.style.opacity=1;"/></div>
-                </div>
-              </div>
-            </div>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_isny8pml74 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/isny8pml74/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+
             <div class="sub_header"><span>APP PROMOS</span></div>
             <p class="pt-2 pb-4">With app promos people will know exactly what the app does and what it
               looks like so people can make a decision about whether they want to
@@ -119,7 +111,7 @@
               managing user expectations.</p>
             <div class="pricing pt-3">
               <span class="font-blue">Starting at only $499</span>
-              <button class="btn orange-btn font-white ml-0 ml-md-4">GET MY FREE QUOTE</button>
+              <button @click="scrollIntoView" class="btn orange-btn font-white ml-0 ml-md-4">GET MY FREE QUOTE</button>
             </div>
           </div>
         </div>
@@ -149,20 +141,20 @@
               and clearly explains what it does in a fun way.</p>
             <div class="pricing pt-3">
               <span class="font-blue">Starting at only $1499</span>
-              <button class="btn orange-btn font-white ml-0 ml-md-4">GET MY FREE QUOTE</button>
+              <button @click="scrollIntoView" class="btn orange-btn font-white ml-0 ml-md-4">GET MY FREE QUOTE</button>
             </div>
           </div>
         </div>
 
         <div class="row mt-3 mb-3 price-section">
           <div class="col-12 col-md-10 offset-md-1 top-break pb-1 pb-md-5 pt-5 text-center">
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_padding" style="padding:216.25% 0 0 0;position:relative;">
               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                <div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true"
+                <div class="wistia_embed wistia_async_3uqeo8h7i3 videoFoam=true"
                      style="height:100%;position:relative;width:100%">
                   <div class="wistia_swatch"
                        style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                    <img src="https://fast.wistia.com/embed/medias/1gsd7phy3v/swatch"
+                    <img src="https://fast.wistia.com/embed/medias/3uqeo8h7i3/swatch"
                          style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt=""
                          onload="this.parentNode.style.opacity=1;"/></div>
                 </div>
@@ -176,7 +168,7 @@
               your app.</p>
             <div class="pricing pt-3">
               <span class="font-blue">Starting at only $249</span>
-              <button class="btn orange-btn font-white ml-0 ml-md-4">GET MY FREE QUOTE</button>
+              <button @click="scrollIntoView" class="btn orange-btn font-white ml-0 ml-md-4">GET MY FREE QUOTE</button>
             </div>
           </div>
         </div>
@@ -193,7 +185,7 @@
       <div class="col-12 col-xl-10 offset-xl-1" style="z-index: 2">
         <div class="row">
 
-          <div class="col-12 col-md-6 col-lg-3 text-left">
+          <div class="col-12 col-md-6 col-xl-3 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -214,7 +206,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-3 text-left">
+          <div class="col-12 col-md-6 col-xl-3 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -235,7 +227,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-3 text-left">
+          <div class="col-12 col-md-6 col-xl-3 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -256,7 +248,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-3 text-left">
+          <div class="col-12 col-md-6 col-xl-3 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -276,13 +268,15 @@
               </div>
             </div>
           </div>
+
+
 
         </div>
       </div>
-      <img class="img-fluid overlap3" src="../../assets/landing_page3/App_Landing_Reviews_Overlap_03_Shadow.png" alt="">
+      <img class="img-fluid overlap3" src="../../assets/landing_page3/App_Landing_Reviews_Overlap_06_Shadow.png" alt="">
     </div>
 
-    <div class="row text-center position-relative light-blue-bg pb-5 pt-5">
+    <div id="contact" class="row text-center position-relative light-blue-bg pb-5 pt-5">
       <div class="container">
         <div class="row">
           <div class="col-12 col-xl-8 offset-xl-2 font-white">
@@ -380,6 +374,10 @@
   export default {
     name: "LandingPage3",
     methods: {
+      scrollIntoView() {
+        var element = document.getElementById("contact");
+        element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+      },
       formResponse() {
         $(document).ready(function () {
           $('#contact .row').each(function () {
@@ -402,11 +400,33 @@
       let whyVideo = document.createElement('script');
       whyVideo.setAttribute('src', 'https://fast.wistia.com/embed/medias/1gsd7phy3v.jsonp');
       document.head.appendChild(whyVideo);
+
+      let promo = document.createElement('script');
+      promo.setAttribute('src', 'https://fast.wistia.com/embed/medias/isny8pml74.jsonp');
+      document.head.appendChild(promo);
+
+      let preview = document.createElement('script');
+      preview.setAttribute('src', 'https://fast.wistia.com/embed/medias/3uqeo8h7i3.jsonp');
+      document.head.appendChild(preview);
     }
   }
 </script>
 
 <style lang="sass" scoped>
+  .btn:hover
+    box-shadow: 0 3px 4px #595959
+
+  .contact-bar
+    span
+      font-weight: 700
+      font-size: 14px
+
+  .contact-btn
+    text-transform: uppercase
+    background: white
+    font-weight: 700
+    padding: 0.3rem 1rem
+
   p
     font-size: 21px
 
@@ -423,8 +443,8 @@
 
   .overlap3
     position: absolute
-    bottom: -7px
-    left: -9px
+    bottom: 0
+    left: 0
     z-index: 0
     width: 29%
 
@@ -471,9 +491,10 @@
 
   .orange-btn, .white-btn
     background: #E98000
+    height: 50px
     border-radius: 8px
     box-shadow: 0 0 7px #9c9c9c
-    padding: 0.5rem 0.8rem
+    padding: 0.25rem 1rem
     border: none
     font-size: 24px
     font-weight: 700
@@ -508,8 +529,9 @@
       justify-content: flex-start
       img
         margin-right: 0.5rem
+        max-width: 50px
       span
-        font-size: 28px
+        font-size: 22px
         font-weight: 700
 
   .light-blue-bg
@@ -538,15 +560,15 @@
     position: absolute
     z-index: 1
     width: 29%
-    left: -7px
-    bottom: -6px
+    left: 0
+    bottom: 0
 
   .overlap2
     position: absolute
     z-index: 1
     width: 29%
-    right: -7px
-    top: -6px
+    right: 0
+    top: 0
     transform: rotate(180deg)
 
   .hero_bg
@@ -567,9 +589,15 @@
     border-radius: 25px
     width: 100%
     max-width: 170px
-    margin-left: 20px
 
   @media(max-width: 767px)
+    .navbar
+      .logo
+        max-width: 110px
+      .contact-bar
+        span
+          display: none
+
     .pricing
       flex-flow: column nowrap
       button
@@ -583,8 +611,6 @@
       li
         span
           font-size: 20px
-        img
-          max-width: 60px
 
     .container
       z-index: 1
