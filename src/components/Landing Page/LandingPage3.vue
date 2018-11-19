@@ -82,7 +82,7 @@
         <div class="row">
           <div class="col-12">
             <h2 class="mt-2 mb-5 font-weight-light font-orange">Benefits of app videos:</h2>
-            <ul class="items-checklist p-0 col-10 offset-1 col-xl-6 offset-xl-3 text-left">
+            <ul class="items-checklist p-0 col-10 offset-1 col-xl-6 offset-xl-4 text-left">
               <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Get more app installs</span>
               </li>
               <li><img class="img-fluid" src="../../assets/landing_page3/App_Landing_Check_Mark.png" alt=""><span>Increase your conversions</span>
@@ -148,7 +148,7 @@
 
         <div class="row mt-3 mb-3 price-section">
           <div class="col-12 col-md-10 offset-md-1 top-break pb-1 pb-md-5 pt-5 text-center">
-            <div class="wistia_responsive_padding" style="padding:216.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_padding" style="padding:216.25% 0 0 0;position:relative;max-width:200px">
               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
                 <div class="wistia_embed wistia_async_3uqeo8h7i3 videoFoam=true"
                      style="height:100%;position:relative;width:100%">
@@ -182,10 +182,10 @@
         <h2 class="mt-4 mb-4 font-weight-light font-orange">Nice words from our clients</h2>
       </div>
 
-      <div class="col-12 col-xl-10 offset-xl-1" style="z-index: 2">
+      <div class="col-12 pl-xl-5 pr-xl-5" style="z-index: 2">
         <div class="row">
 
-          <div class="col-12 col-md-6 col-xl-3 text-left">
+          <div class="col-12 col-md-6 col-xl-3 p-2 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -206,7 +206,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-xl-3 text-left">
+          <div class="col-12 col-md-6 col-xl-3 p-2 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -227,7 +227,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-xl-3 text-left">
+          <div class="col-12 col-md-6 col-xl-3 p-2 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -248,7 +248,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-xl-3 text-left">
+          <div class="col-12 col-md-6 col-xl-3 p-2 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -476,6 +476,8 @@
     padding: 2.45rem 2rem
     margin: 1.5rem 0.2rem
     border-radius: 18px
+    max-height: 400px
+    overflow: auto
     p, span
       font-size: 18px
       line-height: 21px
@@ -545,9 +547,10 @@
   .img1
     position: absolute
     z-index: 1
-    bottom: -1px
+    bottom: -2px
     right: 0
     width: 18%
+    max-width: 250px
 
   .img2
     position: absolute
@@ -555,20 +558,21 @@
     bottom: -6px
     left: 45px
     width: 11%
+    max-width: 200px
 
   .overlap1
     position: absolute
     z-index: 1
     width: 29%
     left: 0
-    bottom: 0
+    bottom: -1px
 
   .overlap2
     position: absolute
     z-index: 1
     width: 29%
     right: 0
-    top: 0
+    top: -1px
     transform: rotate(180deg)
 
   .hero_bg
@@ -589,6 +593,11 @@
     border-radius: 25px
     width: 100%
     max-width: 170px
+
+  @media(max-width: 1200px)
+    .review
+      padding: 1.5rem
+      margin: 0.5rem 0.2rem
 
   @media(max-width: 767px)
     .navbar
