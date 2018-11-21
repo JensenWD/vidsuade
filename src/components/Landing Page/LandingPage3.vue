@@ -392,7 +392,8 @@
         this.formResponse();
 
         $(document).ready(function () {
-          this.scrollIntoView();
+          var element = document.getElementById("contact_form");
+          element.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
         })
     },
     mounted() {
