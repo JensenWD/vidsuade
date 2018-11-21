@@ -388,8 +388,12 @@
       }
     },
     created() {
-      if(this.getUrlParams('thanks') === 1)
+      if(this.getUrlParams('thanks') == 1)
         this.formResponse();
+
+        $(document).ready(function () {
+          this.scrollIntoView();
+        })
     },
     mounted() {
 
