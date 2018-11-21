@@ -32,8 +32,8 @@
     <div class="row text-center position-relative pb-5 pt-2 pt-md-5">
       <img class="img-fluid overlap1" src="../../assets/landing_page3/App_Landing_Struggle_Overlap_06_Shadow.png"
            alt="">
-      <div class="container pb-5 pt-5">
-        <h2 class="mt-2 mb-5 font-weight-light font-orange">The struggle is real.</h2>
+      <div class="container pb-3 pt-3 pb-md-5 pt-md-5">
+        <h2 class="mt-2 mb-2 mb-md-5 font-weight-light font-orange">The struggle is real.</h2>
         <div class="row">
           <div class="col-10 offset-1 col-lg-8 offset-lg-2">
             <p class="text-left">If you’ve developed mobile apps before then you know how difficult it can
@@ -51,8 +51,8 @@
 
     <div class="row text-center position-relative blue-bg pb-5 pt-2 pt-md-5">
       <img class="img-fluid img2 d-none d-md-block" src="../../assets/landing_page3/App_Landing_Downloads_Illustration.png" alt="">
-      <div class="container pb-5 pt-5">
-        <h2 class="mt-2 mb-5 font-weight-light font-white">The secret to more downloads</h2>
+      <div class="container pb-3 pt-3 pb-md-5 pt-md-5">
+        <h2 class="mt-2 mb-2 mb-md-5 font-weight-light font-white">The secret to more downloads</h2>
         <div class="row">
           <div class="col-10 offset-1 col-lg-8 offset-lg-2">
             <p class="text-left font-white">According to TUNE, mobile apps that include videos get higher ratings and
@@ -68,7 +68,7 @@
     </div>
 
     <div class="row text-center position-relative light-blue-bg pb-1 pb-md-3 pt-1 pt-md-3">
-      <div class="container pb-5 pt-5">
+      <div class="container pb-3 pt-3 pb-md-5 pt-md-5">
         <div class="row p-4 justify-content-center align-items-center">
           <h2 class="mt-2 mb-2 font-weight-light font-white">Need a video for your app?</h2>
           <button @click="scrollIntoView" class="btn white-btn font-blue ml-0 ml-lg-4">CONTACT US</button>
@@ -373,7 +373,23 @@
 
           $('#thanksResponse').removeClass('d-none');
         })
+      },
+      getUrlParams(prop) {
+        var params = {};
+        var search = decodeURIComponent(window.location.href.slice(window.location.href.indexOf('?') + 1));
+        var definitions = search.split('&');
+
+        definitions.forEach(function (val, key) {
+          var parts = val.split('=', 2);
+          params[parts[0]] = parts[1];
+        });
+
+        return (prop && prop in params) ? params[prop] : params;
       }
+    },
+    created() {
+      if(this.getUrlParams('thanks') === 1)
+        this.formResponse();
     },
     mounted() {
 
