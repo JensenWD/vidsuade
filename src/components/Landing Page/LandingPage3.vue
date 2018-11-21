@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row" style="margin-top: -1px">
+    <div class="row sticky-top">
       <div class="col-12">
         <div class="nav navbar pl-md-5 pr-md-5 pt-md-3">
           <img src="../../assets/home/Logo_NavBar.png" class="img-fluid logo" alt="logo">
@@ -36,7 +36,7 @@
         <h2 class="mt-2 mb-5 font-weight-light font-orange">The struggle is real.</h2>
         <div class="row">
           <div class="col-10 offset-1 col-lg-8 offset-lg-2">
-            <p class="text-left">If you’ve developed mobile app before then you know how difficult it can
+            <p class="text-left">If you’ve developed mobile apps before then you know how difficult it can
               be to get discovered. You’ve done everything right from researching
               keywords to having stellar reviews, but you’re still stuck with only having
               a handful of downloads. <br><br>It’s not easy getting discovered when the app market is so saturated. It
@@ -46,11 +46,11 @@
           </div>
         </div>
       </div>
-      <img class="img-fluid img1" src="../../assets/landing_page3/App_Landing_Struggle_Illustration.png" alt="">
+      <img class="img-fluid img1 d-none d-md-block" src="../../assets/landing_page3/App_Landing_Struggle_Illustration.png" alt="">
     </div>
 
     <div class="row text-center position-relative blue-bg pb-5 pt-2 pt-md-5">
-      <img class="img-fluid img2" src="../../assets/landing_page3/App_Landing_Downloads_Illustration.png" alt="">
+      <img class="img-fluid img2 d-none d-md-block" src="../../assets/landing_page3/App_Landing_Downloads_Illustration.png" alt="">
       <div class="container pb-5 pt-5">
         <h2 class="mt-2 mb-5 font-weight-light font-white">The secret to more downloads</h2>
         <div class="row">
@@ -78,7 +78,7 @@
 
     <div class="row text-center position-relative pb-5 pt-5">
       <img class="img-fluid overlap2" src="../../assets/landing_page3/App_Landing_Reviews_Overlap_06_Shadow.png" alt="">
-      <div class="container pb-5 pt-5">
+      <div class="container pb-4 pt-5">
         <div class="row">
           <div class="col-12">
             <h2 class="mt-2 mb-5 font-weight-light font-orange">Benefits of app videos:</h2>
@@ -100,7 +100,10 @@
         </div>
 
         <div class="row mt-3 mb-3 price-section">
-          <div class="col-12 col-md-10 offset-md-1 top-break pb-5 pt-5 text-center">
+          <div class="col-12 col-md-10 offset-md-1 pb-5 text-center">
+
+            <div class="top-break mt-2 pb-5"></div>
+
             <h2 class="mt-2 mb-5 font-weight-light font-orange">Types of app videos</h2>
             <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_isny8pml74 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/isny8pml74/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
 
@@ -117,7 +120,10 @@
         </div>
 
         <div class="row mt-3 mb-3 price-section">
-          <div class="col-12 col-md-10 offset-md-1 top-break pb-5 pt-5 text-center">
+          <div class="col-12 col-md-10 offset-md-1 pb-5 text-center">
+
+            <div class="top-break mt-2 pb-5"></div>
+
             <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
                 <div class="wistia_embed wistia_async_1gsd7phy3v videoFoam=true"
@@ -146,9 +152,12 @@
           </div>
         </div>
 
-        <div class="row mt-3 mb-3 price-section">
-          <div class="col-12 col-md-10 offset-md-1 top-break pb-1 pb-md-5 pt-5 text-center">
-            <div class="wistia_responsive_padding" style="padding:216.25% 0 0 0;position:relative;max-width:200px">
+        <div class="row mt-3 price-section">
+          <div class="col-12 col-md-10 offset-md-1 pb-1 text-center">
+
+            <div class="top-break mt-2 pb-5"></div>
+
+            <div class="wistia_responsive_padding" style="padding:216.25% 0 0 0;position:relative;max-width:200px;height: 400px">
               <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
                 <div class="wistia_embed wistia_async_3uqeo8h7i3 videoFoam=true"
                      style="height:100%;position:relative;width:100%">
@@ -182,10 +191,10 @@
         <h2 class="mt-4 mb-4 font-weight-light font-orange">Nice words from our clients</h2>
       </div>
 
-      <div class="col-12 pl-xl-5 pr-xl-5" style="z-index: 2">
+      <div class="col-12 col-xl-10 offset-xl-1" style="z-index: 2">
         <div class="row">
 
-          <div class="col-12 col-md-6 col-xl-3 p-2 text-left">
+          <div class="col-12 col-sm-8 offset-sm-2 offset-lg-0 col-lg-4 p-2 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -206,49 +215,27 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-xl-3 p-2 text-left">
+          <div class="col-12 col-sm-8 offset-sm-2 offset-lg-0 col-lg-4 p-2 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
               </div>
 
               <div class="col-12">
-                <p>“Vidsuade’s talent extends far beyond creating unique designs and animations. Their consultative
-                  approach to truly understand our brand has instilled trust in my agency to keep coming back for more!
-                  I highly recommend Vidsuade.”</p>
-
+                <p>“Vidsuade made a video for our company, Woblet, and it was absolutely perfect! Will and team were all
+                  great to work with, and the video that they put together for us was exactly what we wanted, in budget,
+                  and turned around quickly. I highly recommend Vidsuade!”</p>
                 <div>
-                  <span class="quoted">- Garrett Seiger</span>
+                  <span class="quoted">- Dan Waltzer</span>
                 </div>
                 <div>
-                  <span class="quoted">President of Pirate Labs</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-xl-3 p-2 text-left">
-            <div class="row review">
-              <div class="col-12 mb-4 text-center">
-                <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
-              </div>
-
-              <div class="col-12">
-                <p>“Vidsuade’s talent extends far beyond creating unique designs and animations. Their consultative
-                  approach to truly understand our brand has instilled trust in my agency to keep coming back for more!
-                  I highly recommend Vidsuade.”</p>
-
-                <div>
-                  <span class="quoted">- Garrett Seiger</span>
-                </div>
-                <div>
-                  <span class="quoted">President of Pirate Labs</span>
+                  <span class="quoted">CEO of Woblet</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-xl-3 p-2 text-left">
+          <div class="col-12 col-sm-8 offset-sm-2 offset-lg-0 col-lg-4 p-2 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
                 <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
@@ -276,7 +263,7 @@
       <img class="img-fluid overlap3" src="../../assets/landing_page3/App_Landing_Reviews_Overlap_06_Shadow.png" alt="">
     </div>
 
-    <div id="contact" class="row text-center position-relative light-blue-bg pb-5 pt-5">
+    <div id="contact_form" class="row text-center position-relative light-blue-bg pb-5 pt-5">
       <div class="container">
         <div class="row">
           <div class="col-12 col-xl-8 offset-xl-2 font-white">
@@ -375,7 +362,7 @@
     name: "LandingPage3",
     methods: {
       scrollIntoView() {
-        var element = document.getElementById("contact");
+        var element = document.getElementById("contact_form");
         element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       },
       formResponse() {
@@ -413,8 +400,11 @@
 </script>
 
 <style lang="sass" scoped>
+  .bg-color
+    background: #00a9e5 !important
+
   .btn:hover
-    box-shadow: 0 3px 4px #595959
+    box-shadow: 0 2px 4px #9e9e9e
 
   .contact-bar
     span
@@ -593,6 +583,10 @@
     border-radius: 25px
     width: 100%
     max-width: 170px
+
+  .sticky-top
+    display: block !important
+    margin-top: -1px
 
   @media(max-width: 1200px)
     .review
