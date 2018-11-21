@@ -388,13 +388,14 @@
       }
     },
     created() {
-      if(this.getUrlParams('thanks') == 1)
+      if (this.getUrlParams('thanks') == 1) {
         this.formResponse();
 
         $(document).ready(function () {
           var element = document.getElementById("contact_form");
           element.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
         })
+      }
     },
     mounted() {
 
