@@ -15,9 +15,10 @@
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Social media <br class="d-none d-xl-block"> spots</h4>
+                <h4 class="card-title">Social media spots</h4>
                 <div>
-                  <span class="price font-grey">$500-$1k</span>
+                  <div class="font-grey">Starting at only</div>
+                  <span class="price font-grey">$500</span>
                 </div>
                 <router-link to="/contact"><button class="btn font-white">Get my quote</button></router-link>
                 <p class="font-grey">Showcase your brand in a creative way. This is the best way to create engagement on social media.</p>
@@ -37,16 +38,17 @@
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Sales process <br class="d-none d-xl-block"> videos</h4>
+                <h4 class="card-title">Sales process videos</h4>
                 <div>
-                  <span class="price font-grey">$2k-$8k</span>
+                  <div class="font-grey">Starting at only</div>
+                  <span class="price font-grey">$1,500</span>
                 </div>
                 <router-link to="/contact"><button class="btn font-white">Get my quote</button></router-link>
                 <p class="font-grey">Let your website answer all of your customers' questions and shorten your sales cycle.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
                 <ul class="font-grey text-left m-0 pl-2">
                   <li>Scripts written by professional copywriters</li>
-                  <li>Professional 4k HD video</li>
+                  <li>Up to 4k HD video</li>
                   <li>Highly targeted call-to-action & marketing strategy</li>
                 </ul>
 
@@ -59,16 +61,17 @@
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Testimonial <br class="d-none d-xl-block"> videos</h4>
+                <h4 class="card-title">Testimonial videos</h4>
                 <div>
-                  <span class="price font-grey">$5k-$10k</span>
+                  <div class="font-grey">Starting at only</div>
+                  <span class="price font-grey">$2,500</span>
                 </div>
                 <router-link to="/contact"><button class="btn font-white">Get my quote</button></router-link>
                 <p class="font-grey">Provides social proof and establishes trust with your company. Highly effective at converting leads.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
                 <ul class="font-grey text-left m-0 pl-2">
                   <li>Questions written to evoke a story</li>
-                  <li>Professional 4k HD video</li>
+                  <li>Up to 4k HD video</li>
                   <li>Highly targeted call-to-action & marketing strategy</li>
                 </ul>
 
@@ -81,16 +84,17 @@
             <div class="card h-100">
 
               <div class="card-block fs-16">
-                <h4 class="card-title">Explainer <br class="d-none d-xl-block"> videos</h4>
+                <h4 class="card-title">Explainer videos</h4>
                 <div>
-                  <span class="price font-grey">$8k-$15k</span>
+                  <div class="font-grey">Starting at only</div>
+                  <span class="price font-grey">$3,500</span>
                 </div>
                 <router-link to="/contact"><button class="btn font-white">Get my quote</button></router-link>
                 <p class="font-grey">Presents viewers with their problem and provides them with your solution. Highly effective at capturing leads.</p>
                 <span class="font-grey font-weight-bold">What you'll get:</span>
                 <ul class="font-grey text-left m-0 pl-2">
                   <li>Scripts written by professional copywriters</li>
-                  <li>Professional 4k HD video</li>
+                  <li>Up to 4k HD video</li>
                   <li>Highly targeted call-to-action & marketing strategy</li>
                 </ul>
 
@@ -309,6 +313,12 @@
 </script>
 
 <style lang="sass" scoped>
+
+  h4.card-title
+    font-size: 1.3rem
+    margin-bottom: 0.4rem
+    font-weight: 700
+
   .hero_bg
     background-image: url("../assets/pricing/Pricing_Hero_Photo.png")
     background-size: cover
@@ -320,7 +330,7 @@
     margin-top: -500px
     .card
       border-radius: 0
-      padding: 1.5rem 1.75rem
+      padding: 1.5rem
       box-shadow: 0 2px 5px #b7b7b7
       .card-title
         color: #009EE9
