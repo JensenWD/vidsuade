@@ -218,7 +218,7 @@
           <div class="col-12 col-sm-8 offset-sm-2 offset-lg-0 col-lg-4 p-2 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
-                <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
+                <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Woblet_Logo.png">
               </div>
 
               <div class="col-12">
@@ -238,19 +238,20 @@
           <div class="col-12 col-sm-8 offset-sm-2 offset-lg-0 col-lg-4 p-2 text-left">
             <div class="row review">
               <div class="col-12 mb-4 text-center">
-                <img class="img-fluid" src="../../assets/landing_page3/App_Landing_Pirate_Labs_Logo.png">
+                <img class="img-fluid" src="../../assets/landing_page3/App_Landing_AP_Logo.png">
               </div>
 
               <div class="col-12">
-                <p>“Vidsuade’s talent extends far beyond creating unique designs and animations. Their consultative
-                  approach to truly understand our brand has instilled trust in my agency to keep coming back for more!
-                  I highly recommend Vidsuade.”</p>
+                <p>“ I worked with Visuade for an explainer video for Accident Protocol. Visuade was able to bring our
+                  vision to life and really impressed our prospects at our trade show. I would recommend Visuade to
+                  anyone! They work within your deadline, are extremely professional and reliable and produce great
+                  quality work.”</p>
 
                 <div>
-                  <span class="quoted">- Garrett Seiger</span>
+                  <span class="quoted">- Valeria Shcheglyatyeva</span>
                 </div>
                 <div>
-                  <span class="quoted">President of Pirate Labs</span>
+                  <span class="quoted">Marketing Coordinator</span>
                 </div>
               </div>
             </div>
@@ -490,6 +491,7 @@
     border-radius: 18px
     max-height: 400px
     overflow: auto
+    height: 100%
     p, span
       font-size: 18px
       line-height: 21px
