@@ -2,7 +2,7 @@
     <div class="col-12" style="min-height: 0;">
         <nav class="navbar navbar-expand-lg navbar-light">
             <router-link class="navbar-brand ml-4" to="/">
-                <img src="../assets/home/Logo_NavBar.png" class="img-fluid logo" alt="logo">
+                <img src="../assets/home/Logo.gif" class="img-fluid logo" alt="logo">
             </router-link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

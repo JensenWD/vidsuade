@@ -3,10 +3,10 @@
     <div class="row sticky-top">
       <div class="col-12">
         <div class="nav navbar pl-md-5 pr-md-5 pt-md-3">
-          <img src="../../assets/home/Logo_NavBar.png" class="img-fluid logo" alt="logo">
+          <img src="../../assets/home/Logo.gif" class="img-fluid logo" alt="logo">
           <div class="contact-bar">
             <span class="font-white">Need a video to showcase your app?</span>
-            <button @click="scrollIntoView" class="btn contact-btn font-orange ml-2">Contact Us</button>
+            <button @click="scrollIntoView" class="animated btn contact-btn font-orange ml-2">Contact Us</button>
           </div>
         </div>
       </div>
@@ -270,7 +270,7 @@
           <div class="col-12 col-xl-8 offset-xl-2 font-white">
             <h2 class="mt-4 mb-4 font-weight-light">Contact us</h2>
             <p>Need a video to showcase your app? Or do you have something you’d
-              like to ask us? Fill our the form below and we’ll get back</p>
+              like to ask us? Fill our the form below and we’ll get back to you.</p>
           </div>
 
           <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mb-5 mt-4" style="z-index: 2">
@@ -399,6 +399,25 @@
       }
     },
     mounted() {
+        //RUN ONCE
+        $('.contact-btn').addClass('shake');
+        setTimeout(function () {
+            $('.contact-btn').removeClass('shake');
+        }, 3000);
+
+        //THEN ON INTERVAL
+        setInterval(function () {
+            $('.contact-btn').addClass('shake');
+            setTimeout(function () {
+                $('.contact-btn').removeClass('shake');
+            }, 3000);
+        }, 3500);
+
+
+
+
+
+
 
         let url = window.location.toString();
 
