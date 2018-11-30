@@ -6,7 +6,7 @@
           <img src="../../assets/home/Logo.gif" class="img-fluid logo" alt="logo">
           <div class="contact-bar">
             <span class="font-white">Need a video to showcase your app?</span>
-            <button @click="scrollIntoView" class="animated btn contact-btn font-orange ml-2">Contact Us</button>
+            <button @click="scrollIntoView" class="btn contact-btn font-orange ml-2">Contact Us</button>
           </div>
         </div>
       </div>
@@ -399,19 +399,19 @@
       }
     },
     mounted() {
-        //RUN ONCE
-        $('.contact-btn').addClass('shake');
-        setTimeout(function () {
-            $('.contact-btn').removeClass('shake');
-        }, 3000);
-
-        //THEN ON INTERVAL
-        setInterval(function () {
-            $('.contact-btn').addClass('shake');
-            setTimeout(function () {
-                $('.contact-btn').removeClass('shake');
-            }, 3000);
-        }, 3500);
+        // //RUN ONCE
+        // $('.contact-btn').addClass('wiggle');
+        // setTimeout(function () {
+        //     $('.contact-btn').removeClass('wiggle');
+        // }, 3000);
+        //
+        // //THEN ON INTERVAL
+        // setInterval(function () {
+        //     $('.contact-btn').addClass('wiggle');
+        //     setTimeout(function () {
+        //         $('.contact-btn').removeClass('wiggle');
+        //     }, 3000);
+        // }, 4500);
 
 
 
@@ -458,6 +458,52 @@
     background: white
     font-weight: 700
     padding: 0.3rem 1rem
+    animation-iteration-count: infinite
+    animation-duration: 5s
+    -webkit-animation-name: wiggle
+    -moz-animation-name: wiggle
+    -o-animation-name: wiggle
+    animation-name: wiggle
+    -webkit-animation-play-state: running
+    -moz-animation-play-state: running
+    -o-animation-play-state: running
+    animation-play-state: running
+    -webkit-animation-timing-function: linear
+    -moz-animation-timing-function: linear
+    -o-animation-timing-function: linear
+    animation-timing-function: linear
+
+  @keyframes wiggle
+      2%
+          -webkit-transform: translateX(3px) rotate(2deg)
+          transform: translateX(3px) rotate(2deg)
+      4%
+          -webkit-transform: translateX(-3px) rotate(-2deg)
+          transform: translateX(-3px) rotate(-2deg)
+      6%
+          -webkit-transform: translateX(3px) rotate(2deg)
+          transform: translateX(3px) rotate(2deg)
+      8%
+          -webkit-transform: translateX(-3px) rotate(-2deg)
+          transform: translateX(-3px) rotate(-2deg)
+      10%
+          -webkit-transform: translateX(2px) rotate(1deg)
+          transform: translateX(2px) rotate(1deg)
+      12%
+          -webkit-transform: translateX(-2px) rotate(-1deg)
+          transform: translateX(-2px) rotate(-1deg)
+      14%
+          -webkit-transform: translateX(2px) rotate(1deg)
+          transform: translateX(2px) rotate(1deg)
+      16%
+          -webkit-transform: translateX(-2px) rotate(-1deg)
+          transform: translateX(-2px) rotate(-1deg)
+      18%
+          -webkit-transform: translateX(1px) rotate(0)
+          transform: translateX(1px) rotate(0)
+      20%
+          -webkit-transform: translateX(-1px) rotate(0)
+          transform: translateX(-1px) rotate(0)
 
   p
     font-size: 21px
