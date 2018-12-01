@@ -42,10 +42,14 @@
   export default {
     name: "HeaderMenu",
     methods: {
+      // scrollToTop() {
+      //   let element = document.getElementById("app");
+      //   element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+      // },
       checkWidth() {
-        var $window = $(window);
-        var windowsize = $window.width();
-        console.log(windowsize);
+        let $window = $(window);
+        let windowsize = $window.width();
+        //console.log(windowsize);
 
         if (windowsize < 992) {
           $('.closeOnClick').click(function () {
@@ -87,6 +91,9 @@
 
   .navbar-toggler
     border: none !important
+
+  .logo:hover
+    cursor: pointer
 
   .navbar
     position: absolute

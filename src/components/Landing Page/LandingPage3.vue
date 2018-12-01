@@ -3,7 +3,7 @@
     <div class="row sticky-top">
       <div class="col-12">
         <div class="nav navbar pl-md-5 pr-md-5 pt-md-3">
-          <img src="../../assets/home/Logo.gif" class="img-fluid logo" alt="logo">
+          <img @click="scrollToTop" src="../../assets/home/Logo.gif" class="img-fluid logo" alt="logo">
           <div class="contact-bar">
             <span class="font-white">Need a video to showcase your app?</span>
             <button @click="scrollIntoView" class="btn contact-btn font-orange ml-2">Contact Us</button>
@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="row hero_bg text-center pt-5 font-white">
+    <div id="top" class="row hero_bg text-center pt-5 font-white">
       <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-3 mt-5">
         <h1>Want to get more mobile app downloads?</h1>
         <h4 class="helvetica font-weight-light mt-2">We help mobile apps get noticed through video</h4>
@@ -362,6 +362,10 @@
   export default {
     name: "LandingPage3",
     methods: {
+      scrollToTop() {
+        var element = document.getElementById("top");
+        element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+      },
       scrollIntoView() {
         var element = document.getElementById("contact_form");
         element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
@@ -399,26 +403,6 @@
       }
     },
     mounted() {
-        // //RUN ONCE
-        // $('.contact-btn').addClass('wiggle');
-        // setTimeout(function () {
-        //     $('.contact-btn').removeClass('wiggle');
-        // }, 3000);
-        //
-        // //THEN ON INTERVAL
-        // setInterval(function () {
-        //     $('.contact-btn').addClass('wiggle');
-        //     setTimeout(function () {
-        //         $('.contact-btn').removeClass('wiggle');
-        //     }, 3000);
-        // }, 4500);
-
-
-
-
-
-
-
         let url = window.location.toString();
 
         if (url.includes('mobileapps')) {
@@ -511,6 +495,9 @@
   .logo
     max-width: 150px
     width: 100%
+
+  .logo:hover
+    cursor: pointer
 
   .nav
     background: transparent
