@@ -510,7 +510,7 @@
     position: absolute
     bottom: 0
     left: 0
-    z-index: 0
+    z-index: 2
     width: 29%
 
   .submit
